@@ -1,0 +1,70 @@
+Creative Commons Attribution 4.0 International License (CC-BY-4.0)
+
+Copyright (c) 2026 Philipp Maul - Nexalps
+
+This license applies to the structured analysis and data outputs of this
+project, specifically: site/demographics-data.json, the historical-precedent
+case narratives and AI substitution matrix in site/index.html and
+site/projections.html, the DACH deep-dive analysis in site/dach.html, the
+generational-crises analysis in site/generations.html, and the taxonomy and
+methodology used throughout the site.
+
+You are free to:
+
+  Share - copy and redistribute the material in any medium or format
+  Adapt - remix, transform, and build upon the material for any purpose,
+          even commercially
+
+Under the following terms:
+
+  Attribution - You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  No additional restrictions - You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+Upstream data sources and their licenses:
+
+- Eurostat (demo_pjan, demo_gind, demo_frate, proj_23np, demo_pjanind, and
+  related indicators): Licensed under the Eurostat copyright policy. See
+  https://ec.europa.eu/eurostat/web/main/help/copyright-notice
+
+- UN World Population Prospects 2024 (Demographic Indicators and
+  Probabilistic Projections, UN Population Division, Department of Economic
+  and Social Affairs): Made available under Creative Commons CC-BY 3.0 IGO.
+  See https://creativecommons.org/licenses/by/3.0/igo/
+
+- IMF World Economic Outlook Database: Licensed under the IMF copyright and
+  usage policy. See https://www.imf.org/external/terms.htm
+
+- OECD Economic Surveys (European Union and Euro Area 2025, Japan 2024,
+  China 2022, Switzerland 2024): Licensed under the OECD terms of use. See
+  https://www.oecd.org/termsandconditions/
+
+- National statistical offices referenced throughout (Destatis / Germany,
+  Statistik Austria, BFS / Switzerland, National Bureau of Statistics of
+  China, INED / France, and others): Each under the terms of its respective
+  publisher. Summary figures cited; no raw datasets redistributed.
+
+- European Commission 2024 Ageing Report: Cited under fair-use academic
+  referencing; summary figures only.
+
+- Bundesagentur für Arbeit (Engpassanalyse), AMS Austria, WKO, Bitkom, BIBB,
+  Ravio, Michael Page, Allianz Research, ELA/EURES, IW Köln, CEPR, Adecco
+  (Fachkräftemangel Index), FINMA, Malteser: Industry and institutional
+  reports cited under fair-use academic referencing with attribution.
+
+- Academic and historical scholarship (Ole J. Benedictow, The Black Death
+  1346–1353; Gregory Clark, A Farewell to Alms; John H. Munro, Black Death
+  wages and prices research, MPRA; Jordan Claridge & Vincent Delabastita,
+  LSE Economic History Working Paper 360; Anne H. Gauthier, Family Policies
+  in Industrialized Countries, Population 57(3), 2002): Copyrighted works
+  cited under fair-use academic referencing; no text reproduced, only
+  findings summarised with attribution.
