@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projections &mdash; EUROPOP2023 to 2050 &mdash; European Demographics &amp; AI</title>
+<meta name="description" content="EU working-age population projected to fall to 236M by 2050. Old-age dependency ratio hits 50.4% — one retiree for every two workers. Without migration, the EU would shrink to 387M.">
+<link rel="canonical" href="https://demographics.nexalps.com/projections.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Projections — EUROPOP2023 to 2050">
+<meta property="og:description" content="EU working-age population projected to fall to 236M by 2050. Dependency ratio crosses 50%. Country-level divergence from collapse to resilience.">
+<meta property="og:url" content="https://demographics.nexalps.com/projections.html">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projections — EUROPOP2023 to 2050">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Projections: What EUROPOP2023 Shows Through 2050","description":"EU working-age population projected to fall to 236M by 2050. Old-age dependency ratio crosses 50%. Country-level divergence analysis.","url":"https://demographics.nexalps.com/projections.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["EUROPOP2023","population projections","dependency ratio","working-age decline","migration","demographic cliff"]}
+</script>
+
+<meta property="og:image" content="https://demographics.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://demographics.nexalps.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/assets/d3.v7.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Taxonomy grid (3-col like zone-grid variant) */
+.taxonomy-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0}
+.taxonomy-card{padding:20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);border-left:3px solid #64748b;display:flex;flex-direction:column}
+.taxonomy-card h3{font-size:15px;font-weight:600;margin-bottom:8px}
+.taxonomy-card .tax-countries{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px;flex:1}
+.taxonomy-card .tax-mechanism{font-size:13px;color:#d4d4d8;line-height:1.6;font-style:italic;margin-top:auto;padding-top:12px;border-top:1px solid var(--card-border)}
+@media(max-width:768px){.taxonomy-grid{grid-template-columns:1fr}}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Inline stat card for prose sections */
+.inline-stats{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.inline-stat{flex:1;min-width:180px;padding:14px 18px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.inline-stat .stat-value{font-size:22px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.inline-stat .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4;margin-top:2px}
+.inline-stat .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+/* Data tables */
+.data-table{width:100%;border-collapse:collapse;font-size:12px;color:var(--muted)}
+.data-table th,.data-table td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--card-border)}
+.data-table th{color:var(--muted-foreground);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;font-size:10px}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+
+/* Table overflow — prevent horizontal page scroll on mobile */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+details>table.data-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+
+/* Body-content links — match surrounding text, underlined, orange on hover */
+main p a, .zone-verdict a, .highlight p a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+main p a:hover, .zone-verdict a:hover, .highlight p a:hover{color:var(--ring)}
+
+/* Case sub-headers in historical-precedents section */
+h3.case-head{font-size:17px;font-weight:600;margin:32px 0 8px;color:var(--foreground);letter-spacing:-0.01em}
+h3.case-head .case-dates{font-weight:400;color:var(--muted-foreground);font-size:14px;margin-left:8px;letter-spacing:0}
+.precedent-tldr td{vertical-align:top;padding:12px;font-size:13px;color:#d4d4d8;line-height:1.6}
+.precedent-tldr td:first-child{min-width:180px;max-width:220px}
+.precedent-tldr td:nth-child(2),.precedent-tldr td:nth-child(3){min-width:260px}
+.precedent-tldr .case-dates-cell{font-size:11px;color:var(--muted-foreground);font-weight:400;display:inline-block;margin-top:2px}
+@media(max-width:640px){.precedent-tldr td:first-child{min-width:140px;font-size:12px}.precedent-tldr td{padding:10px;font-size:12px}.precedent-tldr td:nth-child(2),.precedent-tldr td:nth-child(3){min-width:220px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="projections.html" aria-current="page">Projections</a>
+    <a href="dach.html">DACH</a>
+    <a href="generations.html">Generations</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="projections.html" aria-current="page">Projections</a>
+  <a href="dach.html">DACH</a>
+  <a href="generations.html">Generations</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Projections</h1>
+  <p class="lede" style="margin-top:0;margin-bottom:8px;font-size:20px;color:var(--muted)">What EUROPOP2023 Shows Through 2050</p>
+  <p class="lede">The working-age decline is not a forecast &mdash; it is demography already born. Every projection scenario leads to the same place: fewer workers, more dependants, and a continent that cannot grow its way out without migration.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/">Philipp Maul</a> &middot; <a href="https://nexalps.com">Nexalps</a> &middot; April 2026 &middot; Part 4 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">54 primary sources</a> including Eurostat, European Commission, UN Population Division, OECD and Cedefop.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Summary statistics">
+  <div class="stat-card">
+    <span class="stat-value">236M</span>
+    <span class="stat-label">EU working-age by 2050</span>
+    <span class="stat-sublabel">Down from 270M peak in 2010</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">50.4%</span>
+    <span class="stat-label">Old-age dependency ratio by 2050</span>
+    <span class="stat-sublabel">1 retiree per 2 workers</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">&minus;60M</span>
+    <span class="stat-label">No-migration scenario</span>
+    <span class="stat-sublabel">EU would fall to 387M by 2050</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: WORKING-AGE PROJECTIONS -->
+<h2><span class="num">1.</span> Working-Age Projections <span class="subtitle">EUROPOP2023 baseline, 2025&ndash;2050</span></h2>
+
+<p>Under Eurostat's baseline scenario, the EU-27 working-age population (20&ndash;64) drops from 260&nbsp;million in 2025 to 236&nbsp;million by 2050 &mdash; a loss of roughly 1&nbsp;million workers per year. Italy faces the steepest decline at &minus;17.5%, losing 6&nbsp;million workers. Only Switzerland is projected to hold steady, buoyed by sustained high migration.</p>
+
+<div class="chart-box" role="img" aria-label="Multi-line chart showing working-age population projections from 2025 to 2050 for EU-27 (scaled), Germany, France, Italy, Spain, Netherlands, Austria, and Switzerland. All countries decline except Switzerland.">
+  <h3>Working-Age Population Projections &mdash; 2025 to 2050 (millions)</h3>
+  <div id="working-age-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>2025</th><th>2030</th><th>2040</th><th>2050</th><th>Change</th></tr></thead>
+      <tbody id="working-age-table"></tbody>
+    </table>
+  </details>
+  <p style="font-size:13px;color:var(--muted-foreground);margin-top:12px;line-height:1.6">Watch the orange lines: Germany and Italy show the steepest declines among large economies. Every line slopes downward except Switzerland, which is sustained entirely by migration. The EU-27 aggregate (grey, scaled to 1/5) loses roughly 1 million workers per year through 2050.</p>
+</div>
+
+<!-- S2: COUNTRY DIVERGENCE -->
+<h2><span class="num">2.</span> Country Divergence <span class="subtitle">Not all of Europe declines at the same speed</span></h2>
+
+<p>Europe's demographic future is not uniform. Some countries face population collapse within a generation; others have policies that buy time. The divergence between the worst and best cases is as important as the aggregate trend.</p>
+
+<div class="taxonomy-grid" id="divergence-grid">
+  <!-- Rendered by JS -->
+</div>
+
+<!-- S3: BASELINE VS NO-MIGRATION -->
+<h2><span class="num">3.</span> Baseline vs No-Migration <span class="subtitle">How much does migration plug the gap?</span></h2>
+
+<p>Strip out net migration entirely and the EU-27 drops from 450&nbsp;million to 387&nbsp;million by 2050 &mdash; a loss of 63&nbsp;million people. Germany alone would shrink from 84&nbsp;million to 73.5&nbsp;million. The gap between the two scenarios quantifies each country's migration dependency.</p>
+
+<div class="chart-box" role="img" aria-label="Split dumbbell chart comparing baseline vs no-migration 2050 population. EU-27 aggregate shown separately from individual countries for readability. The gap between dots represents migration dependency.">
+  <h3>2050 Projected Population: Baseline (with continued migration) vs Zero-Migration Scenario</h3>
+  <div id="dumbbell-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>Baseline 2050 (with migration)</th><th>No Migration 2050</th><th>Loss without migration</th></tr></thead>
+      <tbody id="dumbbell-table"></tbody>
+    </table>
+  </details>
+  <p style="font-size:13px;color:var(--muted-foreground);margin-top:12px;line-height:1.6">The orange dot shows each country's projected 2050 population with migration. The grey dot shows what would happen without any migration. The gap (shown as a negative number) reveals how dependent each country is on migration to sustain its population. Germany would lose 10.6 million people without migration.</p>
+</div>
+
+<!-- S4: DEPENDENCY RATIO -->
+<h2><span class="num">4.</span> Dependency Ratio <span class="subtitle">Old-age dependency (65+ per 100 working-age)</span></h2>
+
+<p>The old-age dependency ratio measures how many people aged 65+ exist per 100 working-age (20&ndash;64) adults. When it crosses 50%, there are only two workers for every retiree. Italy is projected to hit 58% by 2050 &mdash; nearly 3 dependants for every 5 workers. The EU average crosses 50% around 2050, a threshold no advanced economy has previously navigated.</p>
+
+<div class="chart-box" role="img" aria-label="Grouped bar chart showing old-age dependency ratios for 2025, 2030, 2040, and 2050 across six countries. A reference line at 50 percent marks the critical one-to-two ratio.">
+  <h3>Old-Age Dependency Ratio &mdash; Projected through 2050 (%)</h3>
+  <div id="dependency-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>2025</th><th>2030</th><th>2040</th><th>2050</th></tr></thead>
+      <tbody id="dependency-table"></tbody>
+    </table>
+  </details>
+  <p style="font-size:13px;color:var(--muted-foreground);margin-top:12px;line-height:1.6">The dashed line marks the 1:2 ratio threshold, where there are only two working-age adults for every retiree. Italy crosses 58% by 2050 and Germany reaches 51%. When this ratio climbs above 50%, pension and healthcare systems face structural funding gaps that productivity gains alone cannot close.</p>
+</div>
+
+<!-- S5: AGE STRUCTURE -->
+<h2><span class="num">5.</span> Age Structure <span class="subtitle">EU-27 population by decade band, 2025</span></h2>
+
+<p>The pyramid is no longer a pyramid. The bulge sits across the 25&ndash;54 core working-age decade bands &mdash; all three are shrinking, losing a combined 3.2&nbsp;million workers. The fastest growth is at the top: the 85+ band is expanding by 1.1&nbsp;million, driving exponential demand for long-term care infrastructure that barely exists at the required scale.</p>
+
+<div class="chart-box" role="img" aria-label="Horizontal bar chart showing EU-27 population shares by age band for current snapshot (2024/2025), with volume changes labelled.">
+  <h3>EU-27 Age Structure &mdash; Current (2024/2025) Share of Total Population (%)</h3>
+  <div id="pyramid-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Age Band</th><th>EU-27 %</th><th>Trend</th><th>Volume Change</th><th>Implication</th></tr></thead>
+      <tbody id="pyramid-table"></tbody>
+    </table>
+  </details>
+</div>
+
+<!-- S6: HISTORICAL PRECEDENTS -->
+<h2><span class="num">6.</span> Historical precedents <span class="subtitle">What shrinking-workforce societies did last time</span></h2>
+
+<p>No exact precedent exists for the EU-27 at 2025 scale &mdash; 447&nbsp;million people, a simultaneous retirement wave and below-replacement fertility across 27 countries, accelerating AI. Five comparables map the response space.</p>
+
+<div class="table-wrap" style="margin:16px 0 32px">
+  <table class="data-table precedent-tldr">
+    <thead>
+      <tr><th>Case</th><th>Status at the time</th><th>What helped recovery</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>EU-27 + Switzerland</strong><br><span class="case-dates-cell">2025&ndash;2050</span></td>
+        <td>TFR 1.34; 21% over-65 rising to 30% by 2050; &minus;34M working-age from 2010 peak; AI offsets Zone A (clerical), not Zone C (care/trades).</td>
+        <td>Only lever proven at scale is migration &mdash; politically constrained. Pronatalism and AI-led productivity gains are marginal at this speed.</td>
+      </tr>
+      <tr>
+        <td><strong>Japan</strong><br><span class="case-dates-cell">1995&ndash;2025</span></td>
+        <td>1995 pyramid ≈ EU-27 today: median age 40, TFR 1.42, 14% over-65. By 2025: median 50, TFR 1.20, 29% over-65. Near-closed immigration.</td>
+        <td>Extended retirement age (partial); women's participation (partial); late immigration from 2019. Robots and pronatalism failed. Outcome: 30 years of GDP stagnation.</td>
+      </tr>
+      <tr>
+        <td><strong>China</strong><br><span class="case-dates-cell">2015&ndash;present</span></td>
+        <td>Working-age peaked 2014 at ~998M; TFR 1.00 (2023, lowest outside conflict zones); one-child policy legacy; no meaningful immigration mechanism.</td>
+        <td>Three-child policy + provincial subsidies (2021&ndash;). Too early to judge. Without migration, cannot use France's lever. GDP growth already halved.</td>
+      </tr>
+      <tr>
+        <td><strong>Baltic states + Bulgaria</strong><br><span class="case-dates-cell">1990&ndash;2025</span></td>
+        <td>TFR ~1.5; mass EU-outflow post-2004; Bulgaria 9.0M &rarr; 6.4M (&minus;29%); Latvia &minus;28%; rural districts &minus;40 to &minus;60%.</td>
+        <td>Wage convergence produced some return migration after 2015. Diaspora tax breaks and return bonuses failed. No reversal achieved; decline now structural.</td>
+      </tr>
+      <tr>
+        <td><strong>France</strong><br><span class="case-dates-cell">1800&ndash;1940, recovery thereafter</span></td>
+        <td>First country below replacement fertility (1870s); population share of Europe halved between 1800 and 1940.</td>
+        <td>Century-long pronatalism (family allowances, tax credits, childcare) + post-colonial migration. Combined: TFR 1.61 today, EU highest. Worked &mdash; but took 100 years.</td>
+      </tr>
+      <tr>
+        <td><strong>The Black Death</strong><br><span class="case-dates-cell">1348&ndash;1353</span></td>
+        <td>30&ndash;50% of Europe's population dead in five years. Extreme mortality shock, not ageing.</td>
+        <td>None intentional. Forced reorganisation: wages ~3&times;, manorial system collapsed, wage labour emerged. "Recovery" meant a different system.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="case-head">Japan <span class="case-dates">1995&ndash;2025</span></h3>
+<p>Japan's 1995 age pyramid mapped closely to EU-27 today: median age 40, 14% over 65, fertility 1.42. Thirty years later: median age 50, 29% over 65, fertility 1.20. Japan ran every lever available &mdash; robotics (ROBEAR care robots, Honda Asimo), raised retirement age, women's workforce participation (Abenomics 2013), and eventually slow-rolled immigration (Specified Skilled Worker visa, 2019). Result: three decades of GDP stagnation. Per-capita income held up through deflation and household savings; Japan's share of world GDP fell from 17% to under 5%. The OECD's 2024 <em>Economic Survey of Japan</em> projects the old-age dependency ratio reaching <strong>79% by 2050</strong> &mdash; roughly four workers for every three retirees &mdash; but flags that Japanese employment could still stabilise at ~40 million if immigration and female participation both rise faster than under current trends. <em>Robots did not scale into care work fast enough, and closed immigration imposed a measurable growth cost &mdash; but the levers that did partly work (participation, retirement age) are precisely the ones Europe still has room to pull.</em></p>
+
+<h3 class="case-head">China <span class="case-dates">2015&ndash;present</span></h3>
+<p>China is Europe's story at roughly 4&times; the scale and about 30 years earlier in the lifecycle. The one-child policy (1980&ndash;2015) built structural ageing directly into the pyramid: the working-age population peaked in 2014 at ~998&nbsp;million and is now contracting by 3&ndash;5&nbsp;million per year. Fertility reached 1.00 in 2023 &mdash; the lowest outside conflict zones. The response has been rapid but unproven: end of one-child (2015), two-child (2016), three-child (2021), and provincial pronatalist subsidies from 2023. GDP growth has already fallen from ~7% to ~4%, and with no meaningful immigration mechanism, China cannot use the lever that partially rescued France. <em>The closest live comparable to Europe &mdash; still in its opening chapter, with the policy reversal too recent to judge.</em></p>
+
+<h3 class="case-head">Baltic states and Bulgaria <span class="case-dates">1990&ndash;2025</span></h3>
+<p>The post-1989 combination of low fertility and open EU migration produced the sharpest peacetime demographic contractions in modern Europe. Bulgaria: 9.0M &rarr; 6.4M (&minus;29%). Latvia: &minus;28%. Lithuania: &minus;23%. Rural districts lost 40&ndash;60% of their population; entire villages were abandoned. Policy response was marginal &mdash; diaspora tax breaks, return-migration bonuses &mdash; none sufficient. Wage convergence with Western Europe produced some return migration after 2015, but the decline is now structural. <em>When emigration compounds with low fertility, reversal through policy alone is not achievable.</em></p>
+
+<h3 class="case-head">France <span class="case-dates">1800&ndash;1940, recovery thereafter</span></h3>
+<p>France was Europe's first country to fall below replacement fertility &mdash; by the 1870s, a full century ahead of its neighbours. Its share of Europe's population halved between 1800 and 1940. The response, starting in the 1920s, was the most sustained pronatalist programme in the West: family allowances, progressive tax credits per child, subsidised childcare, and cultural recognition of mothers. A century later, France has the EU's highest TFR at 1.61, versus an EU average of 1.34. <em>The only case where sustained policy partially worked &mdash; but it took a century, and required pairing with open migration from former colonies.</em></p>
+
+<h3 class="case-head">The Black Death <span class="case-dates">1348&ndash;1353</span></h3>
+<p>A structurally different cause &mdash; mortality shock, not ageing &mdash; but the same underlying labour-scarcity dynamic. Between 30% and 50% of Europe's population died in five years. Peasant wages roughly tripled within a generation. The manorial system collapsed; serfdom did not survive; wage labour and labour mobility emerged. <em>The case where extreme labour scarcity did not produce managed adjustment but structural reorganisation &mdash; institutions that seemed permanent dissolved when the labour supply stopped guaranteeing them.</em></p>
+
+<div class="highlight">
+  <h3>Demographic precedents vs. technological disruption</h3>
+  <p>These five cases are <em>demographic</em> precedents &mdash; periods when workforce shrinkage itself was the binding constraint. For the complementary pattern &mdash; labour disruptions driven by technology rather than demography &mdash; see <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://disruptions.nexalps.com/',page:'projections'})">disruptions.nexalps.com</a>, which maps 580 years of technology-driven labour shifts across multiple case studies.</p>
+</div>
+
+<!-- S7: FISCAL IMPACT -->
+<h2><span class="num">7.</span> Fiscal Impact <span class="subtitle">The cost of getting old</span></h2>
+
+<p>Demographic ageing does not only shrink the workforce &mdash; it expands the cost base. The OECD's 2025 <em>Economic Survey of the European Union and Euro Area</em> frames the convergence directly: <q>Spending pressures will increase due to population ageing, the need to increase defence capacity and the green and digital transitions.</q> The European Commission's 2024 Ageing Report projects the specific trajectory &mdash; sustained pressure on public finances through 2070, with healthcare and long-term care absorbing a growing share of GDP while growth itself is capped by workforce contraction.</p>
+
+<div class="inline-stats">
+  <div class="inline-stat">
+    <span class="stat-value">6.9% &rarr; 7.3%</span>
+    <span class="stat-label">Healthcare spending (% GDP)</span>
+    <span class="stat-sublabel">2022 to 2070 projection</span>
+  </div>
+  <div class="inline-stat">
+    <span class="stat-value">1.7% &rarr; 2.6%</span>
+    <span class="stat-label">Long-term care spending (% GDP)</span>
+    <span class="stat-sublabel">53% increase over 50 years</span>
+  </div>
+  <div class="inline-stat">
+    <span class="stat-value">1.3%</span>
+    <span class="stat-label">Average GDP growth through 2070</span>
+    <span class="stat-sublabel">Capped by workforce decline</span>
+  </div>
+</div>
+
+<p>The fiscal squeeze is compounding: fewer workers generate less tax revenue while more retirees draw more from pensions, healthcare, and care systems. The EU's median age &mdash; already 44.9 (Eurostat <code>demo_pjanind</code>, 2025) &mdash; will continue climbing. Italy, at 49.1, is the oldest large economy on the continent and a preview of where others are headed. <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://disruptions.nexalps.com/',page:'projections'})">Layer 3</a> adds the worker-side mechanism: the Card&ndash;Kluve&ndash;Weber meta-analysis of 207 retraining studies finds reemployment probability halves after 50, doubling the wage scar &mdash; directly compounding Italy's trajectory.</p>
+
+<!-- AUTHOR NOTE -->
+<div class="author-note">
+  <h3>A note on projections</h3>
+  <p>EUROPOP2023 is a projection, not a prediction. It assumes current trends in fertility, mortality, and migration continue. The no-migration scenario is a thought experiment, not a policy option &mdash; but it reveals how much of Europe's population stability is borrowed, not earned. The countries that diverge positively (France, Ireland, Sweden) share a common thread: sustained investment in family policy and pragmatic immigration frameworks. The lesson is not that decline is inevitable, but that it is the default.</p>
+  <div class="sig">&mdash; Philipp Maul, Nexalps</div>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>Zoom into the DACH region</h3>
+  <p>See how Germany, Austria, and Switzerland each face unique versions of this cliff &mdash; from Germany's 163 shortage occupations to Switzerland's population cap vote.</p>
+  <div class="btn-row">
+    <a href="dach.html" class="btn btn-primary" onclick="if(typeof posthog!=='undefined')posthog.capture('cta_click',{page:'projections',target:'dach'})">DACH dive now &rarr;</a>
+    <a href="generations.html" class="btn btn-outline" onclick="if(typeof posthog!=='undefined')posthog.capture('cta_click',{page:'projections',target:'generations'})">See where your generation lands &rarr;</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Europe Is Running Out of Workers, Not Work v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="projections.html">Projections</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="generations.html">Generations</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> &middot; &copy; 2026 Nexalps
+</footer>
+
+</main>
+
+<!-- TOOLTIP -->
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+// Burger menu
+const burgerBtn = document.getElementById('burger-btn');
+const burgerPanel = document.getElementById('burger-panel');
+burgerBtn.addEventListener('click', () => {
+  const open = burgerBtn.classList.toggle('open');
+  burgerPanel.classList.toggle('open');
+  burgerBtn.setAttribute('aria-expanded', open);
+});
+
+const tooltip = document.getElementById('tooltip');
+function showTip(evt, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.display = 'block';
+  tooltip.style.left = (evt.pageX + 12) + 'px';
+  tooltip.style.top = (evt.pageY - 28) + 'px';
+}
+function hideTip() { tooltip.style.display = 'none'; }
+
+const countryColors = {
+  'EU-27': '#94a3b8', 'Germany': '#f97316', 'France': '#94a3b8', 'Italy': '#fdba74',
+  'Spain': '#64748b', 'Netherlands': '#64748b', 'Austria': '#64748b', 'Switzerland': '#64748b'
+};
+
+// Load data and render charts
+fetch('demographics-data.json').then(r => r.json()).then(DATA => {
+
+  // ==========================================
+  // CHART 1: Working-Age Projections (multi-line)
+  // ==========================================
+  (function() {
+    const wa = DATA.projections.working_age;
+    const years = [2025, 2030, 2040, 2050];
+    const box = document.getElementById('working-age-chart');
+    const W = Math.min(box.clientWidth, 700), H = 600;
+    const margin = { top: 24, right: 120, bottom: 100, left: 56 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    // Collision avoidance for right-side labels
+    function avoidCollisions(items, minGap) {
+      items.sort((a, b) => a._pos - b._pos);
+      for (let i = 1; i < items.length; i++) {
+        if (items[i]._pos - items[i-1]._pos < minGap) {
+          items[i]._pos = items[i-1]._pos + minGap;
+        }
+      }
+    }
+
+    // Scale EU-27 by /5 for visual fit
+    const series = wa.map(d => {
+      const scale = d.country === 'EU-27' ? 5 : 1;
+      return {
+        country: d.country,
+        label: d.country === 'EU-27' ? 'EU-27 (/5)' : d.country,
+        values: years.map(y => ({ year: y, val: d['y' + y] / scale / 1e6 }))
+      };
+    });
+
+    const x = d3.scaleLinear().domain([2025, 2050]).range([0, w]);
+    const allVals = series.flatMap(s => s.values.map(v => v.val));
+    const y = d3.scaleLinear().domain([0, d3.max(allVals) * 1.08]).nice().range([h, 0]);
+
+    // Grid lines
+    y.ticks(5).forEach(t => {
+      g.append('line').attr('x1', 0).attr('x2', w).attr('y1', y(t)).attr('y2', y(t))
+        .attr('stroke', 'rgba(255,255,255,0.05)');
+    });
+
+    // X axis
+    const xAxis = g.append('g').attr('transform', `translate(0,${h})`).call(
+      d3.axisBottom(x).tickValues(years).tickFormat(d3.format('d'))
+    );
+    xAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '12px');
+    xAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    xAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Y axis
+    const yAxis = g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(d => d + 'M'));
+    yAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '12px');
+    yAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    yAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Lines
+    const line = d3.line().x(d => x(d.year)).y(d => y(d.val)).curve(d3.curveMonotoneX);
+
+    series.forEach(s => {
+      const color = countryColors[s.country] || '#94a3b8';
+      g.append('path').datum(s.values)
+        .attr('d', line)
+        .attr('fill', 'none')
+        .attr('stroke', color)
+        .attr('stroke-width', s.country === 'EU-27' ? 2.5 : 1.8)
+        .attr('stroke-dasharray', '6,3')
+        .attr('opacity', 0.85);
+
+      // Dots
+      g.selectAll('.dot-' + s.country.replace(/\s/g, '')).data(s.values).join('circle')
+        .attr('cx', d => x(d.year)).attr('cy', d => y(d.val)).attr('r', 3)
+        .attr('fill', color).attr('stroke', 'var(--background)').attr('stroke-width', 1.5)
+        .on('mousemove', (evt, d) => showTip(evt, `<strong>${s.label}</strong><br>${d.year}: ${d.val.toFixed(1)}M`))
+        .on('mouseleave', hideTip);
+
+    });
+
+    // Right-side labels with collision avoidance + connector lines to dots
+    const rightLabels = series.map(s => {
+      const lastVal = s.values[s.values.length - 1];
+      return { label: s.label, country: s.country, dotY: y(lastVal.val), _pos: y(lastVal.val) };
+    });
+    // Sort by position, push apart where overlapping
+    rightLabels.sort((a, b) => a._pos - b._pos);
+    for (let i = 1; i < rightLabels.length; i++) {
+      if (rightLabels[i]._pos - rightLabels[i-1]._pos < 16) {
+        rightLabels[i]._pos = rightLabels[i-1]._pos + 16;
+      }
+    }
+    rightLabels.forEach(item => {
+      const color = countryColors[item.country] || '#94a3b8';
+      // Thin connector line from dot to displaced label (if displaced)
+      if (Math.abs(item._pos - item.dotY) > 2) {
+        g.append('line').attr('x1', w + 2).attr('y1', item.dotY).attr('x2', w + 4).attr('y2', item._pos)
+          .attr('stroke', color).attr('stroke-width', 0.5).attr('opacity', 0.4);
+      }
+      g.append('text')
+        .attr('x', w + 6).attr('y', item._pos).attr('dy', '0.35em')
+        .attr('fill', color).attr('font-size', '11px').attr('font-weight', 500)
+        .text(item.label);
+    });
+
+    // Annotation — positioned top-right, clear of all lines
+    g.append('text').attr('x', w - 4).attr('y', 8)
+      .attr('text-anchor', 'end').attr('fill', '#f97316').attr('font-size', '11px').attr('font-weight', 600).attr('opacity', 0.7)
+      .text('EU loses ~1M workers/year \u2193');
+
+    // Legend
+    const legItems = [
+      { color: '#f97316', label: 'Germany (steepest large-economy decline)' },
+      { color: '#fdba74', label: 'Italy (steepest overall: −17.5%)' },
+      { color: '#94a3b8', label: 'EU-27 aggregate (scaled ÷5), France, Netherlands' },
+      { color: '#64748b', label: 'Spain, Austria, Switzerland' },
+    ];
+    const leg = svg.append('g').attr('transform', `translate(${margin.left + 8}, ${H - 60})`);
+    legItems.forEach((it, i) => {
+      const lx = i < 2 ? 0 : w/2;
+      const ly = i < 2 ? i * 16 : (i - 2) * 16;
+      leg.append('line').attr('x1', lx).attr('x2', lx + 20).attr('y1', ly + 5).attr('y2', ly + 5)
+        .attr('stroke', it.color).attr('stroke-width', 2).attr('stroke-dasharray', '6,3').attr('opacity', 0.85);
+      leg.append('text').attr('x', lx + 26).attr('y', ly + 9).attr('fill', '#71717a').attr('font-size', '10px').text(it.label);
+    });
+
+    // Table
+    const tbody = document.getElementById('working-age-table');
+    wa.forEach(d => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${d.country}</td><td>${(d.y2025/1e6).toFixed(1)}M</td><td>${(d.y2030/1e6).toFixed(1)}M</td><td>${(d.y2040/1e6).toFixed(1)}M</td><td>${(d.y2050/1e6).toFixed(1)}M</td><td style="color:${d.change_pct < 0 ? '#f97316' : '#94a3b8'}">${d.change_pct > 0 ? '+' : ''}${d.change_pct}%</td>`;
+      tbody.appendChild(row);
+    });
+
+    if (typeof posthog !== 'undefined') posthog.capture('chart_view', { chart: 'working_age_projections', page: 'projections' });
+  })();
+
+  // ==========================================
+  // CHART 2: Baseline vs No-Migration (Split Dumbbell)
+  // ==========================================
+  (function() {
+    const tp = DATA.projections.total_population.slice()
+      .map(d => ({ ...d, gap: d.y2050 - d.y2050_no_migration }))
+      .sort((a, b) => b.gap - a.gap);
+
+    const eu27 = tp.find(d => d.country === 'EU-27');
+    const countries = tp.filter(d => d.country !== 'EU-27');
+
+    const box = document.getElementById('dumbbell-chart');
+    const W = Math.min(box.clientWidth, 700);
+
+    // --- TOP SECTION: EU-27 Aggregate ---
+    const topH = 90;
+    const topMargin = { top: 28, right: 20, bottom: 20, left: 100 };
+    const topW = W - topMargin.left - topMargin.right;
+
+    // Section label
+    const topLabel = d3.select(box).append('div')
+      .style('font-size', '11px').style('font-weight', '600').style('text-transform', 'uppercase')
+      .style('letter-spacing', '0.05em').style('color', '#71717a').style('margin-bottom', '4px')
+      .text('EU-27 Aggregate');
+
+    const svgTop = d3.select(box).append('svg').attr('width', W).attr('height', topH);
+    const gTop = svgTop.append('g').attr('transform', `translate(${topMargin.left},${topMargin.top})`);
+
+    if (eu27) {
+      const xTop = d3.scaleLinear()
+        .domain([eu27.y2050_no_migration / 1e6 * 0.92, eu27.y2050 / 1e6 * 1.04])
+        .range([0, topW]);
+      const cy = 12;
+
+      // Connecting line
+      gTop.append('line')
+        .attr('x1', xTop(eu27.y2050_no_migration / 1e6)).attr('x2', xTop(eu27.y2050 / 1e6))
+        .attr('y1', cy).attr('y2', cy)
+        .attr('stroke', 'rgba(148,163,184,0.3)').attr('stroke-width', 4).attr('stroke-linecap', 'round');
+
+      // No-migration dot (grey, left)
+      gTop.append('circle')
+        .attr('cx', xTop(eu27.y2050_no_migration / 1e6)).attr('cy', cy).attr('r', 7).attr('fill', '#64748b')
+        .on('mousemove', (evt) => showTip(evt, `<strong>EU-27</strong><br>No migration: ${(eu27.y2050_no_migration / 1e6).toFixed(0)}M`))
+        .on('mouseleave', hideTip);
+
+      // Baseline dot (orange, right)
+      gTop.append('circle')
+        .attr('cx', xTop(eu27.y2050 / 1e6)).attr('cy', cy).attr('r', 7).attr('fill', '#f97316')
+        .on('mousemove', (evt) => showTip(evt, `<strong>EU-27</strong><br>Baseline (with migration): ${(eu27.y2050 / 1e6).toFixed(0)}M`))
+        .on('mouseleave', hideTip);
+
+      // Left label: no-migration value
+      gTop.append('text')
+        .attr('x', xTop(eu27.y2050_no_migration / 1e6)).attr('y', cy - 14)
+        .attr('text-anchor', 'middle').attr('fill', '#94a3b8').attr('font-size', '11px').attr('font-weight', 500)
+        .text((eu27.y2050_no_migration / 1e6).toFixed(0) + 'M (no migration)');
+
+      // Right label: baseline value
+      gTop.append('text')
+        .attr('x', xTop(eu27.y2050 / 1e6)).attr('y', cy - 14)
+        .attr('text-anchor', 'middle').attr('fill', '#f97316').attr('font-size', '11px').attr('font-weight', 500)
+        .text((eu27.y2050 / 1e6).toFixed(0) + 'M (baseline 2050)');
+
+      // Gap label below the line
+      gTop.append('text')
+        .attr('x', (xTop(eu27.y2050_no_migration / 1e6) + xTop(eu27.y2050 / 1e6)) / 2).attr('y', cy + 20)
+        .attr('text-anchor', 'middle').attr('fill', 'var(--muted)').attr('font-size', '12px').attr('font-weight', 600)
+        .text('\u2212' + (eu27.gap / 1e6).toFixed(1) + 'M');
+
+      // Country label
+      gTop.append('text')
+        .attr('x', -8).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end')
+        .attr('fill', '#a1a1aa').attr('font-size', '13px').attr('font-weight', 600)
+        .text('EU-27');
+    }
+
+    // Divider
+    d3.select(box).append('div')
+      .style('height', '1px').style('background', 'rgba(255,255,255,0.08)').style('margin', '8px 0');
+
+    // --- BOTTOM SECTION: By Country ---
+    const botLabel = d3.select(box).append('div')
+      .style('font-size', '11px').style('font-weight', '600').style('text-transform', 'uppercase')
+      .style('letter-spacing', '0.05em').style('color', '#71717a').style('margin-bottom', '4px')
+      .text('By Country');
+
+    const botH = countries.length * 44 + 70;
+    const botMargin = { top: 12, right: 20, bottom: 50, left: 100 };
+    const botW = W - botMargin.left - botMargin.right;
+
+    const svgBot = d3.select(box).append('svg').attr('width', W).attr('height', botH);
+    const gBot = svgBot.append('g').attr('transform', `translate(${botMargin.left},${botMargin.top})`);
+
+    const xBot = d3.scaleLinear().domain([0, 100]).range([0, botW]);
+    const yBot = d3.scaleBand().domain(countries.map(d => d.country)).range([0, botH - botMargin.top - botMargin.bottom]).padding(0.35);
+
+    // Grid lines
+    xBot.ticks(5).forEach(t => {
+      gBot.append('line').attr('x1', xBot(t)).attr('x2', xBot(t)).attr('y1', 0).attr('y2', botH - botMargin.top - botMargin.bottom)
+        .attr('stroke', 'rgba(255,255,255,0.04)');
+    });
+
+    // Lines connecting dots
+    countries.forEach(d => {
+      gBot.append('line')
+        .attr('x1', xBot(d.y2050_no_migration / 1e6)).attr('x2', xBot(d.y2050 / 1e6))
+        .attr('y1', yBot(d.country) + yBot.bandwidth() / 2).attr('y2', yBot(d.country) + yBot.bandwidth() / 2)
+        .attr('stroke', 'rgba(148,163,184,0.3)').attr('stroke-width', 3).attr('stroke-linecap', 'round');
+    });
+
+    // No-migration dots (grey)
+    gBot.selectAll('.dot-no-mig').data(countries).join('circle')
+      .attr('cx', d => xBot(d.y2050_no_migration / 1e6))
+      .attr('cy', d => yBot(d.country) + yBot.bandwidth() / 2)
+      .attr('r', 6).attr('fill', '#64748b')
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.country}</strong><br>No migration: ${(d.y2050_no_migration / 1e6).toFixed(1)}M<br>Loss vs baseline: \u2212${(d.gap / 1e6).toFixed(1)}M`))
+      .on('mouseleave', hideTip);
+
+    // Baseline dots (orange)
+    gBot.selectAll('.dot-baseline').data(countries).join('circle')
+      .attr('cx', d => xBot(d.y2050 / 1e6))
+      .attr('cy', d => yBot(d.country) + yBot.bandwidth() / 2)
+      .attr('r', 6).attr('fill', '#f97316')
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.country}</strong><br>Baseline (with migration): ${(d.y2050 / 1e6).toFixed(1)}M`))
+      .on('mouseleave', hideTip);
+
+    // Delta labels to the RIGHT of the orange (baseline) dot
+    countries.forEach(d => {
+      gBot.append('text')
+        .attr('x', xBot(d.y2050 / 1e6) + 10)
+        .attr('y', yBot(d.country) + yBot.bandwidth() / 2)
+        .attr('dy', '0.35em').attr('text-anchor', 'start').attr('fill', 'var(--muted)').attr('font-size', '11px')
+        .text('\u2212' + (d.gap / 1e6).toFixed(1) + 'M');
+    });
+
+    // Country labels
+    gBot.selectAll('.label').data(countries).join('text')
+      .attr('x', -8).attr('y', d => yBot(d.country) + yBot.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', '#a1a1aa').attr('font-size', '12px')
+      .text(d => d.country);
+
+    // X axis
+    const xAxisBot = gBot.append('g').attr('transform', `translate(0,${botH - botMargin.top - botMargin.bottom})`).call(
+      d3.axisBottom(xBot).ticks(5).tickFormat(d => d + 'M')
+    );
+    xAxisBot.selectAll('text').attr('fill', '#71717a').attr('font-size', '12px');
+    xAxisBot.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    xAxisBot.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Legend
+    const legend = svgBot.append('g').attr('transform', `translate(${botMargin.left + 8},${botH - 10})`);
+    legend.append('circle').attr('cx', 5).attr('cy', -3).attr('r', 5).attr('fill', '#f97316');
+    legend.append('text').attr('x', 14).attr('y', 1).attr('fill', '#71717a').attr('font-size', '11px').text('Baseline (with migration)');
+    legend.append('circle').attr('cx', 185).attr('cy', -3).attr('r', 5).attr('fill', '#64748b');
+    legend.append('text').attr('x', 194).attr('y', 1).attr('fill', '#71717a').attr('font-size', '11px').text('No migration');
+
+    // Table
+    const tbody = document.getElementById('dumbbell-table');
+    tp.forEach(d => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${d.country}</td><td>${(d.y2050 / 1e6).toFixed(1)}M</td><td>${(d.y2050_no_migration / 1e6).toFixed(1)}M</td><td style="color:#f97316">\u2212${(d.gap / 1e6).toFixed(1)}M</td>`;
+      tbody.appendChild(row);
+    });
+
+    if (typeof posthog !== 'undefined') posthog.capture('chart_view', { chart: 'baseline_vs_no_migration', page: 'projections' });
+  })();
+
+  // ==========================================
+  // CHART 3: Dependency Ratio (grouped bar)
+  // ==========================================
+  (function() {
+    const dep = DATA.projections.dependency_ratio;
+    const years = ['y2025', 'y2030', 'y2040', 'y2050'];
+    const yearLabels = ['2025', '2030', '2040', '2050'];
+    const barColors = ['#94a3b8', '#71717a', '#52525b', '#3f3f46'];
+
+    const box = document.getElementById('dependency-chart');
+    const W = Math.min(box.clientWidth, 700), H = 380;
+    const margin = { top: 20, right: 20, bottom: 80, left: 44 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const x0 = d3.scaleBand().domain(dep.map(d => d.country)).range([0, w]).padding(0.2);
+    const x1 = d3.scaleBand().domain(yearLabels).range([0, x0.bandwidth()]).padding(0.08);
+    const y = d3.scaleLinear().domain([0, 65]).range([h, 0]);
+
+    // Grid
+    y.ticks(5).forEach(t => {
+      g.append('line').attr('x1', 0).attr('x2', w).attr('y1', y(t)).attr('y2', y(t))
+        .attr('stroke', 'rgba(255,255,255,0.05)');
+    });
+
+    // 50% reference line (no inline label — legend explains it)
+    g.append('line').attr('x1', 0).attr('x2', w).attr('y1', y(50)).attr('y2', y(50))
+      .attr('stroke', '#f97316').attr('stroke-dasharray', '6,3').attr('opacity', 0.6);
+
+    // Bars
+    dep.forEach(d => {
+      years.forEach((yr, i) => {
+        g.append('rect')
+          .attr('x', x0(d.country) + x1(yearLabels[i]))
+          .attr('y', y(d[yr]))
+          .attr('width', x1.bandwidth())
+          .attr('height', h - y(d[yr]))
+          .attr('fill', barColors[i])
+          .attr('rx', 2)
+          .on('mousemove', (evt) => showTip(evt, `<strong>${d.country} ${yearLabels[i]}</strong><br>Dependency: ${d[yr]}%`))
+          .on('mouseleave', hideTip);
+
+        // Value label on bar
+        if (d[yr] > 15) {
+          g.append('text')
+            .attr('x', x0(d.country) + x1(yearLabels[i]) + x1.bandwidth() / 2)
+            .attr('y', y(d[yr]) + 14)
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#d4d4d8')
+            .attr('font-size', '10px').attr('font-weight', 600)
+            .text(d[yr] + '%');
+        }
+      });
+    });
+
+    // X axis
+    const xAxis = g.append('g').attr('transform', `translate(0,${h})`).call(d3.axisBottom(x0).tickSize(0));
+    xAxis.selectAll('text').attr('fill', '#a1a1aa').attr('font-size', '12px');
+    xAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Y axis
+    const yAxis = g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(d => d + '%'));
+    yAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '12px');
+    yAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    yAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Legend — row 1: year bars, row 2: reference line
+    const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${H - 42})`);
+    yearLabels.forEach((yr, i) => {
+      const offset = i * 70;
+      legend.append('rect').attr('x', offset).attr('width', 10).attr('height', 10).attr('fill', barColors[i]).attr('rx', 2);
+      legend.append('text').attr('x', offset + 14).attr('y', 9).attr('fill', '#71717a').attr('font-size', '11px').text(yr);
+    });
+    // Reference line entry
+    legend.append('line').attr('x1', 0).attr('x2', 20).attr('y1', 25).attr('y2', 25)
+      .attr('stroke', '#f97316').attr('stroke-width', 1.5).attr('stroke-dasharray', '6,3').attr('opacity', 0.7);
+    legend.append('text').attr('x', 26).attr('y', 29)
+      .attr('fill', '#71717a').attr('font-size', '10px')
+      .text('1:2 ratio (50%) \u2014 one retiree per two working-age adults');
+
+    // Remove bar opacity since colors are now solid greys
+    // (bars already rendered above with solid barColors)
+
+    // Table
+    const tbody = document.getElementById('dependency-table');
+    dep.forEach(d => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${d.country}</td><td>${d.y2025}%</td><td>${d.y2030}%</td><td>${d.y2040}%</td><td style="color:${d.y2050 >= 50 ? '#f97316' : '#94a3b8'};font-weight:600">${d.y2050}%</td>`;
+      tbody.appendChild(row);
+    });
+
+    if (typeof posthog !== 'undefined') posthog.capture('chart_view', { chart: 'dependency_ratio', page: 'projections' });
+  })();
+
+  // ==========================================
+  // CHART 4: Country Divergence (taxonomy cards)
+  // ==========================================
+  (function() {
+    const div = DATA.country_divergence;
+    const grid = document.getElementById('divergence-grid');
+
+    const tierBadge = { 'sharpest_decline': '#f97316', 'moderate_decline': '#fdba74', 'relative_resilience': '#94a3b8' };
+    div.forEach(d => {
+      const card = document.createElement('div');
+      card.className = 'taxonomy-card';
+      const badgeColor = tierBadge[d.tier] || '#64748b';
+      card.innerHTML = `
+        <h3><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${badgeColor};margin-right:6px;vertical-align:middle"></span>${d.label}</h3>
+        <div class="tax-countries">${d.countries.join(', ')}</div>
+        <div class="tax-mechanism">${d.mechanism}</div>
+      `;
+      grid.appendChild(card);
+    });
+
+    if (typeof posthog !== 'undefined') posthog.capture('chart_view', { chart: 'country_divergence', page: 'projections' });
+  })();
+
+  // ==========================================
+  // CHART 5: Age Structure (population pyramid)
+  // ==========================================
+  (function() {
+    // Split 25-54 band into decade bands for better granularity
+    const rawAges = DATA.age_structure;
+    const ages = [];
+    rawAges.forEach(d => {
+      if (d.band === '25\u201354' || d.band === '25-54') {
+        ages.push({ band: '25\u201334', label: 'Entering prime', eu27_pct: 13.0, trend: 'shrinking', trend_volume: -1000000, implication: 'Pipeline into peak productivity years is narrowing' });
+        ages.push({ band: '35\u201344', label: 'Peak productivity', eu27_pct: 13.2, trend: 'shrinking', trend_volume: -1100000, implication: 'Core of the tax base and management pipeline shrinking' });
+        ages.push({ band: '45\u201354', label: 'Senior productive', eu27_pct: 13.3, trend: 'shrinking', trend_volume: -1100000, implication: 'Experienced workforce contracting; mentorship capacity declines' });
+      } else {
+        ages.push(d);
+      }
+    });
+    ages.reverse(); // oldest cohort on top to match "fastest growth at the top" prose
+    const box = document.getElementById('pyramid-chart');
+    const W = Math.min(box.clientWidth, 700), H = 430;
+    const margin = { top: 20, right: 120, bottom: 50, left: 70 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, 45]).range([0, w]);
+    const y = d3.scaleBand().domain(ages.map(d => d.band)).range([0, h]).padding(0.2);
+
+    const trendColor = { shrinking: '#64748b', growing: '#94a3b8', fast_growth: '#f97316' };
+
+    // Bars
+    g.selectAll('.bar').data(ages).join('rect')
+      .attr('x', 0)
+      .attr('y', d => y(d.band))
+      .attr('width', d => x(d.eu27_pct))
+      .attr('height', y.bandwidth())
+      .attr('fill', d => trendColor[d.trend] || '#94a3b8')
+      .attr('opacity', 0.7)
+      .attr('rx', 2)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.band} (${d.label})</strong><br>EU-27: ${d.eu27_pct}%<br>Trend: ${d.trend.replace('_', ' ')}<br>${d.implication}`))
+      .on('mouseleave', hideTip);
+
+    // Value labels on bars
+    g.selectAll('.val').data(ages).join('text')
+      .attr('x', d => x(d.eu27_pct) + 6)
+      .attr('y', d => y(d.band) + y.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('fill', d => trendColor[d.trend]).attr('font-size', '11px').attr('font-weight', 600)
+      .text(d => d.eu27_pct + '%');
+
+    // Trend volume labels
+    g.selectAll('.trend-vol').data(ages).join('text')
+      .attr('x', d => x(d.eu27_pct) + 42)
+      .attr('y', d => y(d.band) + y.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('fill', 'var(--muted-foreground)').attr('font-size', '10px')
+      .text(d => {
+        const sign = d.trend_volume > 0 ? '+' : '';
+        return sign + (d.trend_volume / 1e6).toFixed(1) + 'M';
+      });
+
+    // Band labels
+    g.selectAll('.label').data(ages).join('text')
+      .attr('x', -8).attr('y', d => y(d.band) + y.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', '#a1a1aa').attr('font-size', '12px')
+      .text(d => d.band);
+
+    // X axis
+    const xAxis = g.append('g').attr('transform', `translate(0,${h})`).call(
+      d3.axisBottom(x).ticks(5).tickFormat(d => d + '%')
+    );
+    xAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '12px');
+    xAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    xAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Legend
+    const legendData = [{ label: 'Shrinking', color: '#64748b' }, { label: 'Growing', color: '#94a3b8' }, { label: 'Fast growth', color: '#f97316' }];
+    const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${H - 12})`);
+    legendData.forEach((item, i) => {
+      const offset = i * 100;
+      legend.append('rect').attr('x', offset).attr('width', 10).attr('height', 10).attr('fill', item.color).attr('opacity', 0.7).attr('rx', 2);
+      legend.append('text').attr('x', offset + 14).attr('y', 9).attr('fill', '#71717a').attr('font-size', '10px').text(item.label);
+    });
+
+    // Table
+    const tbody = document.getElementById('pyramid-table');
+    ages.forEach(d => {
+      const row = document.createElement('tr');
+      const sign = d.trend_volume > 0 ? '+' : '';
+      row.innerHTML = `<td>${d.band} (${d.label})</td><td>${d.eu27_pct}%</td><td style="color:${d.trend === 'fast_growth' ? '#f97316' : '#94a3b8'}">${d.trend.replace('_', ' ')}</td><td>${sign}${(d.trend_volume / 1e6).toFixed(1)}M</td><td>${d.implication}</td>`;
+      tbody.appendChild(row);
+    });
+
+    if (typeof posthog !== 'undefined') posthog.capture('chart_view', { chart: 'age_structure', page: 'projections' });
+  })();
+
+});
+</script>
+
+</body>
+</html>

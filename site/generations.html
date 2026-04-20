@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Crises, Four Generations &mdash; European Demographics &amp; AI</title>
+<meta name="description" content="Each generation faces a distinct crisis: Boomers exit with irreplaceable knowledge, Gen X is frozen in place, Millennials face maximum AI exposure, and Gen Z cannot get on the ladder. The pipeline is fracturing simultaneously at every level.">
+<link rel="canonical" href="https://demographics.nexalps.com/generations.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Four Crises, Four Generations">
+<meta property="og:description" content="Boomers exit with irreplaceable knowledge. Gen X is frozen in place. Millennials face maximum AI exposure. Gen Z cannot get on the ladder. The pipeline fractures at every level simultaneously.">
+<meta property="og:url" content="https://demographics.nexalps.com/generations.html">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four Crises, Four Generations">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Four Crises, Four Generations: Generational Analysis of Europe's Labour Market Fracture","description":"Each generation faces a distinct crisis from the collision of AI displacement and demographic decline. Analysis of immigration arithmetic, political constraints, and retraining impossibility across the EU-27 and DACH.","url":"https://demographics.nexalps.com/generations.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["generational analysis","Boomers","Gen X","Millennials","Gen Z","immigration","retraining","AI displacement","European labour market"]}
+</script>
+
+<meta property="og:image" content="https://demographics.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://demographics.nexalps.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/assets/d3.v7.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Zone badges */
+.zone-badge{display:inline-block;padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:500;background:rgba(255,255,255,0.06);color:#a1a1aa;border:1px solid rgba(255,255,255,0.12)}
+.zone-a,.zone-b,.zone-c,.zone-d{background:rgba(255,255,255,0.06);color:#a1a1aa;border:1px solid rgba(255,255,255,0.12)}
+
+/* Orange hyperlinks in accordion and prose */
+a.insight-link, .accordion-content a{color:var(--ring);text-decoration:underline;text-underline-offset:2px}
+a.insight-link:hover, .accordion-content a:hover{color:#fb923c}
+
+/* Generation badges */
+.gen-badge{display:inline-block;padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:500}
+.gen-boomer{background:rgba(234,179,8,0.12);color:#fde047;border:1px solid rgba(234,179,8,0.2)}
+.gen-x{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+.gen-millennial{background:rgba(34,197,94,0.12);color:#86efac;border:1px solid rgba(34,197,94,0.2)}
+.gen-z{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Accordion */
+.accordion-item{border-bottom:1px solid var(--card-border)}
+.accordion-trigger{display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:none;cursor:pointer;padding:20px 0;font-family:var(--font);font-size:17px;font-weight:600;color:var(--muted);text-align:left;transition:color .15s}
+.accordion-trigger:hover{color:var(--ring)}
+.accordion-trigger .num{color:var(--ring);font-weight:700;margin-right:8px}
+.accordion-trigger .icon{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:var(--accent);font-size:16px;flex-shrink:0;transition:transform .2s}
+.accordion-trigger[aria-expanded="true"] .icon{transform:rotate(45deg)}
+.accordion-content{max-height:0;overflow:hidden;transition:max-height 400ms ease}
+.accordion-content .inner{padding:0 0 24px}
+.accordion-content p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+
+/* Data cards grid */
+.data-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.data-card{padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.data-card .dc-value{font-size:22px;font-weight:700;color:var(--foreground);letter-spacing:-0.02em}
+.data-card .dc-label{font-size:12px;color:var(--muted-foreground);line-height:1.5;margin-top:4px}
+@media(max-width:640px){.data-cards{grid-template-columns:1fr}}
+
+/* Key stat inline */
+.key-stat{font-weight:700;color:var(--foreground)}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+/* Data table */
+.data-table{width:100%;border-collapse:collapse;font-size:13px;color:#d4d4d8}
+.data-table th{text-align:left;font-weight:600;padding:8px 12px;border-bottom:1px solid var(--card-border);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:0.04em}
+.data-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+
+/* Table overflow — prevent horizontal page scroll on mobile */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+details>table.data-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+
+/* Body-content links — match surrounding text, underlined, orange on hover */
+main p a, .zone-verdict a, .highlight p a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+main p a:hover, .zone-verdict a:hover, .highlight p a:hover{color:var(--ring)}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="projections.html">Projections</a>
+    <a href="dach.html">DACH</a>
+    <a href="generations.html" aria-current="page">Generations</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="projections.html">Projections</a>
+  <a href="dach.html">DACH</a>
+  <a href="generations.html" aria-current="page">Generations</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Four Crises, Four Generations</h1>
+  <p class="lede">The generational pipeline is fracturing at every level simultaneously. Boomers exit with irreplaceable knowledge. Gen&nbsp;X is frozen in place. Millennials face maximum AI exposure. Gen&nbsp;Z cannot get on the ladder.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/">Philipp Maul</a> &middot; <a href="https://nexalps.com">Nexalps</a> &middot; April 2026 &middot; Part 4 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">54 primary sources</a> including Ravio, Randstad, Eurostat, Bitkom and CEPR.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Generation summary statistics">
+  <div class="stat-card" style="border-left:3px solid var(--ring)">
+    <span class="stat-value">15&ndash;20M</span>
+    <span class="stat-label">Boomers still employed</span>
+    <span class="stat-sublabel">Knowledge exodus as 1964 cohort turns 62</span>
+  </div>
+  <div class="stat-card" style="border-left:3px solid var(--ring)">
+    <span class="stat-value">55&ndash;60M</span>
+    <span class="stat-label">Gen X</span>
+    <span class="stat-sublabel">Frozen middle: declining training uptake</span>
+  </div>
+  <div class="stat-card" style="border-left:3px solid var(--ring)">
+    <span class="stat-value">60&ndash;65M</span>
+    <span class="stat-label">Millennials</span>
+    <span class="stat-sublabel">Maximum AI exposure, maximum adaptability</span>
+  </div>
+  <div class="stat-card" style="border-left:3px solid var(--ring)">
+    <span class="stat-value">30&ndash;35M</span>
+    <span class="stat-label">Gen Z</span>
+    <span class="stat-sublabel">&minus;73% entry-level tech hiring</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: GENERATIONAL PIPELINE CHART -->
+<h2><span class="num">1.</span> The Generational Pipeline <span class="subtitle">EU-27 employment by generation, colour-coded by adaptive outlook</span></h2>
+
+<div class="table-wrap" style="margin:24px 0">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Generation</th>
+        <th>Age Range</th>
+        <th>EU-27 Employed</th>
+        <th>Primary Zone</th>
+        <th>Core Risk</th>
+        <th>Adaptive Capacity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Boomers</strong></td>
+        <td>62–80</td>
+        <td>15–20M</td>
+        <td>Zone A/C (retiring)</td>
+        <td>Knowledge loss + compounded displacement</td>
+        <td>Low</td>
+      </tr>
+      <tr>
+        <td><strong>Gen X</strong></td>
+        <td>46–61</td>
+        <td>55–60M</td>
+        <td>Zone B (senior)</td>
+        <td>Sustained transformation; declining training</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td><strong>Millennials</strong></td>
+        <td>30–45</td>
+        <td>60–65M</td>
+        <td>Zone B (mid-career)</td>
+        <td>Highest AI exposure; role transformation</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td><strong>Gen Z</strong></td>
+        <td>14–29</td>
+        <td>30–35M</td>
+        <td>Entry-level (blocked)</td>
+        <td>Structural exclusion from workforce</td>
+        <td>High potential, low access</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p style="font-size:14px;color:var(--muted);line-height:1.7;margin-top:0">Width represents EU-27 employment volume. Millennials and Gen X together account for over 115 million workers &mdash; the core of Europe's productive workforce &mdash; and both face direct AI transformation of their roles.</p>
+
+<!-- S2: FOUR GENERATION ACCORDIONS -->
+<h2><span class="num">2.</span> Four Generations, Four Crises <span class="subtitle">Each faces a distinct mechanism of disruption</span></h2>
+
+<div class="accordion" role="region" aria-label="Generational analysis">
+
+  <!-- BOOMERS -->
+  <div class="accordion-item" id="boomers">
+    <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-boomers" onclick="toggleAccordion(this)">
+      <span><span class="num">2.1</span> <strong>Boomers:</strong> The Knowledge Exodus (62&ndash;80)</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content" id="acc-boomers" role="region">
+      <div class="inner">
+        <p>The 1964 birth cohort &mdash; Germany's largest at <span class="key-stat">1.36&nbsp;million births</span> &mdash; turned 62 in 2026. Bavaria alone expects to lose <span class="key-stat">1.5&nbsp;million workers</span> by 2035, roughly one-third of the state's workforce.</p>
+
+        <p>Boomers remaining in <span class="zone-badge zone-a">Zone A</span> face compounded risk: AI displacement arrives simultaneously with retirement proximity, leaving minimal time or incentive for adaptation. But the larger risk is organisational.</p>
+
+        <p>Only <span class="key-stat">29%</span> of organisations incorporate retirement forecasts into knowledge transfer practices, and only <span class="key-stat">23%</span> of managers are trained in critical skills transfer. Germany's Mittelstand &mdash; family-owned SMEs carrying decades of tacit manufacturing and engineering knowledge &mdash; is particularly vulnerable.</p>
+
+        <p>The positive framing: AI may serve as a knowledge capture tool, encoding tacit expertise into retrievable systems before it walks out the door. The realistic framing: most organisations haven't started.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEN X -->
+  <div class="accordion-item" id="gen-x">
+    <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-genx" onclick="toggleAccordion(this)">
+      <span><span class="num">2.2</span> <strong>Gen X:</strong> The Frozen Middle (46&ndash;61)</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content" id="acc-genx" role="region">
+      <div class="inner">
+        <p>Gen X occupies the senior management and professional roles of ISCO 1&ndash;2, positions with high AI exposure but also high complementarity &mdash; meaning AI transforms rather than eliminates their work.</p>
+
+        <p>The trap is temporal: Gen X workers have <span class="key-stat">15&ndash;20&nbsp;years</span> remaining in their careers but declining training participation rates. Only <span class="key-stat">12%</span> plan 6&ndash;10 professional development courses, versus <span class="key-stat">26%</span> of Gen Z.</p>
+
+        <p>They are too invested in current career paths for radical pivots, yet face the longest remaining exposure to AI-driven transformation. This generation receives the <span class="key-stat">least policy attention</span> despite arguably needing the most support for sustained adaptation.</p>
+
+        <p>The OECD finds older workers are significantly less likely to use advanced ICT than younger colleagues in the same occupations. Too far from retirement to coast, too invested for radical change &mdash; the frozen middle.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MILLENNIALS -->
+  <div class="accordion-item" id="millennials">
+    <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-millennials" onclick="toggleAccordion(this)">
+      <span><span class="num">2.3</span> <strong>Millennials:</strong> Maximum Exposure, Maximum Adaptability (30&ndash;45)</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content" id="acc-millennials" role="region">
+      <div class="inner">
+        <p>Millennials dominate <span class="zone-badge zone-b">Zone B</span> &mdash; software, marketing, management, HR, product. They claim <span class="key-stat">62%</span> AI expertise versus 50% for Gen Z and receive more AI opportunities at work (<span class="key-stat">44%</span> versus 34%).</p>
+
+        <p>Indeed's analysis identifies mid-career professionals and managers aged 25&ndash;54 as most at risk for generative AI disruption. Yet millennials also possess the strongest adaptive capacity: established skills, professional networks, financial resources, and sufficient career runway to justify reinvestment.</p>
+
+        <p>The millennial question is not whether they survive AI but whether their roles transform productively &mdash; the <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">ATM pattern (Type&nbsp;1)</a> or destructively &mdash; the <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">containerisation pattern (Type&nbsp;2)</a>.</p>
+
+        <p>Evidence currently favours transformation over elimination for most Zone B roles. CEPR research across 12,000+ European firms found AI adoption increases productivity <span class="key-stat">~4%</span> on average with no immediate employment losses.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEN Z -->
+  <div class="accordion-item" id="gen-z">
+    <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-genz" onclick="toggleAccordion(this)">
+      <span><span class="num">2.4</span> <strong>Gen Z:</strong> Structural Exclusion (14&ndash;29)</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="accordion-content" id="acc-genz" role="region">
+      <div class="inner">
+        <p>The Ravio 2025 Tech Job Market Report documented a <span class="key-stat">73% decline</span> in entry-level hiring rates (P1/P2 job levels) in European tech between 2023 and 2024 &mdash; compared to only 7% decline across all levels. Randstad's global data shows junior tech roles declining <span class="key-stat">35%</span> since January 2024. <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://job-market.nexalps.com/',page:'generations'})">Layer 2 (Careers Map)</a> cross-verifies the same Ravio collapse across 1,500+ EU tech companies &mdash; the demographic pipeline shock shows up in hiring data first.</p>
+
+        <p>EU youth unemployment stands at <span class="key-stat">15.1%</span> (January 2026), with Spain at 26.6% and even Germany at 6.6%. Gen Z is not being displaced from jobs &mdash; they are being prevented from entering them.</p>
+
+        <p>Only <span class="key-stat">45%</span> hold traditional full-time roles, and average job tenure is just <span class="key-stat">1.1&nbsp;years</span>. This generation is nominally "AI-native" &mdash; 85% are familiar with generative AI tools, 75% are using AI to upskill &mdash; but they paradoxically have less access to AI at work than millennials.</p>
+
+        <p>The entry-level pipeline collapse creates a time-delayed crisis: if junior hiring is cut now, the mid-level talent pool in 2030&ndash;2035 will be severely depleted, compounding the already acute skills shortage.</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /accordion -->
+
+<!-- S3: THE COMPOUNDING INTERACTION -->
+<h2><span class="num">3.</span> The Compounding Interaction <span class="subtitle">Why the whole is worse than the sum of parts</span></h2>
+
+<div class="highlight">
+  <h3>The most dangerous dynamic</h3>
+  <p>Cutting entry-level hiring (Gen&nbsp;Z) + transforming mid-level roles (Millennials) + failing to transfer knowledge from departing workers (Boomers) = a workforce that is simultaneously <strong>shrinking</strong>, <strong>destabilising</strong>, and <strong>losing institutional memory</strong>.</p>
+</div>
+
+<p>No single generation's crisis is unprecedented. But the compounding interaction is. The pipeline is fracturing at both ends while being reshaped in the middle &mdash; and the generational buffer that made past technological transitions manageable (young people organically entering new careers) has been structurally removed by the entry-level hiring collapse.</p>
+
+<!-- S4: THE IMMIGRATION ARITHMETIC -->
+<h2><span class="num">4.</span> The Immigration Arithmetic <span class="subtitle">AI does not solve Europe's immigration equation</span></h2>
+
+<p>Europe needs roughly <span class="key-stat">1&nbsp;million additional workers per year</span> to maintain workforce levels through 2050. Germany alone requires 400,000+ annual net migrants. The structural mismatch between AI's impact zone and immigration's contribution zone is nearly complete.</p>
+
+<div class="chart-box" role="img" aria-label="Grouped bar chart showing immigrant share in Zone C sectors: construction/drywall at 67%, food service at 50%+, bus/tram drivers at 46%, and nursing homes at 30%. These are sectors where AI has minimal substitution capacity.">
+  <h3>Immigrant Share in Zone C Sectors &mdash; Germany</h3>
+  <div id="immigration-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Sector</th><th>Immigrant Share</th><th>AI Zone</th></tr></thead>
+      <tbody>
+        <tr><td>Construction / Drywall</td><td>67%</td><td><span class="zone-badge zone-c">Zone C</span></td></tr>
+        <tr><td>Food Service</td><td>50%+</td><td><span class="zone-badge zone-c">Zone C</span></td></tr>
+        <tr><td>Bus / Tram Drivers</td><td>46%</td><td><span class="zone-badge zone-c">Zone C</span></td></tr>
+        <tr><td>Nursing Homes</td><td>30%</td><td><span class="zone-badge zone-c">Zone C</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<p style="font-size:14px;color:var(--muted);line-height:1.7;margin-top:0">Bars show what percentage of each Zone C sector's workforce is immigrant-born. The orange range (5&ndash;15%) shows the maximum reduction AI could contribute &mdash; barely a dent in sectors where the work is inherently physical.</p>
+
+<p>AI displacement concentrates in <span class="zone-badge zone-a">Zone A</span> &mdash; bookkeeping, administrative support, customer service &mdash; where immigrants are not disproportionately represented. AI reduces total immigration need by an estimated <span class="key-stat">5&ndash;15%</span> through eliminating some mid-skill positions, but it has virtually no effect on the sectors driving immigration demand.</p>
+
+<p>Non-citizens accounted for <span class="key-stat">89%</span> of the 1.6&nbsp;million net increase in socially insured employment in Germany between 2018 and 2023. Net EU migration to Germany turned negative in 2024, making third-country migration essential.</p>
+
+<!-- S5: THE POLITICAL CONSTRAINT -->
+<h2><span class="num">5.</span> The Political Constraint <span class="subtitle">Rising anti-immigration politics vs structural dependency</span></h2>
+
+<p style="font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px">The paradox extends across the entire continent. Every country that most needs immigration is experiencing rising political resistance to it. <em style="font-size:12px;color:var(--muted-foreground)">Snapshot updated 20 April 2026.</em></p>
+
+<div class="data-cards">
+  <div class="data-card">
+    <div class="dc-value">20.8%</div>
+    <div class="dc-label"><strong>Germany (AfD)</strong> &mdash; Feb 2025 election: 20.8% nationally, 30&ndash;40% in eastern states. Polling since has held at 24&ndash;26%, behind the CDU-led coalition. Germany needs 400,000+ annual net migrants.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">28.8%</div>
+    <div class="dc-label"><strong>Austria (FP&Ouml;)</strong> &mdash; Sep 2024: FP&Ouml; placed first but was excluded from government. &Ouml;VP&ndash;SP&Ouml;&ndash;NEOS coalition in power since Jan 2025, though strained. Austria faces a 350,000 worker shortfall by 2040.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">10M cap</div>
+    <div class="dc-label"><strong>Switzerland (SVP)</strong> &mdash; Initiative to cap population at 10M; binding vote scheduled June 2026. 30% of Swiss workforce is already foreign-born.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">26%</div>
+    <div class="dc-label"><strong>Italy (Fratelli d&rsquo;Italia)</strong> &mdash; Meloni in office since 2022; Mediterranean-route policy hardline through 2026. Italy projected to lose an estimated 3.5M workers by 2050.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">35%</div>
+    <div class="dc-label"><strong>France (RN)</strong> &mdash; Won 2024 EU election (31.4%). With Marine Le Pen ineligible pending appeal, Jordan Bardella leads 2027 presidential polling at 35% (Mar 2026) vs &Eacute;douard Philippe at 20.5%. France has the EU&rsquo;s best demographic profile.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">53.2%</div>
+    <div class="dc-label"><strong>Hungary (Tisza, from Apr 2026)</strong> &mdash; 16 years of Fidesz rule under Orb&aacute;n (2010&ndash;2026) ended 12 April 2026 when P&eacute;ter Magyar&rsquo;s Tisza Party won 53.2% (141/199 seats). Magyar is pro-European but signals continued rejection of the EU migration and asylum pact. TFR 1.52 propped by Fidesz-era family policy; migration trajectory under new government unclear.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">12.4%</div>
+    <div class="dc-label"><strong>Spain (Vox)</strong> &mdash; 2023 election, despite Spain having the EU&rsquo;s lowest TFR (1.10, 2024) and highest dependency on immigration for workforce growth.</div>
+  </div>
+  <div class="data-card">
+    <div class="dc-value">56%</div>
+    <div class="dc-label"><strong>Germany public</strong> &mdash; Germans naming immigration a top-3 concern. The political constraint is demand-side, not supply-side.</div>
+  </div>
+</div>
+
+<div class="highlight">
+  <h3>The paradox</h3>
+  <p>Europe needs more immigrants than ever in exactly the sectors AI cannot touch, while political tolerance for immigration is declining. The Draghi Report projects a <strong>41&nbsp;million</strong> working-age decline by 2070 &mdash; without migration, the decline accelerates by an additional <strong>46&nbsp;million</strong>.</p>
+</div>
+
+<!-- S6: THE RETRAINING IMPOSSIBILITY -->
+<h2><span class="num">6.</span> The Retraining Impossibility <span class="subtitle">Why cross-zone retraining cannot work at scale</span></h2>
+
+<p>If AI displaces millions of <span class="zone-badge zone-a">Zone A</span> clerical workers while <span class="zone-badge zone-c">Zone C</span> faces millions of unfilled positions, the obvious policy response is retraining. The evidence says this will fail at anything approaching the necessary scale.</p>
+
+<p>Occupational mobility in Europe is remarkably low: only <span class="key-stat">~3%</span> of European workers change occupation category in any given year, ranging from 0.5% in Romania to 7.4% in Sweden. Employment protection legislation &mdash; strong across DACH &mdash; is a key determinant of this low mobility.</p>
+
+<p>A full Umschulung (vocational retraining) takes <span class="key-stat">2&nbsp;years</span> full-time, with employment benefits appearing only after a 3+&nbsp;year lock-in period. Healthcare retraining shows the strongest effect at <span class="key-stat">+20&nbsp;percentage points</span> for women. Cost ranges from $3,500 to $25,000 per participant.</p>
+
+<p>Training participation collapses with age: only <span class="key-stat">24%</span> for ages 55&ndash;65 versus 48% for ages 35&ndash;54. Only <span class="key-stat">1&nbsp;in&nbsp;4</span> unemployed skilled workers seeks a job in a shortage occupation. Germany had 2.7&nbsp;million unemployed in 2024 but could not fill 439,000 positions. Drywall construction vacancies average <span class="key-stat">299&nbsp;days</span> unfilled.</p>
+
+<div class="highlight">
+  <h3>The direction problem</h3>
+  <p>Every prior technological transition moved workers <strong>upward</strong> in pay, status, and working conditions. The farm-to-factory transition (1880&ndash;1940) moved workers toward higher wages &mdash; and 63% of that employment shift came from factories opening in rural areas, not workers migrating. This transition asks for <strong>downward</strong> mobility. That pattern is essentially without historical precedent at scale.</p>
+</div>
+
+<!-- AUTHOR NOTE -->
+<div class="author-note">
+  <h3>The convergence thesis</h3>
+  <p>Europe's labour markets face <strong>asymmetric disruption</strong>, not symmetric decline. The most realistic path involves all four mechanisms at partial capacity: AI absorbing Zone A retirement, targeted retraining for younger workers, sustained immigration, and aggressive robotics investment. Even optimistically, a <strong>5&ndash;10M workforce gap persists by 2030</strong>.</p>
+  <p>The question is not whether Europe faces a labour shortage, but how large it will be and whether institutions adapt fast enough to prevent it from becoming a crisis of care, infrastructure, and economic capacity.</p>
+  <div class="sig">&mdash; Philipp Maul, Nexalps</div>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>Explore the full picture</h3>
+  <p>See how AI exposure maps to occupations, how historical disruptions played out, or explore the European job market data.</p>
+  <div class="btn-row">
+    <a href="https://ai-exposure.nexalps.com/" class="btn btn-primary" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('cta_clicked',{target:'ai-exposure'})">See what AI actually exposes &rarr;</a>
+    <a href="https://disruptions.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('cta_clicked',{target:'disruptions'})">What happened every other time? &rarr;</a>
+    <a href="https://job-market.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('cta_clicked',{target:'job-market'})">Where is demand heading? &rarr;</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Europe Is Running Out of Workers, Not Work v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="projections.html">Projections</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="generations.html">Generations</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> &middot; &copy; 2026 Nexalps
+</footer>
+
+</main>
+
+<!-- TOOLTIP -->
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+// Burger menu
+const burgerBtn = document.getElementById('burger-btn');
+const burgerPanel = document.getElementById('burger-panel');
+burgerBtn.addEventListener('click', () => {
+  const open = burgerBtn.classList.toggle('open');
+  burgerPanel.classList.toggle('open');
+  burgerBtn.setAttribute('aria-expanded', open);
+});
+
+const tooltip = document.getElementById('tooltip');
+function showTip(evt, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.display = 'block';
+  tooltip.style.left = (evt.pageX + 12) + 'px';
+  tooltip.style.top = (evt.pageY - 28) + 'px';
+}
+function hideTip() { tooltip.style.display = 'none'; }
+
+// Accordion toggle
+function toggleAccordion(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  const content = btn.nextElementSibling;
+
+  // Close all others
+  document.querySelectorAll('.accordion-trigger').forEach(t => {
+    if (t !== btn) {
+      t.setAttribute('aria-expanded', 'false');
+      t.nextElementSibling.style.maxHeight = null;
+    }
+  });
+
+  btn.setAttribute('aria-expanded', !expanded);
+  if (!expanded) {
+    content.style.maxHeight = content.scrollHeight + 'px';
+    const genId = content.id.replace('acc-', '').replace('genx', 'gen-x').replace('genz', 'gen-z');
+    if (typeof posthog !== 'undefined') posthog.capture('accordion_opened', { generation: genId });
+  } else {
+    content.style.maxHeight = null;
+  }
+}
+
+// Hash deep linking
+function openAccordionFromHash() {
+  const hash = window.location.hash.replace('#', '');
+  if (!hash) return;
+  const target = document.getElementById(hash);
+  if (target && target.classList.contains('accordion-item')) {
+    const btn = target.querySelector('.accordion-trigger');
+    if (btn && btn.getAttribute('aria-expanded') !== 'true') {
+      toggleAccordion(btn);
+    }
+    setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+  }
+}
+window.addEventListener('hashchange', openAccordionFromHash);
+window.addEventListener('load', openAccordionFromHash);
+
+// Track page view
+if (typeof posthog !== 'undefined') posthog.capture('generation_viewed', { page: 'generations' });
+
+// Load data and render charts
+fetch('demographics-data.json').then(r => r.json()).then(DATA => { try {
+
+  // ==========================================
+  // CHART: Immigration Sector Shares
+  // ==========================================
+  (function() {
+    const sectors = [
+      { label: 'Construction / Drywall', value: DATA.immigration.zone_c_immigrant_share.construction_drywall },
+      { label: 'Food Service', value: DATA.immigration.zone_c_immigrant_share.food_service },
+      { label: 'Bus / Tram Drivers', value: DATA.immigration.zone_c_immigrant_share.bus_tram_drivers },
+      { label: 'Nursing Homes', value: DATA.immigration.zone_c_immigrant_share.nursing_homes }
+    ];
+
+    const box = document.getElementById('immigration-chart');
+    const W = Math.min(box.clientWidth, 700), H = 220;
+    const margin = { top: 10, right: 60, bottom: 30, left: 160 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, 80]).range([0, w]);
+    const y = d3.scaleBand().domain(sectors.map(d => d.label)).range([0, h]).padding(0.3);
+
+    // Bars
+    g.selectAll('.bar').data(sectors).join('rect')
+      .attr('x', 0)
+      .attr('y', d => y(d.label))
+      .attr('width', d => x(d.value))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#64748b')
+      .attr('opacity', 0.7)
+      .attr('rx', 3)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.label}</strong><br>Immigrant share: ${d.value}%`))
+      .on('mouseleave', hideTip)
+      .on('click', () => { if (typeof posthog !== 'undefined') posthog.capture('chart_interacted', { chart: 'immigration' }); });
+
+    // Darker orange overlay: first 5% (the "likely" portion)
+    g.selectAll('.bar-likely').data(sectors).join('rect')
+      .attr('x', 0)
+      .attr('y', d => y(d.label))
+      .attr('width', x(5))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#c2410c')
+      .attr('opacity', 0.75)
+      .attr('rx', 3);
+
+    // Labels
+    g.selectAll('.lbl').data(sectors).join('text')
+      .attr('x', -8).attr('y', d => y(d.label) + y.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', '#a1a1aa').attr('font-size', '12px')
+      .text(d => d.label);
+
+    // Value labels
+    g.selectAll('.val').data(sectors).join('text')
+      .attr('x', d => x(d.value) + 6).attr('y', d => y(d.label) + y.bandwidth() / 2)
+      .attr('dy', '0.35em').attr('text-anchor', 'start')
+      .attr('fill', '#cbd5e1').attr('font-size', '13px').attr('font-weight', 700)
+      .text(d => d.value + '%');
+
+    // Reference line: AI reduction
+    const aiLine = x(15);
+    const aiLineStart = x(5);
+    g.append('rect').attr('x', aiLineStart).attr('y', -4).attr('width', aiLine - aiLineStart).attr('height', h + 8)
+      .attr('fill', 'rgba(249,115,22,0.10)');
+    g.append('line').attr('x1', aiLine).attr('x2', aiLine).attr('y1', -4).attr('y2', h + 4)
+      .attr('stroke', 'rgba(249,115,22,0.6)').attr('stroke-dasharray', '4,4');
+    g.append('line').attr('x1', aiLineStart).attr('x2', aiLineStart).attr('y1', -4).attr('y2', h + 4)
+      .attr('stroke', 'rgba(249,115,22,0.3)').attr('stroke-dasharray', '4,4');
+    g.append('text').attr('x', (aiLineStart + aiLine) / 2).attr('y', h + 22).attr('text-anchor', 'middle')
+      .attr('fill', '#f97316').attr('font-size', '12px').attr('font-weight', 600).text('AI reduction range: 5\u201315%');
+  })();
+
+} catch(e) { console.error('Chart render error:', e); } }).catch(err => console.error('Failed to load demographics data:', err));
+</script>
+</body>
+</html>

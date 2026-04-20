@@ -1,0 +1,65 @@
+# Europe Is Running Out of Workers, Not Work
+> https://demographics.nexalps.com/
+
+> **Status (April 2026):** Pre-launch. This page and its structured data are complete, but the sister-product URLs listed below (ai-exposure.nexalps.com, job-market.nexalps.com, disruptions.nexalps.com) may not yet be deployed at the time of crawl.
+
+## What this is
+Product 4 of 7 in the Nexalps European AI Labour Market suite. Analyses European population dynamics, demographic projections, and the structural mismatch between where AI eliminates jobs and where retiring workers leave unfillable gaps.
+
+## Core thesis
+Europe's binding constraint is not job creation but workforce availability. The continent loses ~1 million working-age people per year through 2050. AI is strongest where need is least (clerical/Zone A), weakest where need is greatest (healthcare/trades/Zone C).
+
+## Key findings
+- EU working-age population (20–64) peaked at 270M in 2010, projected to fall to 236M by 2050 — a loss of 34 million
+- EU fertility rate hit record low of 1.34 in 2024; no member state meets the 2.1 replacement rate
+- 8–12 million Zone C positions (healthcare, trades, care) unfillable by 2030; AI can substitute only 5–15% of these tasks
+- Old-age dependency ratio shifts from 1 retiree per 3 workers to 1 per 2 by 2050
+- Without migration, EU population would fall to 387M by 2050 (vs 448M baseline) — a 60M gap
+- Germany needs 400,000+ net migrants annually; 2024 net EU migration turned negative
+- Cross-zone retraining (cognitive to physical) has no historical precedent and faces a 3% annual switching rate ceiling
+- Entry-level tech hiring in Europe collapsed 73% year-over-year (Gen Z structural exclusion)
+- Italy faces -17.5% working-age decline by 2050; Spain -12.9%; Germany -12.0%
+- France (TFR 1.61) and Ireland are the only relative outliers with organic stabilisation possible
+
+## The AI Substitution Matrix
+- Zone A (High AI, 25–30M workers): Surplus displacement — AI replaces faster than retirement
+- Zone B (Medium AI, 40–50M workers): Partial offset — AI transforms roles, genuine shortage in strategic positions
+- Zone C (Low AI, 90–100M workers): Critical gap — AI cannot compensate for 8–12M retirees by 2030
+- Zone D (AI-enhanced, 3–5M workers): Chronic undersupply — EU has 10M ICT specialists, needs 20M by 2030
+
+## Five asymmetries
+1. Substitution: AI strongest in Zone A (moderate retirement), weakest in Zone C (severe retirement)
+2. Mobility: 3% annual switching rate, retraining collapses after age 50
+3. Immigration: immigrants fill Zone C (67% construction, 50% food service) but politics trending restrictive
+4. Generational: entry-level collapse + mid-career transformation + boomer knowledge exodus simultaneously
+5. Geographic: AI displacement in urban offices, Zone C shortages in hospitals/farms/care homes
+
+## Four generational crises
+- Boomers (62–80): knowledge exodus, only 29% of orgs have retirement-forecast knowledge transfer
+- Gen X (46–61): frozen middle, only 12% plan professional development (vs 26% Gen Z)
+- Millennials (30–45): maximum AI exposure but highest adaptive capacity, 62% claim AI expertise
+- Gen Z (14–29): structurally excluded, -73% entry-level hiring, 15.1% youth unemployment
+
+## Pages
+- index.html — Overview: population decline, AI substitution matrix, five asymmetries, fertility collapse
+- projections.html — EUROPOP2023 projections, dependency ratios, country divergence, population pyramid
+- dach.html — Germany (163 Engpassberufe), Austria (82% firms with shortages), Switzerland (34.4% foreign workforce)
+- generations.html — Four generational crises, immigration arithmetic, political constraints, retraining impossibility
+- sources.html — 54 primary sources with tier ratings
+- demographics-data.json — Machine-readable structured data
+
+## Data sources (54 primary)
+Tier 1: Eurostat (demo_pjan, demo_gind, proj_23np, demo_frate, lfsi_emp_a), Destatis (Bevölkerungsvorausberechnung), European Commission (2024 Ageing Report), Bruegel, UN Population Division, OECD, ILO, Bundesagentur für Arbeit (Engpassanalyse)
+Tier 2: Statistik Austria, BFS Switzerland, AMS, WKO, Bitkom, BIBB, Ravio, Michael Page, Microsoft, FINMA, Allianz Research, ELA/EURES
+Tier 3: Political polling data, news sources
+
+## Connection to other products
+- ai-exposure.nexalps.com = which jobs AI hits (130 ISCO groups × 36 countries)
+- job-market.nexalps.com = where demand is going (9 roles × 34 countries)
+- disruptions.nexalps.com = what happened every other time (19 case studies × 580 years)
+- demographics.nexalps.com = the structural constraint (population decline × AI mismatch)
+- Same design system (shadcn dark, Geist font, #f97316 orange accent)
+
+## Author
+Philipp Maul, Nexalps (https://nexalps.com)
+Licensed under CC-BY 4.0

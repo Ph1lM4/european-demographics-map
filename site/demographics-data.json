@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "title": "Europe Is Running Out of Workers, Not Work",
+    "subtitle": "European Population Growth, Decline & Demographic Projections",
+    "last_updated": "2026-04",
+    "source_count": 54,
+    "country_count": 8,
+    "url": "https://demographics.nexalps.com/"
+  },
+  "population_trends": [
+    {
+      "country": "EU-27", "iso": "EU27",
+      "data": [
+        { "year": 2020, "total": 447704445, "working_age": 262300000, "natural_change": -438201, "net_migration": 1112622, "tfr": 1.50 },
+        { "year": 2021, "total": 447030024, "working_age": 261100000, "natural_change": -1152709, "net_migration": 478288, "tfr": 1.53 },
+        { "year": 2022, "total": 446735000, "working_age": 259600000, "natural_change": -1250422, "net_migration": 857400, "tfr": null },
+        { "year": 2023, "total": 448387800, "working_age": 259900000, "natural_change": -1304500, "net_migration": 2957300, "tfr": 1.38 },
+        { "year": 2024, "total": 449200000, "working_age": 260600000, "natural_change": -1260000, "net_migration": 2300000, "tfr": 1.34 },
+        { "year": 2025, "total": 450380320, "working_age": 260100000, "natural_change": -1300000, "net_migration": 2480320, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2010, "value": 270000000 },
+      "working_age_share_pct": 58.0,
+      "employment_rate_2024": 75.8, "gender_gap_pp": 10.0,
+      "neet_rate_pct": 11.0, "inactive_reserve": 51100000
+    },
+    {
+      "country": "Germany", "iso": "DE",
+      "data": [
+        { "year": 2020, "total": 83166711, "working_age": 49800000, "natural_change": -211958, "net_migration": 359456, "tfr": 1.54 },
+        { "year": 2021, "total": 83155031, "working_age": 49500000, "natural_change": -227610, "net_migration": 215930, "tfr": 1.58 },
+        { "year": 2022, "total": 83237124, "working_age": 49200000, "natural_change": -326567, "net_migration": 408660, "tfr": null },
+        { "year": 2023, "total": 84358845, "working_age": 49200000, "natural_change": -328211, "net_migration": 1449932, "tfr": 1.39 },
+        { "year": 2024, "total": 83400000, "working_age": 49400000, "natural_change": -330000, "net_migration": 420000, "tfr": 1.39 },
+        { "year": 2025, "total": 83577140, "working_age": 49100000, "natural_change": -340000, "net_migration": 517140, "tfr": null }
+      ],
+      "working_age_peak": { "year": 1998, "value": 52000000 },
+      "working_age_share_pct": 59.2,
+      "employment_rate_2024": 77.5, "gender_gap_pp": 7.0,
+      "neet_rate_pct": 8.5
+    },
+    {
+      "country": "Austria", "iso": "AT",
+      "data": [
+        { "year": 2020, "total": 8901064, "working_age": 5350000, "natural_change": -1037, "net_migration": 43326, "tfr": 1.46 },
+        { "year": 2021, "total": 8932664, "working_age": 5340000, "natural_change": -5800, "net_migration": 37400, "tfr": 1.48 },
+        { "year": 2022, "total": 8978929, "working_age": 5330000, "natural_change": -10650, "net_migration": 56915, "tfr": null },
+        { "year": 2023, "total": 9104772, "working_age": 5380000, "natural_change": -11200, "net_migration": 137043, "tfr": 1.32 },
+        { "year": 2024, "total": 9158750, "working_age": 5430000, "natural_change": -11248, "net_migration": 50105, "tfr": 1.32 },
+        { "year": 2025, "total": 9197213, "working_age": 5410000, "natural_change": -12000, "net_migration": 50463, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2024, "value": 5570000 },
+      "working_age_share_pct": 59.3,
+      "employment_rate_2024": 75.5, "gender_gap_pp": 8.5,
+      "neet_rate_pct": 9.2
+    },
+    {
+      "country": "Switzerland", "iso": "CH",
+      "data": [
+        { "year": 2020, "total": 8606033, "working_age": 5220000, "natural_change": 9600, "net_migration": 51906, "tfr": 1.48 },
+        { "year": 2021, "total": 8670300, "working_age": 5250000, "natural_change": 8200, "net_migration": 56067, "tfr": 1.52 },
+        { "year": 2022, "total": 8738791, "working_age": 5280000, "natural_change": 7900, "net_migration": 60591, "tfr": null },
+        { "year": 2023, "total": 8815385, "working_age": 5340000, "natural_change": 7500, "net_migration": 69094, "tfr": 1.39 },
+        { "year": 2024, "total": 8962258, "working_age": 5400000, "natural_change": 6800, "net_migration": 140073, "tfr": 1.35 },
+        { "year": 2025, "total": 9051029, "working_age": 5450000, "natural_change": 6000, "net_migration": 82771, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2025, "value": 5450000, "note": "Ongoing — peak not yet reached" },
+      "working_age_share_pct": 60.2,
+      "employment_rate_2024": 83.6, "gender_gap_pp": 6.5,
+      "migration_composition": {
+        "source": "SEM Jahresstatistik Zuwanderung 2025 + BFS DVS",
+        "reference_year": 2025,
+        "foreign_population": {
+          "total": 2414408,
+          "eu_efta_pct": 67, "third_country_pct": 33,
+          "born_in_switzerland": 445615,
+          "growth_since_fza_2002": 1700000,
+          "growth_driver_migration_pct": 82
+        },
+        "permits_eu_efta": { "total": 1651084, "c_niederlassung_pct": 60, "b_aufenthalt_pct": 37, "l_kurzaufenthalt_pct": 2 },
+        "permits_third_country": { "total": 809042, "c_niederlassung_pct": 56, "b_aufenthalt_pct": 43, "l_kurzaufenthalt_pct": 1 },
+        "immigration_2025": {
+          "total_permanent": 165386,
+          "wanderungssaldo": 74675,
+          "by_reason": {
+            "work": { "total": 88355, "eu_efta_pct": 95 },
+            "family": { "total": 42170 },
+            "education": { "total": 17579 },
+            "asylum_transfer": { "total": 8119 }
+          },
+          "by_nationality_pct": { "DE": 16, "FR": 12, "IT": 11, "PT": 7, "ES": 7, "RO": 4, "PL": 3, "rest_eu_efta": 14, "third_country": 26 },
+          "by_sector_pct": { "services": 81, "industry_construction": 17, "agriculture": 2 }
+        },
+        "grenzgaenger_permits_2025": 71781,
+        "refugee_integration": {
+          "cohort_2018_total": 3060,
+          "employment_rate_7yr_pct": 48,
+          "cohort_2020_5yr_pct": 53,
+          "ias_target_pct": 50,
+          "note": "IAS target being exceeded; 2020 cohort already at 53% after 5 years"
+        },
+        "naturalisations_2025": 41269
+      }
+    },
+    {
+      "country": "France", "iso": "FR",
+      "data": [
+        { "year": 2020, "total": 67473651, "working_age": 37500000, "natural_change": 66800, "net_migration": 116380, "tfr": 1.86 },
+        { "year": 2021, "total": 67728568, "working_age": 37400000, "natural_change": 81200, "net_migration": 173717, "tfr": 1.84 },
+        { "year": 2022, "total": 68091703, "working_age": 37300000, "natural_change": 56400, "net_migration": 306735, "tfr": null },
+        { "year": 2023, "total": 68277210, "working_age": 37400000, "natural_change": 47100, "net_migration": 138407, "tfr": 1.66 },
+        { "year": 2024, "total": 68400000, "working_age": 37600000, "natural_change": 40000, "net_migration": 82790, "tfr": 1.61 },
+        { "year": 2025, "total": 68635943, "working_age": 37600000, "natural_change": 35000, "net_migration": 200943, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2011, "value": 38200000 },
+      "working_age_share_pct": 55.0
+    },
+    {
+      "country": "Italy", "iso": "IT",
+      "data": [
+        { "year": 2020, "total": 59641488, "working_age": 35200000, "natural_change": -342000, "net_migration": 66719, "tfr": 1.27 },
+        { "year": 2021, "total": 59236213, "working_age": 34800000, "natural_change": -309000, "net_migration": -96275, "tfr": 1.25 },
+        { "year": 2022, "total": 59030133, "working_age": 34400000, "natural_change": -320000, "net_migration": 113920, "tfr": null },
+        { "year": 2023, "total": 58997201, "working_age": 34600000, "natural_change": -281000, "net_migration": 248068, "tfr": 1.21 },
+        { "year": 2024, "total": 59700000, "working_age": 34400000, "natural_change": -270000, "net_migration": 972799, "tfr": 1.21 },
+        { "year": 2025, "total": 58934177, "working_age": 34100000, "natural_change": -280000, "net_migration": -485823, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2010, "value": 36400000 },
+      "working_age_share_pct": 57.6,
+      "median_age": 49.1
+    },
+    {
+      "country": "Spain", "iso": "ES",
+      "data": [
+        { "year": 2020, "total": 47318050, "working_age": 28500000, "natural_change": -153000, "net_migration": 553099, "tfr": 1.23 },
+        { "year": 2021, "total": 47400798, "working_age": 28400000, "natural_change": -113000, "net_migration": 195748, "tfr": 1.19 },
+        { "year": 2022, "total": 47486843, "working_age": 28300000, "natural_change": -133000, "net_migration": 219045, "tfr": null },
+        { "year": 2023, "total": 48085361, "working_age": 28800000, "natural_change": -117000, "net_migration": 715518, "tfr": 1.12 },
+        { "year": 2024, "total": 48600000, "working_age": 29200000, "natural_change": -110000, "net_migration": 624639, "tfr": 1.10 },
+        { "year": 2025, "total": 49077984, "working_age": 29300000, "natural_change": -115000, "net_migration": 592984, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2012, "value": 29500000 },
+      "working_age_share_pct": 60.1
+    },
+    {
+      "country": "Netherlands", "iso": "NL",
+      "data": [
+        { "year": 2020, "total": 17407585, "working_age": 10300000, "natural_change": -1800, "net_migration": 127222, "tfr": 1.57 },
+        { "year": 2021, "total": 17475415, "working_age": 10300000, "natural_change": -10300, "net_migration": 78130, "tfr": 1.62 },
+        { "year": 2022, "total": 17590672, "working_age": 10300000, "natural_change": -2800, "net_migration": 118057, "tfr": null },
+        { "year": 2023, "total": 17811291, "working_age": 10400000, "natural_change": -4500, "net_migration": 225119, "tfr": 1.43 },
+        { "year": 2024, "total": 17942942, "working_age": 10500000, "natural_change": -5000, "net_migration": 136651, "tfr": 1.43 },
+        { "year": 2025, "total": 18044027, "working_age": 10500000, "natural_change": -6000, "net_migration": 107085, "tfr": null }
+      ],
+      "working_age_peak": { "year": 2010, "value": 10600000 },
+      "working_age_share_pct": 58.6
+    }
+  ],
+  "projections": {
+    "working_age": [
+      { "country": "EU-27", "iso": "EU27", "y2025": 260100000, "y2030": 258000000, "y2040": 247000000, "y2050": 236000000, "change_pct": -9.2 },
+      { "country": "Germany", "iso": "DE", "y2025": 49100000, "y2030": 47000000, "y2040": 44500000, "y2050": 43200000, "change_pct": -12.0 },
+      { "country": "Austria", "iso": "AT", "y2025": 5400000, "y2030": 5300000, "y2040": 5100000, "y2050": 5000000, "change_pct": -7.4 },
+      { "country": "Switzerland", "iso": "CH", "y2025": 5400000, "y2030": 5500000, "y2040": 5600000, "y2050": 5500000, "change_pct": 1.8 },
+      { "country": "France", "iso": "FR", "y2025": 37600000, "y2030": 37000000, "y2040": 36200000, "y2050": 35500000, "change_pct": -5.5 },
+      { "country": "Italy", "iso": "IT", "y2025": 34100000, "y2030": 33200000, "y2040": 30500000, "y2050": 28100000, "change_pct": -17.5 },
+      { "country": "Spain", "iso": "ES", "y2025": 29300000, "y2030": 29500000, "y2040": 28000000, "y2050": 25500000, "change_pct": -12.9 },
+      { "country": "Netherlands", "iso": "NL", "y2025": 10500000, "y2030": 10400000, "y2040": 10200000, "y2050": 9900000, "change_pct": -5.7 }
+    ],
+    "total_population": [
+      { "country": "EU-27", "iso": "EU27", "y2025": 450400000, "y2030": 452000000, "y2040": 450000000, "y2050": 447900000, "y2050_no_migration": 387200000 },
+      { "country": "Germany", "iso": "DE", "y2025": 83600000, "y2030": 84100000, "y2040": 84300000, "y2050": 84100000, "y2050_no_migration": 73500000 },
+      { "country": "Austria", "iso": "AT", "y2025": 9200000, "y2030": 9300000, "y2040": 9400000, "y2050": 9500000, "y2050_no_migration": 8100000 },
+      { "country": "Switzerland", "iso": "CH", "y2025": 9000000, "y2030": 9400000, "y2040": 9800000, "y2050": 10100000, "y2050_no_migration": 8200000 },
+      { "country": "France", "iso": "FR", "y2025": 68600000, "y2030": 69100000, "y2040": 69800000, "y2050": 70100000, "y2050_no_migration": 66000000 },
+      { "country": "Italy", "iso": "IT", "y2025": 58900000, "y2030": 57800000, "y2040": 56500000, "y2050": 55400000, "y2050_no_migration": 48000000 },
+      { "country": "Spain", "iso": "ES", "y2025": 49100000, "y2030": 49700000, "y2040": 49800000, "y2050": 49300000, "y2050_no_migration": 41500000 },
+      { "country": "Netherlands", "iso": "NL", "y2025": 18000000, "y2030": 18300000, "y2040": 18600000, "y2050": 18700000, "y2050_no_migration": 16200000 }
+    ],
+    "dependency_ratio": [
+      { "country": "EU-27", "iso": "EU27", "y2025": 35.0, "y2030": 40.5, "y2040": 47.0, "y2050": 50.4 },
+      { "country": "Germany", "iso": "DE", "y2025": 36.5, "y2030": 43.0, "y2040": 49.5, "y2050": 51.0 },
+      { "country": "Austria", "iso": "AT", "y2025": 33.5, "y2030": 40.0, "y2040": 48.5, "y2050": 52.0 },
+      { "country": "Switzerland", "iso": "CH", "y2025": 31.0, "y2030": 37.5, "y2040": 44.0, "y2050": 47.5 },
+      { "country": "France", "iso": "FR", "y2025": 37.0, "y2030": 41.0, "y2040": 47.5, "y2050": 50.0 },
+      { "country": "Italy", "iso": "IT", "y2025": 39.0, "y2030": 44.0, "y2040": 53.0, "y2050": 58.0 }
+    ]
+  },
+  "fertility_rates": [
+    { "country": "EU-27", "iso": "EU27", "y2019": 1.50, "y2021": 1.53, "y2023": 1.38, "y2024": 1.34, "gap": -0.76 },
+    { "country": "Germany", "iso": "DE", "y2019": 1.54, "y2021": 1.58, "y2023": 1.39, "y2024": 1.39, "gap": -0.71 },
+    { "country": "Austria", "iso": "AT", "y2019": 1.46, "y2021": 1.48, "y2023": 1.32, "y2024": 1.32, "gap": -0.78 },
+    { "country": "Switzerland", "iso": "CH", "y2019": 1.48, "y2021": 1.52, "y2023": 1.39, "y2024": 1.35, "gap": -0.75 },
+    { "country": "France", "iso": "FR", "y2019": 1.86, "y2021": 1.84, "y2023": 1.66, "y2024": 1.61, "gap": -0.49 },
+    { "country": "Italy", "iso": "IT", "y2019": 1.27, "y2021": 1.25, "y2023": 1.21, "y2024": 1.21, "gap": -0.89 },
+    { "country": "Spain", "iso": "ES", "y2019": 1.23, "y2021": 1.19, "y2023": 1.12, "y2024": 1.10, "gap": -1.00 },
+    { "country": "Netherlands", "iso": "NL", "y2019": 1.57, "y2021": 1.62, "y2023": 1.43, "y2024": 1.43, "gap": -0.67 }
+  ],
+  "age_structure": [
+    { "band": "0–14", "label": "Pre-working age", "eu27_pct": 14.4, "de_pct": 13.9, "at_pct": 14.1, "ch_pct": 14.5, "trend": "shrinking", "trend_volume": -2100000, "implication": "Built-in deficit for mid-century labour pipeline" },
+    { "band": "15–24", "label": "Entering workforce", "eu27_pct": 10.5, "de_pct": 10.0, "at_pct": 10.3, "ch_pct": 10.4, "trend": "shrinking", "trend_volume": -1400000, "implication": "Immediate scarcity in entry-level and vocational hiring" },
+    { "band": "25–54", "label": "Core working age", "eu27_pct": 39.5, "de_pct": 40.1, "at_pct": 40.5, "ch_pct": 41.0, "trend": "shrinking", "trend_volume": -3200000, "implication": "Depletion of the core tax base; requires migration to offset" },
+    { "band": "55–64", "label": "Pre-retirement", "eu27_pct": 13.6, "de_pct": 14.5, "at_pct": 13.5, "ch_pct": 13.0, "trend": "growing", "trend_volume": 1800000, "implication": "Baby boomer vanguard; final high-productivity years" },
+    { "band": "65–74", "label": "Recent retirees", "eu27_pct": 11.2, "de_pct": 10.8, "at_pct": 10.5, "ch_pct": 10.5, "trend": "growing", "trend_volume": 2500000, "implication": "Driving initial pension system strain" },
+    { "band": "75–84", "label": "Older retirees", "eu27_pct": 7.4, "de_pct": 8.1, "at_pct": 7.5, "ch_pct": 7.2, "trend": "growing", "trend_volume": 1900000, "implication": "Escalating acute healthcare utilisation" },
+    { "band": "85+", "label": "Very old", "eu27_pct": 3.4, "de_pct": 2.6, "at_pct": 3.6, "ch_pct": 3.4, "trend": "fast_growth", "trend_volume": 1100000, "implication": "Exponential demand for Long-Term Care infrastructure" }
+  ],
+  "substitution_matrix": [
+    {
+      "zone": "A", "label": "High AI Exposure", "color": "#ef4444",
+      "occupations": "Clerical, admin, customer service, bookkeeping",
+      "employment": [25000000, 30000000],
+      "workers_55_plus": [5000000, 6500000],
+      "retirements_2030": [3000000, 4000000],
+      "retirements_2040": [8000000, 10000000],
+      "ai_displacement": "High (60–80% of tasks)",
+      "ai_displacement_label": "High",
+      "net_dynamic": "Surplus displacement: AI replaces faster than retirement creates gaps; ~5–10M mid-career workers at risk",
+      "retirement_midpoint": 3500000,
+      "ai_capacity_midpoint": 7500000
+    },
+    {
+      "zone": "B", "label": "Medium AI Exposure", "color": "#eab308",
+      "occupations": "Software, marketing, management, HR, product",
+      "employment": [40000000, 50000000],
+      "workers_55_plus": [8000000, 10000000],
+      "retirements_2030": [4000000, 6000000],
+      "retirements_2040": [12000000, 16000000],
+      "ai_displacement": "Medium (20–35% of tasks)",
+      "ai_displacement_label": "Medium",
+      "net_dynamic": "Partial offset: AI fills ~1–2M roles via productivity; ~2–4M transformed; genuine shortage in strategic roles",
+      "retirement_midpoint": 5000000,
+      "ai_capacity_midpoint": 3000000
+    },
+    {
+      "zone": "C", "label": "Low AI Exposure", "color": "#22c55e",
+      "occupations": "Healthcare, trades, construction, agriculture, care, emergency services",
+      "employment": [90000000, 100000000],
+      "workers_55_plus": [20000000, 26000000],
+      "retirements_2030": [10000000, 14000000],
+      "retirements_2040": [28000000, 36000000],
+      "ai_displacement": "Low (5–15% of tasks)",
+      "ai_displacement_label": "Low",
+      "net_dynamic": "Critical gap: ~8–12M unfilled by 2030; ~24–32M by 2040; AI cannot compensate",
+      "retirement_midpoint": 12000000,
+      "ai_capacity_midpoint": 1500000
+    },
+    {
+      "zone": "D", "label": "AI-Enhanced Demand", "color": "#3b82f6",
+      "occupations": "AI/ML engineering, data science, cybersecurity",
+      "employment": [3000000, 5000000],
+      "workers_55_plus": [300000, 500000],
+      "retirements_2030": [200000, 300000],
+      "retirements_2040": [500000, 1000000],
+      "ai_displacement": "N/A (demand creation)",
+      "ai_displacement_label": "N/A",
+      "net_dynamic": "Chronic undersupply: EU has 10M ICT specialists but needs 20M by 2030",
+      "retirement_midpoint": 250000,
+      "ai_capacity_midpoint": 0
+    }
+  ],
+  "generational_analysis": [
+    {
+      "generation": "Boomers", "id": "boomers", "birth_years": "1946–1964", "age_range": "62–80",
+      "color": "#eab308",
+      "employment": [15000000, 20000000],
+      "primary_zone": "Zone A/C (retiring)",
+      "core_risk": "Knowledge loss + compounded displacement in Zone A",
+      "adaptive_capacity": "Low (mitigated by retirement proximity)",
+      "key_stats": {
+        "germany_1964_cohort": 1360000,
+        "bavaria_workers_lost_by_2035": 1500000,
+        "orgs_with_retirement_forecasts_pct": 29,
+        "managers_trained_knowledge_transfer_pct": 23
+      }
+    },
+    {
+      "generation": "Gen X", "id": "gen-x", "birth_years": "1965–1980", "age_range": "46–61",
+      "color": "#ef4444",
+      "employment": [55000000, 60000000],
+      "primary_zone": "Zone B (senior)",
+      "core_risk": "Sustained transformation over 15–20 years; declining training uptake",
+      "adaptive_capacity": "Moderate (experience, but rigidity)",
+      "key_stats": {
+        "dev_courses_planned_pct": 12,
+        "gen_z_dev_courses_pct": 26,
+        "years_remaining": "15–20"
+      }
+    },
+    {
+      "generation": "Millennials", "id": "millennials", "birth_years": "1981–1996", "age_range": "30–45",
+      "color": "#22c55e",
+      "employment": [60000000, 65000000],
+      "primary_zone": "Zone B (mid-career)",
+      "core_risk": "Highest absolute AI exposure; role transformation",
+      "adaptive_capacity": "High (skills, networks, time)",
+      "key_stats": {
+        "ai_expertise_claim_pct": 62,
+        "gen_z_ai_expertise_pct": 50,
+        "ai_opportunities_at_work_pct": 44,
+        "cepr_productivity_gain_pct": 4
+      }
+    },
+    {
+      "generation": "Gen Z", "id": "gen-z", "birth_years": "1997–2012", "age_range": "14–29",
+      "color": "#ef4444",
+      "employment": [30000000, 35000000],
+      "primary_zone": "Entry-level (blocked)",
+      "core_risk": "Structural exclusion from workforce ladder",
+      "adaptive_capacity": "High potential, low current access",
+      "key_stats": {
+        "entry_level_hiring_decline_pct": 73,
+        "junior_tech_decline_pct": 35,
+        "eu_youth_unemployment_pct": 15.1,
+        "spain_youth_unemployment_pct": 26.6,
+        "traditional_fulltime_pct": 45,
+        "avg_tenure_years": 1.1,
+        "ai_familiar_pct": 85
+      }
+    }
+  ],
+  "immigration": {
+    "annual_need": 1000000,
+    "germany_annual_need": 400000,
+    "ai_reduction_pct": [5, 15],
+    "zone_c_immigrant_share": {
+      "construction_drywall": 67,
+      "food_service": 50,
+      "bus_tram_drivers": 46,
+      "nursing_homes": 30,
+      "foreign_born_doctors_2023": 63763,
+      "non_citizen_employment_growth_pct": 89
+    },
+    "political_context": {
+      "afd_feb_2025_pct": 20.8,
+      "afd_current_pct": 25.0,
+      "afd_east_pct": 39.0,
+      "immigration_top3_concern_pct": 56,
+      "fpo_sep_2024_pct": 28.8,
+      "svp_population_cap": 10000000,
+      "svp_vote_date": "2026-06"
+    },
+    "draghi_report_decline_2070": 41000000,
+    "no_migration_additional_decline": 46000000
+  },
+  "retraining": {
+    "annual_switching_rate_pct": 3,
+    "switching_range": { "low": 0.5, "high": 7.4, "low_country": "Romania", "high_country": "Sweden" },
+    "umschulung_duration_years": 2,
+    "benefit_lag_years": 3,
+    "healthcare_retraining_effect_pp": 20,
+    "training_participation_55_65_pct": 24,
+    "training_participation_35_54_pct": 48,
+    "cost_range_usd": [3500, 25000],
+    "seekers_targeting_shortage_pct": 25,
+    "employment_rate_gap_pp": 15.5,
+    "germany_unemployed_2024": 2700000,
+    "germany_unfilled_positions": 439000,
+    "drywall_vacancy_days": 299,
+    "farm_to_factory_rural_pct": 63
+  },
+  "country_divergence": [
+    {
+      "tier": "sharpest_decline", "label": "Sharpest Decline",
+      "description": "Population collapse >30% by 2100 without migration",
+      "color": "#ef4444",
+      "countries": ["Italy", "Spain", "Poland", "Greece", "Latvia", "Lithuania", "Bulgaria", "Romania", "Croatia", "Malta", "Portugal"],
+      "mechanism": "Sub-1.3 fertility + emigration drain. Italy loses 6M workers by 2050 even with baseline migration. Southern Europe trapped in 'lowest-low' fertility cycle."
+    },
+    {
+      "tier": "moderate_decline", "label": "Moderate Decline",
+      "description": "Heavy migration dependency, organic decline",
+      "color": "#eab308",
+      "countries": ["Germany", "Austria", "Netherlands", "Belgium", "Finland"],
+      "mechanism": "TFR 1.3–1.4, entirely migration-dependent. Germany needs 400K+/year net migration. Finland's TFR collapsed from 1.81 to 1.26."
+    },
+    {
+      "tier": "relative_resilience", "label": "Relative Resilience",
+      "description": "Organic stabilisation possible — the outliers to learn from",
+      "color": "#22c55e",
+      "countries": ["France", "Ireland", "Sweden"],
+      "mechanism": "France TFR 1.61 (vs Spain 1.10) — robust family policy, state-subsidised childcare. Ireland: only EU country projected to grow through 2050. Sweden: work-life balance policies + immigration."
+    }
+  ],
+  "asymmetries": [
+    { "id": "substitution", "title": "The Substitution Asymmetry", "summary": "AI strongest in Zone A (moderate retirement pressure), weakest in Zone C (severe retirement pressure), creating an 8–12 million gap by 2030 that grows to 24–32 million by 2040." },
+    { "id": "mobility", "title": "The Mobility Asymmetry", "summary": "Cross-zone retraining from cognitive to physical work is unprecedented, faces a 3% annual switching rate ceiling, and collapses in effectiveness for workers over 50 — the fastest-growing segment." },
+    { "id": "immigration", "title": "The Immigration Asymmetry", "summary": "Immigrants fill Zone C shortages (67% construction, 50%+ food service, 30% care) but political tolerance is declining as AfD polls at 25%+, FPÖ wins 28.8%, and SVP pushes population caps." },
+    { "id": "generational", "title": "The Generational Asymmetry", "summary": "Entry-level hiring collapses 73% for Gen Z while 40 million 55+ workers approach retirement, simultaneously depleting both ends of the talent pipeline." },
+    { "id": "geographic", "title": "The Geographic Asymmetry", "summary": "AI displacement concentrates in office-heavy urban centres. Zone C shortages are distributed across hospitals, construction sites, care homes, and farms. Historical evidence shows displacement scarring lasts 30–50 years." }
+  ],
+  "dach": {
+    "germany": {
+      "population_2025": 83500000,
+      "engpassberufe_count": 163,
+      "unfilled_positions": 439000,
+      "unemployment_rate_2024_pct": 6.3,
+      "unemployed_2024": 2700000,
+      "chancenkarte_issued": 17489,
+      "chancenkarte_target": 30000,
+      "experience_pillar_visas": 838,
+      "employment_visas_2024": 200000,
+      "visa_legal_bases": 104,
+      "residence_titles_2024": 610000,
+      "employment_related_titles": 53000,
+      "blue_cards_issued": 30000,
+      "apprenticeship_contracts_2024": 475100,
+      "apprenticeship_contracts_change_pct": -1.0,
+      "apprenticeship_enrolled": 1210000,
+      "apprenticeship_graduates": 339200,
+      "unfilled_apprenticeship_places": 54000,
+      "unplaced_applicants": 84400,
+      "industrie40_penetration_pct": 71,
+      "ai_adoption_mittelstand_pct": 17,
+      "mittelstand_ai_spend_pct": 0.35,
+      "market_avg_ai_spend_pct": 0.50,
+      "firms_citing_expertise_barrier_pct": 42,
+      "firms_wait_and_see_pct": 50,
+      "east_population_65plus_pct": 24,
+      "west_population_65plus_pct": 20,
+      "east_decline_2070_pct": [14, 30],
+      "vacancy_rate_it_pct": 4.5,
+      "vacancy_rate_construction_pct": 4.3,
+      "vacancy_rate_health_pct": 3.6,
+      "vacancy_rate_manufacturing_pct": 2.0,
+      "engineering_open_positions": 148000,
+      "engineering_ratio_per_100_unemployed": 333,
+      "top_shortage_occupations": [
+        { "rank": 1, "occupation": "Plumbing, Heating, Air Conditioning", "kldb": "34212", "severity": 2.8, "type": "Demographic/Structural" },
+        { "rank": 2, "occupation": "Dental Assistants", "kldb": "8111", "severity": 2.8, "type": "Structural" },
+        { "rank": 3, "occupation": "Civil Engineering", "kldb": "3220", "severity": 2.8, "type": "Demographic/Structural" },
+        { "rank": 4, "occupation": "Nursing (Geriatric & Clinical)", "kldb": "8130/821", "severity": 2.75, "type": "Structural" },
+        { "rank": 5, "occupation": "Construction Electrics", "kldb": "2621", "severity": 2.7, "type": "Demographic/Structural" },
+        { "rank": 6, "occupation": "Facade Construction", "kldb": "3215", "severity": 2.7, "type": "Demographic/Structural" },
+        { "rank": 7, "occupation": "Meat Processing", "kldb": "2923", "severity": 2.7, "type": "Structural" },
+        { "rank": 8, "occupation": "Gastronomy Service", "kldb": "6330", "severity": 2.5, "type": "Structural" },
+        { "rank": 9, "occupation": "Professional Drivers (Freight)", "kldb": "52122", "severity": 2.4, "type": "Demographic/Structural" },
+        { "rank": 10, "occupation": "Medical Assistants", "kldb": "8110", "severity": 2.3, "type": "Structural" },
+        { "rank": 11, "occupation": "Automotive Technology", "kldb": "25212", "severity": 2.3, "type": "Demographic/Structural" },
+        { "rank": 12, "occupation": "Masonry", "kldb": "32102", "severity": 2.3, "type": "Demographic/Structural" },
+        { "rank": 13, "occupation": "Carpentry", "kldb": "33312", "severity": 2.3, "type": "Demographic" },
+        { "rank": 14, "occupation": "Mechatronics", "kldb": "26112", "severity": 2.3, "type": "Structural" },
+        { "rank": 15, "occupation": "Train Drivers", "kldb": "52512", "severity": 2.3, "type": "Demographic/Structural" },
+        { "rank": 16, "occupation": "Metal Construction", "kldb": "2441", "severity": 2.2, "type": "Demographic" },
+        { "rank": 17, "occupation": "Technical Service & Maintenance", "kldb": "2513", "severity": 2.0, "type": "Structural" },
+        { "rank": 18, "occupation": "Chefs", "kldb": "2930", "severity": 2.0, "type": "Structural" },
+        { "rank": 19, "occupation": "Software Development (Experts)", "kldb": "43414", "severity": 2.0, "type": "Structural" },
+        { "rank": 20, "occupation": "Early Childhood Education", "kldb": "8311", "severity": 2.0, "type": "Structural" }
+      ]
+    },
+    "austria": {
+      "population_2024": 9200000,
+      "working_age_peak": { "year": 2024, "value": 5570000 },
+      "working_age_decline_by_2040": 256000,
+      "working_age_decline_pct": -4.6,
+      "oadr_2024_pct": 20.0,
+      "oadr_2040_pct": 26.2,
+      "firms_with_shortage_pct": 82,
+      "vacancy_avg_2024": 173800,
+      "vacancy_change_pct": -15.8,
+      "foreign_employment_share_pct": 24,
+      "immigrations_2024": 178600,
+      "net_migration_2024": 50100,
+      "austrians_in_germany": 232739,
+      "austrians_in_switzerland": 40000,
+      "academics_among_foreign_pct": 29,
+      "academics_among_native_pct": 21,
+      "pflegestipendium_participants": 9000,
+      "pflegestipendium_female_pct": 78,
+      "pflegestipendium_spending_eur": 107900000,
+      "vacancy_ratios": [
+        { "occupation": "Restaurant Specialists", "ratio": 6.6 },
+        { "occupation": "Gastronomy Specialists", "ratio": 5.9 },
+        { "occupation": "Cooks", "ratio": 4.2 },
+        { "occupation": "Hotel & Hospitality Assistants", "ratio": 3.9 },
+        { "occupation": "Retail Clerks", "ratio": 2.3 }
+      ]
+    },
+    "switzerland": {
+      "population_2024": 9050000,
+      "population_2055_projected": 10500000,
+      "birth_surplus_2024": 6300,
+      "cross_border_commuters": 407000,
+      "foreign_workforce_pct": 34.4,
+      "working_age_share_2023_pct": 60.7,
+      "working_age_share_2035_pct": 58.1,
+      "working_age_share_2055_pct": 56.7,
+      "ai_adoption_workforce_pct": 32,
+      "eu_avg_ai_adoption_pct": 23,
+      "enterprise_ai_agents_pct": 52,
+      "global_avg_ai_agents_pct": 46,
+      "finma_ai_live_pct": 50,
+      "finma_genai_of_adopters_pct": 91,
+      "avg_monthly_earnings_eur": 8759,
+      "eu27_avg_monthly_eur": 3417,
+      "svp_population_cap": 10000000,
+      "svp_vote_date": "2026-06"
+    }
+  },
+  "fiscal_impact": {
+    "eu_gdp_growth_avg_2022_2070_pct": 1.3,
+    "healthcare_gdp_2022_pct": 6.9,
+    "healthcare_gdp_2070_pct": 7.3,
+    "ltc_gdp_2022_pct": 1.7,
+    "ltc_gdp_2070_pct": 2.6,
+    "eu_median_age_2025": 44.9,
+    "italy_median_age": 49.1,
+    "eu_population_peak_year": 2026,
+    "eu_population_peak_value": 453300000
+  },
+  "sources": [
+    { "id": 1, "tier": 1, "title": "Population and population change statistics", "author": "Eurostat", "year": 2025, "code": "demo_pjan, demo_gind", "type": "Database" },
+    { "id": 2, "tier": 1, "title": "EUROPOP2023 — Population projections at national level (2022–2100)", "author": "Eurostat", "year": 2023, "code": "proj_23np", "type": "Projections" },
+    { "id": 3, "tier": 1, "title": "2024 Ageing Report: Economic and Budgetary Projections for the EU Member States (2022–2070)", "author": "European Commission", "year": 2024, "type": "Report" },
+    { "id": 4, "tier": 1, "title": "Population structure and ageing", "author": "Eurostat", "year": 2025, "code": "demo_pjanage, demo_pjanind", "type": "Database" },
+    { "id": 5, "tier": 1, "title": "Fertility statistics", "author": "Eurostat", "year": 2025, "code": "demo_frate", "type": "Database" },
+    { "id": 6, "tier": 1, "title": "Migration to and from the EU", "author": "Eurostat", "year": 2025, "type": "Database" },
+    { "id": 7, "tier": 1, "title": "Employment — annual statistics", "author": "Eurostat", "year": 2025, "code": "lfsi_emp_a", "type": "Database" },
+    { "id": 8, "tier": 1, "title": "16th Coordinated Population Projection (Bevölkerungsvorausberechnung)", "author": "Destatis", "year": 2025, "type": "Projections" },
+    { "id": 9, "tier": 1, "title": "The Demographic Divide: Inequalities in Ageing Across the European Union", "author": "Bruegel", "year": 2025, "type": "Policy Brief" },
+    { "id": 10, "tier": 1, "title": "World Population Prospects 2024: Summary of Results", "author": "UN Population Division", "year": 2024, "type": "Report" },
+    { "id": 11, "tier": 1, "title": "Fachkräfteengpassanalyse 2024", "author": "Bundesagentur für Arbeit", "year": 2025, "type": "Report" },
+    { "id": 12, "tier": 1, "title": "Beyond Retirement: A Closer Look at the Very Old", "author": "Bruegel", "year": 2025, "type": "Analysis" },
+    { "id": 13, "tier": 1, "title": "Old-age dependency ratio", "author": "OECD", "year": 2025, "type": "Database" },
+    { "id": 14, "tier": 1, "title": "Bevölkerungsprognose 2025–2080", "author": "Statistik Austria", "year": 2025, "type": "Projections" },
+    { "id": 15, "tier": 1, "title": "Szenarien zur Bevölkerungsentwicklung der Schweiz und der Kantone 2025–2055", "author": "BFS", "year": 2025, "type": "Projections" },
+    { "id": 16, "tier": 1, "title": "Displaced Ukrainians: Challenges and Outlook for Integration in the EU", "author": "European Parliament", "year": 2025, "type": "Briefing" },
+    { "id": 17, "tier": 1, "title": "Labour Market Statistics at Regional Level", "author": "Eurostat", "year": 2025, "type": "Database" },
+    { "id": 18, "tier": 2, "title": "Arbeits- und Fachkräftebedarf/-mangel in Österreich 2024", "author": "ibw", "year": 2024, "type": "Report" },
+    { "id": 19, "tier": 2, "title": "Die Arbeitsmarktlage 2024", "author": "AMS", "year": 2025, "type": "Report" },
+    { "id": 20, "tier": 2, "title": "Statistisches Jahrbuch Migration & Integration 2025", "author": "Statistik Austria", "year": 2025, "type": "Report" },
+    { "id": 21, "tier": 2, "title": "The new Skilled Immigration Act one year on", "author": "BMI", "year": 2024, "type": "Press Release" },
+    { "id": 22, "tier": 2, "title": "Industrie 4.0 | Studie 2025", "author": "Bitkom", "year": 2025, "type": "Survey" },
+    { "id": 23, "tier": 2, "title": "Switzerland leads Europe in AI workforce adoption", "author": "Michael Page", "year": 2024, "type": "Survey" },
+    { "id": 24, "tier": 2, "title": "2025 Work Trend Index: Swiss Organizations Lead in AI Adoption", "author": "Microsoft", "year": 2025, "type": "Report" },
+    { "id": 25, "tier": 2, "title": "Grenzgängerstatistik Q4 2024", "author": "BFS", "year": 2025, "type": "Database" },
+    { "id": 26, "tier": 2, "title": "Fachkräftemangel Index Schweiz 2024", "author": "Adecco Group", "year": 2024, "type": "Index" },
+    { "id": 27, "tier": 2, "title": "Swiss Federal Council warns population cap initiative could harm economy", "author": "Anadolu Agency", "year": 2026, "type": "News" },
+    { "id": 28, "tier": 2, "title": "Der Ausbildungsmarkt 2024/2025", "author": "BIBB", "year": 2025, "type": "Report" },
+    { "id": 29, "tier": 2, "title": "European labor markets: Migration matters", "author": "Allianz Research", "year": 2024, "type": "Research" },
+    { "id": 30, "tier": 2, "title": "Ravio 2025 Tech Job Market Report", "author": "Ravio", "year": 2025, "type": "Report" },
+    { "id": 31, "tier": 2, "title": "ELA/EURES Report on Labour Shortages and Surpluses 2024", "author": "European Labour Authority", "year": 2024, "type": "Report" },
+    { "id": 32, "tier": 2, "title": "2024 Pension systems in Europe", "author": "EcoAustria / Vienna Insurance Group", "year": 2024, "type": "Report" },
+    { "id": 33, "tier": 2, "title": "Pensions at a Glance 2023", "author": "OECD", "year": 2023, "type": "Report" },
+    { "id": 34, "tier": 2, "title": "Skilled immigration via the Opportunity Card: An initial assessment", "author": "Institut der deutschen Wirtschaft (IW Köln)", "year": 2025, "type": "Policy Brief" },
+    { "id": 35, "tier": 2, "title": "Industrie 4.0 Studie 2025: Digitalisierung der deutschen Industrie", "author": "Bitkom / VDMA / ZVEI", "year": 2025, "type": "Survey" },
+    { "id": 36, "tier": 1, "title": "Demography of Europe: 2025 interactive digital publication", "author": "Eurostat", "year": 2025, "type": "Publication" },
+    { "id": 37, "tier": 2, "title": "ESDE Review 2023: Impact of population ageing", "author": "European Commission", "year": 2023, "type": "Report" },
+    { "id": 38, "tier": 2, "title": "ILO Global Report on AI and Employment 2023", "author": "ILO", "year": 2023, "type": "Report" },
+    { "id": 39, "tier": 2, "title": "Pflegestipendium — Nursing Scholarship evaluation", "author": "BMWET Austria", "year": 2024, "type": "Evaluation" },
+    { "id": 40, "tier": 2, "title": "AI Adoption in Swiss Financial Services", "author": "FINMA / Unique AI", "year": 2025, "type": "Survey" },
+    { "id": 41, "tier": 1, "title": "World Population Prospects 2024 — Demographic Indicators and Probabilistic Projections", "author": "United Nations, Department of Economic and Social Affairs, Population Division", "year": 2024, "type": "Database", "code": "WPP2024/GEN/F01, PPP/TFR" },
+    { "id": 42, "tier": 1, "title": "World Economic Outlook Database", "author": "International Monetary Fund (IMF)", "year": 2026, "type": "Database", "code": "imf-dm-export-20260420" },
+    { "id": 43, "tier": 1, "title": "China Statistical Yearbook 2025", "author": "National Bureau of Statistics of China (NBS)", "year": 2025, "type": "Database" },
+    { "id": 44, "tier": 2, "title": "China's fertility rate has fallen to one, continuing a long decline that began before and continued after the one-child policy", "author": "Our World in Data", "year": 2025, "type": "Analysis" },
+    { "id": 45, "tier": 1, "title": "Données historiques de fécondité et de population de la France", "author": "INED — Institut national d'études démographiques", "year": 2024, "type": "Database" },
+    { "id": 46, "tier": 2, "title": "The Black Death 1346–1353: The Complete History", "author": "Ole J. Benedictow", "year": 2021, "type": "Publication" },
+    { "id": 47, "tier": 2, "title": "A Farewell to Alms: A Brief Economic History of the World", "author": "Gregory Clark", "year": 2007, "type": "Publication" },
+    { "id": 48, "tier": 1, "title": "OECD Economic Surveys: Japan 2024", "author": "OECD", "year": 2024, "type": "Report" },
+    { "id": 49, "tier": 1, "title": "OECD Economic Surveys: China 2022", "author": "OECD", "year": 2022, "type": "Report" },
+    { "id": 50, "tier": 1, "title": "OECD Economic Surveys: European Union and Euro Area 2025", "author": "OECD", "year": 2025, "type": "Report" },
+    { "id": 51, "tier": 1, "title": "OECD Economic Surveys: Switzerland 2024", "author": "OECD", "year": 2024, "type": "Report" },
+    { "id": 52, "tier": 2, "title": "Before and After the Black Death: Money, Prices, and Wages in Fourteenth-Century England (MPRA 15748)", "author": "John H. Munro, University of Toronto", "year": 2004, "type": "Research" },
+    { "id": 53, "tier": 2, "title": "Wages and Labour Relations in the Middle Ages: It's Not (All) About the Money (LSE Economic History Working Paper No. 360)", "author": "Jordan Claridge & Vincent Delabastita", "year": 2023, "type": "Research" },
+    { "id": 54, "tier": 2, "title": "Family Policies in Industrialized Countries: Is There Convergence? (Population 57(3), pp. 447-474)", "author": "Anne H. Gauthier", "year": 2002, "type": "Research" }
+  ]
+}

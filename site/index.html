@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe Is Running Out of Workers, Not Work &mdash; European Demographics &amp; AI</title>
+<meta name="description" content="Europe loses ~1 million working-age people per year through 2050. AI is strongest where need is least, weakest where need is greatest. The structural mismatch that defines the next decade.">
+<link rel="canonical" href="https://demographics.nexalps.com/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Europe Is Running Out of Workers, Not Work">
+<meta property="og:description" content="EU working-age population peaked at 270M in 2010, projected 236M by 2050. The AI substitution matrix reveals a structural mismatch between displacement and need.">
+<meta property="og:url" content="https://demographics.nexalps.com/">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Europe Is Running Out of Workers, Not Work">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Europe Is Running Out of Workers, Not Work: European Demographics & AI","description":"Europe loses ~1 million working-age people per year through 2050. Analysis of the structural mismatch between AI displacement and demographic need across the EU-27 and DACH.","url":"https://demographics.nexalps.com/","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["European demographics","working-age population","AI displacement","labour shortage","fertility rate","dependency ratio","DACH","immigration"]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much is Europe's working-age population projected to decline by 2050?","acceptedAnswer":{"@type":"Answer","text":"The EU-27 working-age population (20–64) peaked at 270 million in 2010 and is projected to fall to 236 million by 2050 under Eurostat's EUROPOP2023 baseline — a loss of roughly 34 million, or about 1.3 million workers per year. Italy is projected to lose 17.5% of its working-age population by 2050, Spain 12.9%, and Germany 12.0%."}},
+{"@type":"Question","name":"Can AI substitute for Europe's retiring workforce?","acceptedAnswer":{"@type":"Answer","text":"Only partially. AI substitutability is highest in Zone A (clerical and administrative work, 25–30M workers), where retirement pressure is moderate. It is weakest in Zone C (healthcare, trades, care work, 90–100M workers), where retirement pressure is severe: 8–12 million Zone C positions will be unfillable by 2030, and AI can substitute at most 5–15% of those tasks. The mismatch is structural, not cyclical."}},
+{"@type":"Question","name":"Which European countries have the lowest fertility rates?","acceptedAnswer":{"@type":"Answer","text":"The EU average total fertility rate (TFR) hit a record low of 1.34 in 2024, down from 1.53 in 2021 — no member state meets the 2.1 replacement rate. Spain is lowest at 1.10, Italy at 1.21, Poland at 1.26, and Germany at 1.35. France at 1.61 and Ireland are the only relative outliers with organic stabilisation possible."}},
+{"@type":"Question","name":"Is migration enough to offset Europe's population decline?","acceptedAnswer":{"@type":"Answer","text":"Without migration, the EU population would fall to 387 million by 2050 versus 448 million under the baseline — a 60 million gap. Germany alone needs 400,000+ net migrants annually to stabilise its labour force, and 2024 net EU migration to Germany turned negative. Migration arithmetic works only if politically sustained; 2024–2026 polling shows rising restrictive pressure across most member states."}},
+{"@type":"Question","name":"How many unfilled jobs will there be in Europe by 2030?","acceptedAnswer":{"@type":"Answer","text":"In Zone C alone (healthcare, trades, care), 8–12 million positions are projected to be unfillable by 2030. Germany currently has 163 recognised shortage occupations (Engpassberufe); Austria reports 82% of firms with labour shortages; Switzerland's foreign workforce is already at 34.4%. The old-age dependency ratio shifts from 1 retiree per 3 workers today to 1 per 2 by 2050."}}
+]}
+</script>
+
+<meta property="og:image" content="https://demographics.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://demographics.nexalps.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/assets/d3.v7.min.js"></script>
+<script src="/assets/topojson-client.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero.container{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Zone cards (2x2 grid) */
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.zone-card{padding:20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);border-left:3px solid}
+.zone-card h3{font-size:15px;font-weight:600;margin-bottom:8px}
+.zone-card .zone-meta{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px}
+.zone-card .zone-meta strong{color:#d4d4d8}
+.zone-card .zone-verdict{font-size:13px;color:#d4d4d8;line-height:1.6;font-style:italic}
+@media(max-width:640px){.zone-grid{grid-template-columns:1fr}}
+
+/* Zone badges */
+.zone-badge{display:inline-block;padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:500;background:rgba(255,255,255,0.06);color:#a1a1aa;border:1px solid rgba(255,255,255,0.12)}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+.map-pair{display:flex;gap:16px;margin:8px 0}
+.map-col{flex:1;min-width:0;text-align:center}
+.map-label{font-size:13px;font-weight:600;color:var(--muted);text-align:center;margin-bottom:4px}
+#map-legend{margin-top:8px}
+.map-col svg path{transition:opacity var(--transition)}
+@media(max-width:768px){.map-pair{flex-direction:column}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+
+/* Table overflow — prevent horizontal page scroll on mobile */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+details>table.data-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+
+/* Body-content links — match surrounding text, underlined, orange on hover */
+main p a, .zone-verdict a, .highlight p a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+main p a:hover, .zone-verdict a:hover, .highlight p a:hover{color:var(--ring)}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html" aria-current="page">Overview</a>
+    <a href="projections.html">Projections</a>
+    <a href="dach.html">DACH</a>
+    <a href="generations.html">Generations</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html" aria-current="page">Overview</a>
+  <a href="projections.html">Projections</a>
+  <a href="dach.html">DACH</a>
+  <a href="generations.html">Generations</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Europe Is Running Out of Workers, Not Work</h1>
+  <p class="lede">The continent loses ~1&nbsp;million working-age people per year through 2050. AI is strongest where need is least, weakest where need is greatest. This asymmetry defines the coming decade.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; April 2026 &middot; Part 4 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">54 primary sources</a> including Eurostat, European Commission, UN Population Division, OECD and Cedefop.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Summary statistics">
+  <div class="stat-card">
+    <span class="stat-value">1M/year</span>
+    <span class="stat-label">Working-age decline</span>
+    <span class="stat-sublabel">Demographically locked in through 2050</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">34M</span>
+    <span class="stat-label">Lost since 2010 peak</span>
+    <span class="stat-sublabel">270M peak &rarr; 236M projected by 2050</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1.34</span>
+    <span class="stat-label">EU fertility rate</span>
+    <span class="stat-sublabel">Record low; replacement is 2.1</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">8&ndash;12M</span>
+    <span class="stat-label">Unfillable Zone C jobs by 2030</span>
+    <span class="stat-sublabel">Healthcare, trades, construction, care</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: THE DECLINE -->
+<h2><span class="num">1.</span> The Decline Is Already Here <span class="subtitle">This is arithmetic, not forecast</span></h2>
+
+<p>The EU-27 working-age population (20&ndash;64) peaked at 270&nbsp;million in 2010. It has been declining ever since. Natural population change &mdash; births minus deaths &mdash; has been negative for the entire EU since 2012. In 2024, the EU recorded 4.82&nbsp;million deaths against only 3.56&nbsp;million births, a natural decrease of 1.3&nbsp;million people. The 1.1&nbsp;million total growth came exclusively from net migration of +2.3&nbsp;million.</p>
+
+<p>No EU member state currently meets the 2.1 replacement fertility rate. The EU average hit a record low of 1.34 in 2024 &mdash; down from 1.53 just three years earlier. When a society falls below 1.3 (Italy at 1.21, Spain at 1.10), the population base halves roughly every 45 years absent migration.</p>
+
+<div class="chart-box" role="img" aria-label="Two maps of Europe showing working-age population change: 2025 vs peak year (mostly stable) and 2050 vs peak year (widespread decline, especially in Southern and Eastern Europe).">
+  <h3>Working-Age Population Change Across Europe</h3>
+  <div class="map-pair">
+    <div class="map-col">
+      <div class="map-label">2025 vs Peak</div>
+      <div id="map-2025"></div>
+    </div>
+    <div class="map-col">
+      <div class="map-label">2050 vs Peak</div>
+      <div id="map-2050"></div>
+    </div>
+  </div>
+  <div id="map-legend"></div>
+  <p style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6">Each country is coloured by how much its working-age population (20&ndash;64) has changed from its historical peak. By 2050, most of Europe turns orange or red &mdash; only Switzerland, Ireland, and Luxembourg project working-age growth.</p>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>ISO</th><th>2025 vs Peak (%)</th><th>2050 vs Peak (%)</th></tr></thead>
+      <tbody>
+        <tr><td>Germany</td><td>DEU</td><td>-5.6</td><td>-16.9</td></tr>
+        <tr><td>Austria</td><td>AUT</td><td>-1.5</td><td>-8.7</td></tr>
+        <tr><td>Switzerland</td><td>CHE</td><td>+4.4</td><td>+5.8</td></tr>
+        <tr><td>France</td><td>FRA</td><td>-1.6</td><td>-7.1</td></tr>
+        <tr><td>Italy</td><td>ITA</td><td>-6.3</td><td>-22.8</td></tr>
+        <tr><td>Spain</td><td>ESP</td><td>-0.7</td><td>-13.6</td></tr>
+        <tr><td>Netherlands</td><td>NLD</td><td>-0.9</td><td>-6.6</td></tr>
+        <tr><td>Poland</td><td>POL</td><td>-8.0</td><td>-25.0</td></tr>
+        <tr><td>Romania</td><td>ROU</td><td>-12.0</td><td>-30.0</td></tr>
+        <tr><td>Bulgaria</td><td>BGR</td><td>-15.0</td><td>-35.0</td></tr>
+        <tr><td>Croatia</td><td>HRV</td><td>-10.0</td><td>-28.0</td></tr>
+        <tr><td>Lithuania</td><td>LTU</td><td>-18.0</td><td>-35.0</td></tr>
+        <tr><td>Latvia</td><td>LVA</td><td>-18.0</td><td>-35.0</td></tr>
+        <tr><td>Hungary</td><td>HUN</td><td>-5.0</td><td>-18.0</td></tr>
+        <tr><td>Slovakia</td><td>SVK</td><td>-3.0</td><td>-20.0</td></tr>
+        <tr><td>Czech Republic</td><td>CZE</td><td>-2.0</td><td>-15.0</td></tr>
+        <tr><td>Greece</td><td>GRC</td><td>-8.0</td><td>-25.0</td></tr>
+        <tr><td>Portugal</td><td>PRT</td><td>-7.0</td><td>-22.0</td></tr>
+        <tr><td>Malta</td><td>MLT</td><td>+2.0</td><td>-10.0</td></tr>
+        <tr><td>Cyprus</td><td>CYP</td><td>+3.0</td><td>-5.0</td></tr>
+        <tr><td>Sweden</td><td>SWE</td><td>-1.0</td><td>-5.0</td></tr>
+        <tr><td>Denmark</td><td>DNK</td><td>-1.5</td><td>-6.0</td></tr>
+        <tr><td>Finland</td><td>FIN</td><td>-4.0</td><td>-12.0</td></tr>
+        <tr><td>Norway</td><td>NOR</td><td>+1.0</td><td>-2.0</td></tr>
+        <tr><td>Iceland</td><td>ISL</td><td>+2.0</td><td>0.0</td></tr>
+        <tr><td>Belgium</td><td>BEL</td><td>-1.0</td><td>-7.0</td></tr>
+        <tr><td>Luxembourg</td><td>LUX</td><td>+5.0</td><td>+3.0</td></tr>
+        <tr><td>Ireland</td><td>IRL</td><td>+3.0</td><td>+2.0</td></tr>
+        <tr><td>United Kingdom</td><td>GBR</td><td>-1.0</td><td>-5.0</td></tr>
+        <tr><td>Slovenia</td><td>SVN</td><td>-3.0</td><td>-18.0</td></tr>
+        <tr><td>Estonia</td><td>EST</td><td>-8.0</td><td>-20.0</td></tr>
+        <tr><td>Serbia</td><td>SRB</td><td>-10.0</td><td>-28.0</td></tr>
+        <tr><td>Bosnia &amp; Herzegovina</td><td>BIH</td><td>-12.0</td><td>-30.0</td></tr>
+        <tr><td>Montenegro</td><td>MNE</td><td>-5.0</td><td>-15.0</td></tr>
+        <tr><td>North Macedonia</td><td>MKD</td><td>-5.0</td><td>-18.0</td></tr>
+        <tr><td>Albania</td><td>ALB</td><td>-10.0</td><td>-25.0</td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<!-- S2: POPULATION CHANGE WATERFALL CHART -->
+<h2><span class="num">2.</span> Where Growth Comes From <span class="subtitle">Natural change vs net migration by country, 2024</span></h2>
+
+<div class="chart-box" role="img" aria-label="Chart showing population change decomposed into natural change and net migration for 8 European countries in 2024. Most countries show negative natural change offset by positive migration.">
+  <h3>Population Change Decomposition &mdash; 2024</h3>
+  <div id="waterfall-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>Natural Change</th><th>Net Migration</th><th>Total</th></tr></thead>
+      <tbody>
+        <tr><td>EU-27</td><td>-1,260,000</td><td>+2,300,000</td><td>+1,040,000</td></tr>
+        <tr><td>Germany</td><td>-330,000</td><td>+420,000</td><td>+90,000</td></tr>
+        <tr><td>Austria</td><td>-11,248</td><td>+50,105</td><td>+38,857</td></tr>
+        <tr><td>Switzerland</td><td>+6,800</td><td>+140,073</td><td>+146,873</td></tr>
+        <tr><td>France</td><td>+40,000</td><td>+82,790</td><td>+122,790</td></tr>
+        <tr><td>Italy</td><td>-270,000</td><td>+972,799</td><td>+702,799</td></tr>
+        <tr><td>Spain</td><td>-110,000</td><td>+624,639</td><td>+514,639</td></tr>
+        <tr><td>Netherlands</td><td>-5,000</td><td>+136,651</td><td>+131,651</td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<p style="font-size:14px;color:var(--muted);margin-top:-12px;line-height:1.6">Grey bars show natural population change (births minus deaths). Orange bars show net migration. In every country except Switzerland and France, natural change is negative &mdash; migration is the only reason the population is not shrinking.</p>
+
+<!-- S3: AI SUBSTITUTION MATRIX -->
+<h2><span class="num">3.</span> The AI Substitution Matrix <span class="subtitle">Where AI hits vs where workers retire</span></h2>
+
+<p>Mapping EU-27 occupations to AI exposure zones reveals a ~215&nbsp;million workforce distributed unevenly. The retirement wave hits hardest precisely where AI has the least substitution capacity.</p>
+
+<div class="zone-grid">
+  <div class="zone-card" style="border-left-color:var(--border)">
+    <h3><span class="zone-badge">Zone A</span> High AI Exposure</h3>
+    <div class="zone-meta">
+      <strong>25&ndash;30M</strong> workers &middot; Clerical, admin, customer service<br>
+      <strong>3&ndash;4M</strong> retire by 2030 &middot; AI displaces <strong>60&ndash;80%</strong> of tasks
+    </div>
+    <div class="zone-verdict">Surplus displacement: AI replaces faster than retirement creates gaps. ~5&ndash;10M mid-career workers at risk.</div>
+  </div>
+  <div class="zone-card" style="border-left-color:var(--border)">
+    <h3><span class="zone-badge">Zone B</span> Medium AI Exposure</h3>
+    <div class="zone-meta">
+      <strong>40&ndash;50M</strong> workers &middot; Software, marketing, management, HR<br>
+      <strong>4&ndash;6M</strong> retire by 2030 &middot; AI transforms <strong>20&ndash;35%</strong> of tasks
+    </div>
+    <div class="zone-verdict">Partial offset: AI fills ~1&ndash;2M roles via productivity; ~2&ndash;4M transformed; genuine shortage in strategic roles.</div>
+  </div>
+  <div class="zone-card" style="border-left-color:var(--border)">
+    <h3><span class="zone-badge">Zone C</span> Low AI Exposure</h3>
+    <div class="zone-meta">
+      <strong>90&ndash;100M</strong> workers &middot; Healthcare, trades, construction, care<br>
+      <strong>10&ndash;14M</strong> retire by 2030 &middot; AI substitutes only <strong>5&ndash;15%</strong> of tasks
+    </div>
+    <div class="zone-verdict">Critical gap: ~8&ndash;12M unfilled by 2030; ~24&ndash;32M by 2040. AI cannot compensate.</div>
+  </div>
+  <div class="zone-card" style="border-left-color:var(--border)">
+    <h3><span class="zone-badge">Zone D</span> AI-Enhanced Demand</h3>
+    <div class="zone-meta">
+      <strong>3&ndash;5M</strong> workers &middot; AI/ML engineering, data science, cybersecurity<br>
+      <strong>0.2&ndash;0.3M</strong> retire by 2030 &middot; Demand creation, not displacement
+    </div>
+    <div class="zone-verdict">Chronic undersupply: EU has 10M ICT specialists but needs 20M by 2030. <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://job-market.nexalps.com/',page:'index'})">Layer 2</a> quantifies one slice: 424K unfilled cybersecurity roles, driven by NIS2 (160K EU entities) + DORA (22K firms).</div>
+  </div>
+</div>
+
+<div class="highlight" style="margin-top:24px">
+  <h3>The asymmetry is measurable, not rhetorical</h3>
+  <p><a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://ai-exposure.nexalps.com/',page:'index'})">Layer 1 (AI Exposure Map)</a> scores Zone C occupations (personal care, construction trades, agriculture &mdash; ISCO 32/53/71/72/83/91) at a regulated AI exposure of <strong>~2.8/10</strong>, versus Zone A clerical (ISCO 41&ndash;44/52) at <strong>~6.0/10</strong>. Keyboard operators (ISCO 413) reach 8.5/10 while personal care workers (ISCO 53) stay at 2.8/10. The zone system on this page is a narrative simplification of that evidence, not a claim without it.</p>
+</div>
+
+<!-- ASYMMETRY CHART -->
+<div class="chart-box" role="img" aria-label="Diverging bar chart showing retirement-driven attrition versus AI displacement capacity for four workforce zones. Zone C shows massive retirement with minimal AI capacity, while Zone A shows moderate retirement with high AI capacity.">
+  <h3>The Asymmetry &mdash; Retirement Gap vs AI Capacity (millions of workers by 2030)</h3>
+  <div id="asymmetry-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Zone</th><th>Retirements by 2030 (M)</th><th>AI Displacement Capacity (M)</th><th>Net Gap</th></tr></thead>
+      <tbody>
+        <tr><td>Zone A (High AI)</td><td>3.5</td><td>7.5</td><td>+4.0 surplus</td></tr>
+        <tr><td>Zone B (Medium AI)</td><td>5.0</td><td>3.0</td><td>-2.0 moderate gap</td></tr>
+        <tr><td>Zone C (Low AI)</td><td>12.0</td><td>1.5</td><td>-10.5 critical gap</td></tr>
+        <tr><td>Zone D (AI-enhanced)</td><td>0.25</td><td>0</td><td>-0.25 undersupply</td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<p style="font-size:14px;color:var(--muted);margin-top:-12px;line-height:1.6">Grey bars show how many workers retire by 2030. Orange overlay shows what AI can plausibly compensate. Zone C loses 12M workers but AI covers only 1.5M &mdash; an unfillable gap of 10.5M. Zone A is the only zone where AI capacity exceeds the retirement wave.</p>
+
+<!-- S4: FERTILITY COLLAPSE (swapped with S5) -->
+<h2><span class="num">4.</span> The Fertility Collapse <span class="subtitle">No EU member state meets replacement rate</span></h2>
+
+<p>A total fertility rate (TFR) of 2.1 births per woman is needed to maintain population without migration. No EU country comes close. When a society drops below 1.3 &mdash; termed &ldquo;lowest-low&rdquo; fertility by demographers &mdash; the population base halves roughly every 45 years. At that point, the decline becomes self-reinforcing: fewer women today means even fewer potential mothers in the next generation.</p>
+
+<div class="chart-box" role="img" aria-label="Slope chart showing total fertility rate decline from 2019 to 2024 for 8 European countries. All countries decline, with Spain reaching 1.10 and Italy 1.21. The red shaded area below 1.3 marks the lowest-low fertility danger zone.">
+  <h3>Total Fertility Rate &mdash; 2019 vs 2024</h3>
+  <div id="fertility-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th>Country</th><th>2019 TFR</th><th>2024 TFR</th><th>Gap to Replacement</th></tr></thead>
+      <tbody>
+        <tr><td>EU-27</td><td>1.50</td><td>1.34</td><td>-0.76</td></tr>
+        <tr><td>France</td><td>1.86</td><td>1.61</td><td>-0.49</td></tr>
+        <tr><td>Netherlands</td><td>1.57</td><td>1.43</td><td>-0.67</td></tr>
+        <tr><td>Germany</td><td>1.54</td><td>1.39</td><td>-0.71</td></tr>
+        <tr><td>Switzerland</td><td>1.48</td><td>1.35</td><td>-0.75</td></tr>
+        <tr><td>Austria</td><td>1.46</td><td>1.32</td><td>-0.78</td></tr>
+        <tr><td>Italy</td><td>1.27</td><td>1.21</td><td>-0.89</td></tr>
+        <tr><td>Spain</td><td>1.23</td><td>1.10</td><td>-1.00</td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<p style="font-size:14px;color:var(--muted);margin-top:-12px;line-height:1.6">Every line slopes downward. France remains the relative outlier at 1.61, sustained by deep pro-natalist policy and state childcare. Spain (1.10) and Italy (1.21) are in the red &ldquo;lowest-low&rdquo; zone where population decline becomes self-reinforcing.</p>
+
+<!-- S5: FIVE ASYMMETRIES (swapped with S4) -->
+<h2><span class="num">5.</span> Five Asymmetries <span class="subtitle">Why this convergence is historically unprecedented</span></h2>
+
+<div class="highlight">
+  <h3>1. The Substitution Asymmetry</h3>
+  <p>AI strongest in Zone A (moderate retirement pressure), weakest in Zone C (severe retirement pressure), creating an 8&ndash;12&nbsp;million gap by 2030 that grows to 24&ndash;32&nbsp;million by 2040.</p>
+</div>
+
+<div class="highlight">
+  <h3>2. The Mobility Asymmetry</h3>
+  <p>Cross-zone retraining from cognitive to physical work is unprecedented, faces a 3% annual switching rate ceiling, and collapses in effectiveness for workers over 50 &mdash; who are the fastest-growing segment.</p>
+</div>
+
+<div class="highlight">
+  <h3>3. The Immigration Asymmetry</h3>
+  <p>Immigrants fill Zone C shortages (67% of construction, 50%+ of food service, 30% of care) but political tolerance has narrowed: AfD took 20.8% in Feb 2025 and polls 24&ndash;26% since; the FP&Ouml; took 28.8% in Sep 2024 without governing; Switzerland&rsquo;s 10-million population cap faces a binding vote in June 2026. Hungary&rsquo;s April 2026 change of government replaced Fidesz with Tisza, but the new administration signals continuity on EU migration-pact rejection.</p>
+</div>
+
+<div class="highlight">
+  <h3>4. The Generational Asymmetry</h3>
+  <p>Entry-level hiring collapses 73% for Gen Z while 40&nbsp;million 55+ workers approach retirement, simultaneously depleting both ends of the talent pipeline.</p>
+</div>
+
+<div class="highlight">
+  <h3>5. The Geographic Asymmetry</h3>
+  <p>AI displacement concentrates in office-heavy urban centres. Zone C shortages are distributed across hospitals, construction sites, care homes, and farms. Historical evidence shows displacement scarring lasts 30&ndash;50 years &mdash; <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener" onclick="if(typeof posthog!=='undefined')posthog.capture('outbound_click',{url:'https://disruptions.nexalps.com/',page:'index'})">Layer 3</a> documents the pattern across 20 cases spanning 580 years, from UK coalfields to containerisation.</p>
+</div>
+
+<!-- AUTHOR NOTE -->
+<div class="author-note">
+  <h3>A note on the thesis</h3>
+  <p>The claim that Europe is running out of workers is <strong>strongly supported</strong> for Zone C and Zone D &mdash; the roughly 95&ndash;105&nbsp;million workers in healthcare, trades, construction, care, agriculture, and tech who face a future of acute and worsening shortage that AI cannot remedy.</p>
+  <p>But it requires qualification for Zone A, where 25&ndash;30&nbsp;million clerical and administrative workers face a surplus of both AI capability and human labour. The challenge is not symmetric decline &mdash; it is asymmetric mismatch.</p>
+  <div class="sig">&mdash; Philipp Maul, Nexalps</div>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>Explore the full picture</h3>
+  <p>See how the demographic cliff plays out through 2050, dive into the DACH region, or understand how each generation is affected differently.</p>
+  <div class="btn-row">
+    <a href="projections.html" class="btn btn-primary">Peek across the cliff &rarr;</a>
+    <a href="generations.html" class="btn btn-outline">See where your generation lands &rarr;</a>
+    <a href="https://ai-exposure.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Europe Is Running Out of Workers, Not Work v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="projections.html">Projections</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="generations.html">Generations</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> &middot; &copy; 2026 Nexalps
+</footer>
+
+</main>
+
+<!-- TOOLTIP -->
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+// Burger menu
+const burgerBtn = document.getElementById('burger-btn');
+const burgerPanel = document.getElementById('burger-panel');
+burgerBtn.addEventListener('click', () => {
+  const open = burgerBtn.classList.toggle('open');
+  burgerPanel.classList.toggle('open');
+  burgerBtn.setAttribute('aria-expanded', open);
+});
+
+const tooltip = document.getElementById('tooltip');
+function showTip(evt, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.display = 'block';
+  tooltip.style.left = (evt.pageX + 12) + 'px';
+  tooltip.style.top = (evt.pageY - 28) + 'px';
+}
+function hideTip() { tooltip.style.display = 'none'; }
+
+// Load data and render charts
+fetch('demographics-data.json').then(r => r.json()).then(DATA => {
+
+  // ==========================================
+  // MAP: Working-Age Population Change Choropleth (2025 & 2050 vs Peak)
+  // ==========================================
+  (function() {
+    const mapData = {
+      'DEU': { y2025: -5.6, y2050: -16.9, name: 'Germany' },
+      'AUT': { y2025: -1.5, y2050: -8.7, name: 'Austria' },
+      'CHE': { y2025: 4.4, y2050: 5.8, name: 'Switzerland' },
+      'FRA': { y2025: -1.6, y2050: -7.1, name: 'France' },
+      'ITA': { y2025: -6.3, y2050: -22.8, name: 'Italy' },
+      'ESP': { y2025: -0.7, y2050: -13.6, name: 'Spain' },
+      'NLD': { y2025: -0.9, y2050: -6.6, name: 'Netherlands' },
+      'POL': { y2025: -8.0, y2050: -25.0, name: 'Poland' },
+      'ROU': { y2025: -12.0, y2050: -30.0, name: 'Romania' },
+      'BGR': { y2025: -15.0, y2050: -35.0, name: 'Bulgaria' },
+      'HRV': { y2025: -10.0, y2050: -28.0, name: 'Croatia' },
+      'LTU': { y2025: -18.0, y2050: -35.0, name: 'Lithuania' },
+      'LVA': { y2025: -18.0, y2050: -35.0, name: 'Latvia' },
+      'HUN': { y2025: -5.0, y2050: -18.0, name: 'Hungary' },
+      'SVK': { y2025: -3.0, y2050: -20.0, name: 'Slovakia' },
+      'CZE': { y2025: -2.0, y2050: -15.0, name: 'Czech Republic' },
+      'GRC': { y2025: -8.0, y2050: -25.0, name: 'Greece' },
+      'PRT': { y2025: -7.0, y2050: -22.0, name: 'Portugal' },
+      'MLT': { y2025: 2.0, y2050: -10.0, name: 'Malta' },
+      'CYP': { y2025: 3.0, y2050: -5.0, name: 'Cyprus' },
+      'SWE': { y2025: -1.0, y2050: -5.0, name: 'Sweden' },
+      'DNK': { y2025: -1.5, y2050: -6.0, name: 'Denmark' },
+      'FIN': { y2025: -4.0, y2050: -12.0, name: 'Finland' },
+      'NOR': { y2025: 1.0, y2050: -2.0, name: 'Norway' },
+      'ISL': { y2025: 2.0, y2050: 0.0, name: 'Iceland' },
+      'BEL': { y2025: -1.0, y2050: -7.0, name: 'Belgium' },
+      'LUX': { y2025: 5.0, y2050: 3.0, name: 'Luxembourg' },
+      'IRL': { y2025: 3.0, y2050: 2.0, name: 'Ireland' },
+      'GBR': { y2025: -1.0, y2050: -5.0, name: 'United Kingdom' },
+      'SVN': { y2025: -3.0, y2050: -18.0, name: 'Slovenia' },
+      'EST': { y2025: -8.0, y2050: -20.0, name: 'Estonia' },
+      'SRB': { y2025: -10.0, y2050: -28.0, name: 'Serbia' },
+      'BIH': { y2025: -12.0, y2050: -30.0, name: 'Bosnia & Herzegovina' },
+      'MNE': { y2025: -5.0, y2050: -15.0, name: 'Montenegro' },
+      'MKD': { y2025: -5.0, y2050: -18.0, name: 'North Macedonia' },
+      'ALB': { y2025: -10.0, y2050: -25.0, name: 'Albania' }
+    };
+
+    // ISO 3166-1 numeric to alpha-3 lookup for Natural Earth TopoJSON
+    const numToAlpha3 = {
+      '008':'ALB','040':'AUT','056':'BEL','100':'BGR','070':'BIH','112':'BLR',
+      '756':'CHE','196':'CYP','203':'CZE','276':'DEU','208':'DNK','233':'EST',
+      '724':'ESP','246':'FIN','250':'FRA','826':'GBR','300':'GRC','191':'HRV',
+      '348':'HUN','352':'ISL','372':'IRL','380':'ITA','440':'LTU','442':'LUX',
+      '428':'LVA','498':'MDA','499':'MNE','807':'MKD','470':'MLT','528':'NLD',
+      '578':'NOR','616':'POL','620':'PRT','642':'ROU','688':'SRB','703':'SVK',
+      '705':'SVN','752':'SWE','804':'UKR','792':'TUR'
+    };
+
+    // European country numeric codes (filter TopoJSON to these)
+    const euroCodes = new Set(Object.keys(numToAlpha3));
+
+    function classify(val) {
+      if (val > 2) return 'Growth';
+      if (val >= -5) return 'Stable';
+      if (val >= -15) return 'Moderate decline';
+      return 'Severe decline';
+    }
+
+    function colorScale(val) {
+      if (val > 2) return '#22c55e';
+      if (val >= -5) return '#94a3b8';
+      if (val >= -15) return '#f97316';
+      return '#ef4444';
+    }
+
+    const geoUrl = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json';
+
+    fetch(geoUrl).then(r => r.json()).then(world => {
+      const countries = topojson.feature(world, world.objects.countries);
+      const euroFeatures = countries.features.filter(f => euroCodes.has(String(f.id)));
+
+      function drawMap(containerId, yearKey) {
+        const container = document.getElementById(containerId);
+        const mapW = Math.min(container.clientWidth, 400);
+        const mapH = mapW * 1.05;
+
+        const projection = d3.geoConicConformal()
+          .center([10, 54])
+          .scale(mapW * 1.7)
+          .translate([mapW / 2, mapH / 2]);
+
+        const path = d3.geoPath().projection(projection);
+
+        const svg = d3.select(container).append('svg')
+          .attr('width', mapW).attr('height', mapH)
+          .attr('viewBox', `0 0 ${mapW} ${mapH}`)
+          .style('max-width', '100%')
+          .style('display', 'block')
+          .style('margin', '0 auto');
+
+        // Draw countries
+        svg.selectAll('path').data(euroFeatures).join('path')
+          .attr('d', path)
+          .attr('fill', d => {
+            const iso = numToAlpha3[String(d.id)];
+            const entry = iso ? mapData[iso] : null;
+            if (!entry) return '#27272a';
+            return colorScale(entry[yearKey]);
+          })
+          .attr('stroke', '#3f3f46')
+          .attr('stroke-width', 0.5)
+          .on('mousemove', (evt, d) => {
+            const iso = numToAlpha3[String(d.id)];
+            const entry = iso ? mapData[iso] : null;
+            if (entry) {
+              const val = entry[yearKey];
+              const sign = val > 0 ? '+' : '';
+              showTip(evt, `<strong>${entry.name}</strong><br>${sign}${val.toFixed(1)}%<br><span style="color:var(--muted-foreground)">${classify(val)}</span>`);
+            }
+          })
+          .on('mouseleave', hideTip);
+      }
+
+      drawMap('map-2025', 'y2025');
+      drawMap('map-2050', 'y2050');
+
+      // Draw shared legend
+      const legendBox = document.getElementById('map-legend');
+      const legW = Math.min(legendBox.clientWidth, 500);
+      const legSvg = d3.select(legendBox).append('svg')
+        .attr('width', legW).attr('height', 44);
+
+      const stops = [
+        { val: 2, color: '#22c55e', label: '+2%' },
+        { val: 0, color: '#94a3b8', label: '0%' },
+        { val: -5, color: '#94a3b8', label: '-5%' },
+        { val: -15, color: '#f97316', label: '-15%' },
+        { val: -35, color: '#ef4444', label: '-35%' }
+      ];
+
+      const gradientId = 'map-legend-grad';
+      const defs = legSvg.append('defs');
+      const lg = defs.append('linearGradient').attr('id', gradientId);
+      lg.append('stop').attr('offset', '0%').attr('stop-color', '#22c55e');
+      lg.append('stop').attr('offset', '12%').attr('stop-color', '#94a3b8');
+      lg.append('stop').attr('offset', '40%').attr('stop-color', '#94a3b8');
+      lg.append('stop').attr('offset', '55%').attr('stop-color', '#f97316');
+      lg.append('stop').attr('offset', '100%').attr('stop-color', '#ef4444');
+
+      const barX = 20, barW = legW - 80, barY = 6, barH = 12;
+      legSvg.append('rect').attr('x', barX).attr('y', barY)
+        .attr('width', barW).attr('height', barH)
+        .attr('fill', `url(#${gradientId})`).attr('rx', 3);
+
+      // Tick positions map from value to x position
+      const valScale = d3.scaleLinear().domain([2, -35]).range([barX, barX + barW]);
+      stops.forEach(s => {
+        const tx = valScale(s.val);
+        legSvg.append('line').attr('x1', tx).attr('x2', tx).attr('y1', barY + barH).attr('y2', barY + barH + 5)
+          .attr('stroke', '#71717a').attr('stroke-width', 1);
+        legSvg.append('text').attr('x', tx).attr('y', barY + barH + 16)
+          .attr('text-anchor', 'middle').attr('fill', '#71717a').attr('font-size', '9px').text(s.label);
+      });
+
+      // No data swatch
+      const ndX = barX + barW + 12;
+      legSvg.append('rect').attr('x', ndX).attr('y', barY).attr('width', 12).attr('height', barH)
+        .attr('fill', '#27272a').attr('stroke', '#3f3f46').attr('stroke-width', 0.5).attr('rx', 2);
+      legSvg.append('text').attr('x', ndX + 16).attr('y', barY + 10)
+        .attr('fill', '#71717a').attr('font-size', '9px').text('No data');
+    });
+  })();
+
+  // ==========================================
+  // CHART 1: Population Change Waterfall
+  // ==========================================
+  (function() {
+    const countries = DATA.population_trends.map(c => {
+      const d2024 = c.data.find(d => d.year === 2024);
+      return { country: c.country, iso: c.iso, natural: d2024.natural_change, migration: d2024.net_migration };
+    }).sort((a, b) => a.natural - b.natural);
+
+    const box = document.getElementById('waterfall-chart');
+    const W = Math.min(box.clientWidth, 700), H = 340;
+    const margin = { top: 20, right: 20, bottom: 60, left: 80 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const maxVal = d3.max(countries, d => Math.max(Math.abs(d.natural), d.migration));
+    const x = d3.scaleLinear().domain([-maxVal * 1.1, maxVal * 1.1]).range([0, w]);
+    const y = d3.scaleBand().domain(countries.map(d => d.country)).range([0, h]).padding(0.25);
+
+    // Zero line
+    g.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 0).attr('y2', h)
+      .attr('stroke', 'rgba(255,255,255,0.15)').attr('stroke-width', 1);
+
+    // Natural change bars (grey)
+    g.selectAll('.bar-natural').data(countries).join('rect')
+      .attr('x', d => d.natural < 0 ? x(d.natural) : x(0))
+      .attr('y', d => y(d.country))
+      .attr('width', d => Math.abs(x(d.natural) - x(0)))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#64748b')
+      .attr('opacity', 0.7)
+      .attr('rx', 2)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.country}</strong><br>Natural: ${d.natural > 0 ? '+' : ''}${(d.natural/1000).toFixed(0)}K`))
+      .on('mouseleave', hideTip);
+
+    // Migration bars (orange)
+    g.selectAll('.bar-migration').data(countries).join('rect')
+      .attr('x', d => x(Math.max(0, d.natural)))
+      .attr('y', d => y(d.country))
+      .attr('width', d => Math.abs(x(d.migration) - x(0)))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#f97316')
+      .attr('opacity', 0.6)
+      .attr('rx', 2)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>${d.country}</strong><br>Net migration: +${(d.migration/1000).toFixed(0)}K`))
+      .on('mouseleave', hideTip);
+
+    // Labels
+    g.selectAll('.label').data(countries).join('text')
+      .attr('x', -8).attr('y', d => y(d.country) + y.bandwidth()/2)
+      .attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', '#a1a1aa').attr('font-size', '12px')
+      .text(d => d.country === 'EU-27' ? 'EU-27' : d.iso);
+
+    // X axis
+    const xAxis = g.append('g').attr('transform', `translate(0,${h})`).call(
+      d3.axisBottom(x).ticks(5).tickFormat(d => {
+        if (d === 0) return '0';
+        return (d > 0 ? '+' : '') + (d/1000000).toFixed(1) + 'M';
+      })
+    );
+    xAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '10px');
+    xAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    xAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Legend
+    const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${H - 10})`);
+    legend.append('rect').attr('width', 10).attr('height', 10).attr('fill', '#64748b').attr('opacity', 0.7).attr('rx', 2);
+    legend.append('text').attr('x', 14).attr('y', 9).attr('fill', '#71717a').attr('font-size', '10px').text('Natural change');
+    legend.append('rect').attr('x', 110).attr('width', 10).attr('height', 10).attr('fill', '#f97316').attr('opacity', 0.6).attr('rx', 2);
+    legend.append('text').attr('x', 124).attr('y', 9).attr('fill', '#71717a').attr('font-size', '10px').text('Net migration');
+  })();
+
+  // ==========================================
+  // CHART 2: AI Substitution Asymmetry
+  // Single-direction bars: grey = retirements, orange overlay = what AI can fill
+  // ==========================================
+  (function() {
+    const zones = DATA.substitution_matrix;
+    const box = document.getElementById('asymmetry-chart');
+    const W = Math.min(box.clientWidth, 700), H = 240;
+    const margin = { top: 20, right: 60, bottom: 50, left: 90 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const maxVal = d3.max(zones, d => d.retirement_midpoint / 1000000) * 1.15;
+    const x = d3.scaleLinear().domain([0, maxVal]).range([0, w]);
+    const y = d3.scaleBand().domain(zones.map(d => 'Zone ' + d.zone)).range([0, h]).padding(0.3);
+
+    // Grey bars: full retirement gap
+    g.selectAll('.bar-retire').data(zones).join('rect')
+      .attr('x', 0)
+      .attr('y', d => y('Zone ' + d.zone))
+      .attr('width', d => x(d.retirement_midpoint / 1000000))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#64748b').attr('opacity', 0.5).attr('rx', 2)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>Zone ${d.zone}</strong><br>Retirements by 2030: ${(d.retirement_midpoint/1000000).toFixed(1)}M<br>AI can fill: ${(d.ai_capacity_midpoint/1000000).toFixed(1)}M`))
+      .on('mouseleave', hideTip);
+
+    // Orange overlay: what AI can compensate (same bar, from left)
+    g.selectAll('.bar-ai').data(zones.filter(d => d.ai_capacity_midpoint > 0)).join('rect')
+      .attr('x', 0)
+      .attr('y', d => y('Zone ' + d.zone))
+      .attr('width', d => x(d.ai_capacity_midpoint / 1000000))
+      .attr('height', y.bandwidth())
+      .attr('fill', '#f97316').attr('opacity', 0.8).attr('rx', 2)
+      .on('mousemove', (evt, d) => showTip(evt, `<strong>Zone ${d.zone}</strong><br>AI can fill: ${(d.ai_capacity_midpoint/1000000).toFixed(1)}M of ${(d.retirement_midpoint/1000000).toFixed(1)}M retirements`))
+      .on('mouseleave', hideTip);
+
+    // Left labels
+    g.selectAll('.label').data(zones).join('text')
+      .attr('x', -8).attr('y', d => y('Zone ' + d.zone) + y.bandwidth()/2)
+      .attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', '#a1a1aa').attr('font-size', '12px').attr('font-weight', 600)
+      .text(d => 'Zone ' + d.zone);
+
+    // Value labels at end of grey bars
+    g.selectAll('.val-total').data(zones).join('text')
+      .attr('x', d => x(d.retirement_midpoint / 1000000) + 6)
+      .attr('y', d => y('Zone ' + d.zone) + y.bandwidth()/2)
+      .attr('dy', '0.35em').attr('text-anchor', 'start')
+      .attr('fill', '#94a3b8').attr('font-size', '11px').attr('font-weight', 600)
+      .text(d => (d.retirement_midpoint / 1000000).toFixed(1) + 'M');
+
+    // X axis
+    const xAxis = g.append('g').attr('transform', `translate(0,${h})`).call(
+      d3.axisBottom(x).ticks(5).tickFormat(d => d + 'M')
+    );
+    xAxis.selectAll('text').attr('fill', '#71717a').attr('font-size', '10px');
+    xAxis.selectAll('line').attr('stroke', 'rgba(255,255,255,0.1)');
+    xAxis.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)');
+
+    // Legend
+    const legend = svg.append('g').attr('transform', `translate(${margin.left + 8},${H - 10})`);
+    legend.append('rect').attr('width', 10).attr('height', 10).attr('fill', '#64748b').attr('opacity', 0.5).attr('rx', 2);
+    legend.append('text').attr('x', 14).attr('y', 9).attr('fill', '#71717a').attr('font-size', '10px').text('Retirements by 2030');
+    legend.append('rect').attr('x', 150).attr('width', 10).attr('height', 10).attr('fill', '#f97316').attr('opacity', 0.8).attr('rx', 2);
+    legend.append('text').attr('x', 164).attr('y', 9).attr('fill', '#71717a').attr('font-size', '10px').text('AI can compensate');
+  })();
+
+  // ==========================================
+  // CHART 3: Fertility Rate Slope Chart
+  // EU-27 shown as reference line; 7 countries as slopes
+  // Height expanded so labels align directly with dots
+  // ==========================================
+  (function() {
+    const allFert = DATA.fertility_rates.slice().sort((a, b) => b.y2024 - a.y2024);
+    // Separate EU-27 (shown as reference) from countries (shown as slopes)
+    const eu = allFert.find(d => d.iso === 'EU27');
+    const fert = allFert.filter(d => d.iso !== 'EU27');
+
+    const box = document.getElementById('fertility-chart');
+    const W = Math.min(box.clientWidth, 700), H = 660;
+    const margin = { top: 24, right: 130, bottom: 130, left: 80 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = d3.select(box).append('svg').attr('width', W).attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const yScale = d3.scaleLinear().domain([1.0, 2.15]).range([h, 0]);
+
+    // Replacement rate line (GREEN, dashed — same dash pattern as others)
+    g.append('line').attr('x1', 0).attr('x2', w).attr('y1', yScale(2.1)).attr('y2', yScale(2.1))
+      .attr('stroke', '#22c55e').attr('stroke-width', 1.5).attr('stroke-dasharray', '6,4').attr('opacity', 0.6);
+
+    // Lowest-low threshold line at 1.3 (RED, dashed — same dash pattern)
+    g.append('line').attr('x1', 0).attr('x2', w).attr('y1', yScale(1.3)).attr('y2', yScale(1.3))
+      .attr('stroke', '#ef4444').attr('stroke-width', 1.5).attr('stroke-dasharray', '6,4').attr('opacity', 0.5);
+
+    // Sub-1.3 danger zone shading (no text label — legend explains it)
+    g.append('rect').attr('x', 0).attr('y', yScale(1.3)).attr('width', w).attr('height', yScale(1.0) - yScale(1.3))
+      .attr('fill', 'rgba(239,68,68,0.05)');
+
+    // EU-27 average reference line (ORANGE, dashed) — no inline label, legend explains it
+    g.append('line').attr('x1', 0).attr('x2', w).attr('y1', yScale(eu.y2024)).attr('y2', yScale(eu.y2024))
+      .attr('stroke', '#f97316').attr('stroke-width', 1).attr('stroke-dasharray', '6,4').attr('opacity', 0.5);
+
+    // Year labels
+    g.append('text').attr('x', 0).attr('y', -8).attr('text-anchor', 'middle')
+      .attr('fill', '#71717a').attr('font-size', '11px').attr('font-weight', 600).text('2019');
+    g.append('text').attr('x', w).attr('y', -8).attr('text-anchor', 'middle')
+      .attr('fill', '#71717a').attr('font-size', '11px').attr('font-weight', 600).text('2024');
+
+    // Colors: red for sub-1.3, orange for 1.3-1.5, grey for above 1.5
+    const colors = { 'France': '#94a3b8', 'Netherlands': '#94a3b8', 'Germany': '#f97316',
+                     'Switzerland': '#f97316', 'Austria': '#f97316', 'Italy': '#ef4444', 'Spain': '#ef4444' };
+
+    // Draw country slopes — labels placed directly at dot y position
+    fert.forEach(d => {
+      const c = colors[d.country] || '#94a3b8';
+      g.append('line').attr('x1', 0).attr('y1', yScale(d.y2019)).attr('x2', w).attr('y2', yScale(d.y2024))
+        .attr('stroke', c).attr('stroke-width', 2).attr('opacity', 0.7);
+      g.append('circle').attr('cx', 0).attr('cy', yScale(d.y2019)).attr('r', 4).attr('fill', c);
+      g.append('text').attr('x', -8).attr('y', yScale(d.y2019)).attr('dy', '0.35em').attr('text-anchor', 'end')
+        .attr('fill', c).attr('font-size', '11px').text(d.y2019.toFixed(2) + ' ' + d.iso);
+      g.append('circle').attr('cx', w).attr('cy', yScale(d.y2024)).attr('r', 4).attr('fill', c);
+      g.append('text').attr('x', w + 8).attr('y', yScale(d.y2024)).attr('dy', '0.35em').attr('text-anchor', 'start')
+        .attr('fill', c).attr('font-size', '11px').attr('font-weight', 600).text(d.y2024.toFixed(2) + ' ' + d.country);
+    });
+
+    // LEGEND (below chart, fully stacked, one item per row)
+    const leg = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top + h + 16})`);
+    const legendItems = [
+      { type: 'rect', color: 'rgba(239,68,68,0.15)', label: 'Red zone: below 1.3 — population halves every ~45 years' },
+      { type: 'dashed', color: '#22c55e', label: 'Replacement rate (2.1) — needed to maintain population' },
+      { type: 'dashed', color: '#f97316', label: 'EU-27 average (1.34) — record low in 2024' },
+      { type: 'dashed', color: '#ef4444', label: 'Lowest-low threshold (1.3) — self-reinforcing decline below' },
+      { type: 'solid', color: '#94a3b8', label: 'Grey lines: TFR above 1.5 (closer to replacement)' },
+      { type: 'solid', color: '#f97316', label: 'Orange lines: TFR between 1.3 and 1.5 (declining)' },
+      { type: 'solid', color: '#ef4444', label: 'Red lines: TFR below 1.3 (lowest-low fertility)' },
+    ];
+    legendItems.forEach((it, i) => {
+      const ly = i * 16;
+      if (it.type === 'rect') {
+        leg.append('rect').attr('y', ly).attr('width', 20).attr('height', 10).attr('fill', it.color).attr('rx', 2);
+      } else if (it.type === 'dashed') {
+        leg.append('line').attr('x1', 0).attr('x2', 20).attr('y1', ly + 5).attr('y2', ly + 5)
+          .attr('stroke', it.color).attr('stroke-width', 1.5).attr('stroke-dasharray', '6,4').attr('opacity', 0.7);
+      } else {
+        leg.append('line').attr('x1', 0).attr('x2', 20).attr('y1', ly + 5).attr('y2', ly + 5)
+          .attr('stroke', it.color).attr('stroke-width', 2.5).attr('opacity', 0.7);
+      }
+      leg.append('text').attr('x', 28).attr('y', ly + 9).attr('fill', '#71717a').attr('font-size', '10px').text(it.label);
+    });
+  })();
+
+});
+
+// PostHog tracking
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.posthog) posthog.capture('cta_clicked', { label: btn.textContent.trim(), page: 'index' });
+  });
+});
+</script>
+</body>
+</html>

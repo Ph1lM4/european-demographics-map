@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The DACH Deep Dive &mdash; European Demographics &amp; AI</title>
+<meta name="description" content="Germany, Austria, and Switzerland face a demographic reckoning: 163 shortage occupations, 82% of Austrian firms with labour gaps, and 407K Swiss cross-border commuters masking structural decline.">
+<link rel="canonical" href="https://demographics.nexalps.com/dach.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The DACH Deep Dive — European Demographics & AI">
+<meta property="og:description" content="Germany, Austria, and Switzerland: three economies united by a common demographic threat but divided by their policy responses. 163 Engpassberufe, Pflegestipendium, SVP population caps.">
+<meta property="og:url" content="https://demographics.nexalps.com/dach.html">
+<meta property="og:site_name" content="Nexalps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The DACH Deep Dive — European Demographics & AI">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"The DACH Deep Dive: Germany, Austria & Switzerland Workforce Demographics","description":"In-depth analysis of demographic decline, labour shortages, immigration policy, and AI adoption across the DACH region.","url":"https://demographics.nexalps.com/dach.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["DACH demographics","Germany labour shortage","Engpassberufe","Austria workforce","Switzerland cross-border commuters","Fachkräfteeinwanderungsgesetz","AI adoption DACH"]}
+</script>
+
+<meta property="og:image" content="https://demographics.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://demographics.nexalps.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#71717a;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Zone cards (2x2 grid) */
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.zone-card{padding:20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);border-left:3px solid}
+.zone-card h3{font-size:15px;font-weight:600;margin-bottom:8px}
+.zone-card .zone-meta{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px}
+.zone-card .zone-meta strong{color:#d4d4d8}
+.zone-card .zone-verdict{font-size:13px;color:#d4d4d8;line-height:1.6;font-style:italic}
+@media(max-width:640px){.zone-grid{grid-template-columns:1fr}}
+
+/* Zone badges */
+.zone-badge{display:inline-block;padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:500}
+.zone-a{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+.zone-b{background:rgba(234,179,8,0.12);color:#fde047;border:1px solid rgba(234,179,8,0.2)}
+.zone-c{background:rgba(34,197,94,0.12);color:#86efac;border:1px solid rgba(34,197,94,0.2)}
+.zone-d{background:rgba(59,130,246,0.12);color:#93c5fd;border:1px solid rgba(59,130,246,0.2)}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+
+/* Data tables */
+.data-table{width:100%;border-collapse:collapse;font-size:13px}
+.data-table th{text-align:left;padding:8px 12px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted-foreground);border-bottom:1px solid var(--border)}
+.data-table td{padding:8px 12px;color:#d4d4d8;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;line-height:1.5}
+.data-table tr:hover td{background:rgba(255,255,255,0.02)}
+.data-table .severity-high{color:#fca5a5}
+.data-table .severity-mid{color:#ea580c}
+.data-table .severity-low{color:#f97316}
+@media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
+
+/* Accordion */
+.accordion-item{border-bottom:1px solid var(--card-border)}
+.accordion-trigger{display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:none;cursor:pointer;padding:20px 0;font-family:var(--font);font-size:17px;font-weight:600;color:var(--muted);text-align:left;transition:color .15s}
+.accordion-trigger:hover{color:var(--ring)}
+.accordion-trigger .num{color:var(--ring);font-weight:700;margin-right:8px}
+.accordion-trigger .icon{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:var(--accent);font-size:16px;flex-shrink:0;transition:transform .2s}
+.accordion-trigger[aria-expanded="true"] .icon{transform:rotate(45deg)}
+.accordion-trigger[aria-expanded="true"]{color:var(--foreground)}
+.accordion-content{max-height:0;overflow:hidden;transition:max-height 400ms ease}
+.accordion-content .inner{padding:0 0 24px}
+.accordion-content p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+
+/* Country section headers */
+.country-header{display:flex;align-items:center;gap:12px;margin:48px 0 4px}
+.country-header h2{margin:0}
+.country-flag{font-size:28px;line-height:1}
+
+/* Comparison table wrapper */
+.comparison-table-wrap{overflow-x:auto;margin:24px 0}
+.comparison-table{width:100%;border-collapse:collapse;font-size:13px}
+.comparison-table th{text-align:left;padding:10px 14px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted-foreground);border-bottom:1px solid var(--border);white-space:nowrap}
+.comparison-table td{padding:10px 14px;color:#d4d4d8;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;line-height:1.6;vertical-align:top}
+.comparison-table td:first-child{font-weight:600;color:var(--muted);white-space:nowrap;min-width:160px}
+.comparison-table tr:hover td{background:rgba(255,255,255,0.02)}
+@media(max-width:640px){.comparison-table{font-size:12px}.comparison-table th,.comparison-table td{padding:8px 10px}}
+
+/* Inline stat emphasis */
+.inline-stat{color:var(--foreground);font-weight:600}
+
+/* Table overflow — prevent horizontal page scroll on mobile */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+details>table.data-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+
+/* Body-content links — match surrounding text, underlined, orange on hover */
+main p a, .zone-verdict a, .highlight p a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+main p a:hover, .zone-verdict a:hover, .highlight p a:hover{color:var(--ring)}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="projections.html">Projections</a>
+    <a href="dach.html" aria-current="page">DACH</a>
+    <a href="generations.html">Generations</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="projections.html">Projections</a>
+  <a href="dach.html" aria-current="page">DACH</a>
+  <a href="generations.html">Generations</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>The DACH Deep Dive</h1>
+  <p class="lede">Germany, Austria, and Switzerland &mdash; three economies united by a common demographic threat but divided by their policy responses. Immigration reform, corporatist retraining, and wage-premium magnetism each mask the same structural decline.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/">Philipp Maul</a> &middot; <a href="https://nexalps.com">Nexalps</a> &middot; April 2026 &middot; Part 4 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">54 primary sources</a> including Destatis, Statistik Austria, BFS, Bundesagentur für Arbeit and WKO.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="DACH summary statistics">
+  <div class="stat-card">
+    <span class="stat-value">163</span>
+    <span class="stat-label">German shortage occupations</span>
+    <span class="stat-sublabel">Engpassberufe &mdash; BA 2024</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">82%</span>
+    <span class="stat-label">Austrian firms with shortages</span>
+    <span class="stat-sublabel">WKO survey 2024</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">407K</span>
+    <span class="stat-label">Swiss cross-border commuters</span>
+    <span class="stat-sublabel">34.4% foreign workforce share</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: DACH COMPARISON TABLE -->
+<h2><span class="num">1.</span> DACH at a Glance <span class="subtitle">Three countries, one demographic crisis, divergent responses</span></h2>
+
+<p>The DACH region represents the industrial, financial, and technological anchor of the European economy. But beneath shared linguistic ties and integrated supply chains, each country is approaching workforce contraction with fundamentally different institutional machinery.</p>
+
+<div class="comparison-table-wrap">
+  <table class="comparison-table" id="dach-comparison">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Germany</th>
+        <th>Austria</th>
+        <th>Switzerland</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Current Population</td>
+        <td>83.6M (2025)</td>
+        <td>9.20M (1.1.2025)</td>
+        <td>9.05M (2025)</td>
+      </tr>
+      <tr>
+        <td>Working-Age Trajectory</td>
+        <td>&minus;4&ndash;6M by 2035 (&minus;8&ndash;12%)</td>
+        <td>&minus;256K by 2040 (&minus;4.6%)</td>
+        <td>&minus;0.1M by 2055 (+1.8%)</td>
+      </tr>
+      <tr>
+        <td>Foreign-Born / Cross-Border</td>
+        <td>14.06M foreign nationals (16.8%) + 100% of employment growth</td>
+        <td>1.86M foreign nationals (20.2%); 29% of workforce</td>
+        <td>34.4% workforce + 407K commuters</td>
+      </tr>
+      <tr>
+        <td>Key Shortage Sectors</td>
+        <td>Healthcare (Zone C), Construction (Zone C), IT (Zone D)</td>
+        <td>Healthcare (Zone C), Tourism (Zone C), Trades (Zone C)</td>
+        <td>Healthcare (Zone C), Science/Eng (Zone D), ICT (Zone D)</td>
+      </tr>
+      <tr>
+        <td>Primary Policy Response</td>
+        <td>Chancenkarte / Immigration reform</td>
+        <td>AMS retraining (Pflegestipendium)</td>
+        <td>High wages / EU Free Movement</td>
+      </tr>
+      <tr>
+        <td>Enterprise AI Adoption</td>
+        <td>17% Mittelstand manufacturing</td>
+        <td>Mid-tier EU adoption</td>
+        <td>32% workforce adoption (EU leader)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- S2: GERMANY -->
+<div class="country-header" id="germany">
+  <h2><span class="num">2.</span> Germany <span class="subtitle">83.6M people, 163 shortage occupations, EU workers leaving</span></h2>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-pop">
+    <span><span class="num">2.1</span> Population &amp; Workforce</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-pop" role="region">
+    <div class="inner">
+      <p>Germany has reached a historic demographic inflection point. The total population stood at approximately <span class="inline-stat">83.6 million</span> in 2025, marking the first decline since 2020. Deaths exceeded 1 million while births languished between 640,000 and 670,000, resulting in a natural deficit of up to 360,000 people. Net migration fell 40% compared to 2024, insufficient to offset mortality.</p>
+
+      <p>The working-age population (20&ndash;64) is projected to contract by <span class="inline-stat">4.0 to 6.0 million</span> by the mid-2030s. The pivotal 1964 birth cohort &mdash; 1.36 million people, the largest in German history &mdash; is now turning 62. By 2035, every fourth person will be 67 or older.</p>
+
+      <div class="highlight">
+        <h3>East vs West Divergence</h3>
+        <p>Eastern states are aging <span class="inline-stat">14&ndash;30% faster</span> than the West. The East already has 24% of residents aged 67+, vs 20% in the West and 17% in city-states. Eastern states will shrink 14&ndash;30% by 2070 across all projection variants. Urban magnets like Leipzig (+30% since 1990) and Berlin (+7%) coexist with rural Saxony (-15%), creating micro-economies of abundance amid macro-scarcity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-immigration">
+    <span><span class="num">2.2</span> Migration &amp; Integration</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-immigration" role="region">
+    <div class="inner">
+      <p>Net migration fell to <span class="inline-stat">+430,183</span> in 2024 &mdash; down 35% from 2023&rsquo;s +662,964 and a world away from the 2022 Ukraine-driven peak of +1.46M. Total immigration: 1.69M arrivals, 1.26M departures. But the headline is not the total &mdash; it&rsquo;s the composition shift underneath.</p>
+
+      <div class="highlight" style="background:rgba(239,68,68,0.08);border-left-color:#ef4444">
+        <h3>EU Net Migration Turned Negative</h3>
+        <p>For the first time since 2008, Germany recorded a <span class="inline-stat">negative EU migration balance</span>: <span class="inline-stat">&minus;23,770</span> by nationality (&minus;33,574 by country of origin). More EU citizens left Germany than arrived. Poland: &minus;12,068. Bulgaria: &minus;8,826. Romania: &minus;3,446. The EU workforce pipeline that sustained German industry for two decades is reversing &mdash; Eastern European countries are aging too, and the wage gap is narrowing.</p>
+      </div>
+
+      <p><strong>Where growth comes from instead:</strong> Ukraine (+121,110 net), Syria (+75,102), Turkey (+41,439), India (+41,121), Afghanistan (+32,751). The immigration pipeline is shifting from EU free movement to third-country visa-based and humanitarian channels &mdash; structurally slower, with higher integration costs and longer employment ramp-up times.</p>
+
+      <p>The Fachkr&auml;fteeinwanderungsgesetz (FEG) reform, phased in between November 2023 and June 2024, issued <span class="inline-stat">172,422 work visas</span> (+9.2% YoY) and <span class="inline-stat">90,188 study visas</span> (+18.4%). But the showpiece Chancenkarte underperformed: only <span class="inline-stat">17,489</span> issued vs a 30,000 target. The experience pillar &mdash; designed for workers without degree recognition &mdash; managed just <span class="inline-stat">838 visas</span>. Germany requires ~400,000 net skilled migrants annually; three bottlenecks remain: <span class="inline-stat">104 distinct legal bases</span> for national visas, severe consular backlogs (India, Brazil, Western Balkans), and Blue Card processing at 6&ndash;10 weeks &mdash; losing talent to faster systems.</p>
+
+      <p><strong>Asylum applications dropped sharply:</strong> <span class="inline-stat">229,751</span> first applications in 2024 (&minus;30%), collapsing further to <span class="inline-stat">113,236</span> in 2025 (&minus;51%). The protection rate fell from 44.4% to 28.1%. Syria&rsquo;s rate crashed to 2.1% after a processing moratorium following Assad&rsquo;s fall in December 2024.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-integration">
+    <span><span class="num">2.3</span> Integration &amp; Employment</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-integration" role="region">
+    <div class="inner">
+      <div class="highlight">
+        <h3>The Integration Story the Debate Ignores</h3>
+        <p>Refugee men reach <span class="inline-stat">86% employment</span> after 8 years &mdash; <strong>exceeding the German male average</strong> (81%). But the gender gap is severe: women reach only 33% at the same point. Of Germany&rsquo;s 34.8M employed, <span class="inline-stat">5.7M are foreign nationals</span> (16%). In 2024, German national employment shrank by 130,700/month on average while foreign national employment grew by 267,600/month. The workforce is not just supplemented by immigration &mdash; it is sustained by it.</p>
+      </div>
+
+      <div class="highlight" style="background:rgba(234,179,8,0.06);border-left-color:#eab308">
+        <h3>What &ldquo;Unemployment&rdquo; Actually Means</h3>
+        <p>Headline unemployment rates by origin &mdash; Germans 5.7%, EU-East 9%, Western Balkans ~11%, Asyl8 nationals 29%, Ukrainians 41% &mdash; obscure three structural realities. <strong>First:</strong> asylum seekers face a legal work prohibition (Arbeitsverbot) during processing, then restricted access for months after. You cannot be &ldquo;employed&rdquo; when you are legally barred from employment. <strong>Second:</strong> women from Afghanistan, Syria, and Iraq face compounding barriers &mdash; cultural expectations around childcare and household work, lack of formal qualifications recognised in Germany, and limited access to language courses while caring for children. The 33% female employment rate after 8 years is not laziness &mdash; it is a system that was not designed for their situation. <strong>Third:</strong> employment quality diverges sharply. Of those who do work, <span class="inline-stat">47% of Asyl8 nationals</span> are in unskilled &ldquo;Helfer&rdquo; roles (vs 13% of Germans), earning less and with fewer prospects for advancement.</p>
+      </div>
+
+      <p><strong>Record naturalisations:</strong> <span class="inline-stat">292,020</span> in 2024 &mdash; an all-time record (+46%), driven by Syrians reaching eligibility and the new dual citizenship law (StARModG, effective June 2024) reducing the residence requirement from 8 to 5 years. Top: Syria (83,185), Turkey (22,525 &mdash; +110%), Russia (12,980 &mdash; +551%). The 3-year fast-track was abolished again in October 2025.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-shortage">
+    <span><span class="num">2.4</span> 163 Engpassberufe</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-shortage" role="region">
+    <div class="inner">
+      <p>Despite 6.3% unemployment and 2.7M registered unemployed in 2024, the Bundesagentur f&uuml;r Arbeit identified <span class="inline-stat">163 occupations</span> with severe skilled labour shortages &mdash; roughly one in eight of all evaluated occupations. Severity is measured on a 3.0-point index; a score of 2.0+ designates an official Engpassberuf.</p>
+
+      <div class="comparison-table-wrap">
+        <table class="data-table" id="shortage-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Occupation</th>
+              <th>KldB</th>
+              <th>Severity</th>
+              <th>Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Populated via JS from demographics-data.json -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="highlight" style="margin-top:20px">
+        <h3>Vacancy Rates by Sector</h3>
+        <p>IT: <span class="inline-stat">4.5%</span> (highest) &middot; Construction: <span class="inline-stat">4.3%</span> &middot; Healthcare: <span class="inline-stat">3.6%</span> &middot; Manufacturing: <span class="inline-stat">2.0%</span> (but 148K open engineering positions, ratio of 333 per 100 unemployed engineers)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-apprentice">
+    <span><span class="num">2.5</span> Apprenticeship System</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-apprentice" role="region">
+    <div class="inner">
+      <p>The dual vocational training system is failing to replace retiring workers at scale. New contracts in 2024: <span class="inline-stat">475,100</span> (-1.0%), down 8% over the past decade. While German nationals starting apprenticeships fell 4%, foreign nationals increased 17% (Ukraine, Syria, Vietnam).</p>
+
+      <div class="highlight">
+        <h3>The Matching Paradox</h3>
+        <p><span class="inline-stat">54,000 apprenticeship places</span> remained unfilled while <span class="inline-stat">84,400 applicants</span> were unplaced &mdash; the second-highest number since 2009. Youth seek urban and IT/media roles; vacancies concentrate in rural areas and physical trades.</p>
+      </div>
+
+      <p>The pipeline produces <span class="inline-stat">339,200 graduates</span> annually against a retirement wave that will soon consistently exceed 1 million per year. The domestic pipeline covers roughly one-third of replacement needs.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="germany">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="de-ai">
+    <span><span class="num">2.6</span> AI Adoption</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="de-ai" role="region">
+    <div class="inner">
+      <p><span class="inline-stat">71%</span> of industrial firms have Industrie 4.0 applications in use, but the transition to AI has stalled. Only <span class="inline-stat">17%</span> of Mittelstand firms have adopted AI, with another 40% in the &ldquo;discussion&rdquo; phase. Mittelstand AI spending dropped to 0.35% of revenues (vs 0.50% market average) &mdash; investing 30% below the broader market.</p>
+
+      <div class="highlight">
+        <h3>The Betriebsrat Factor</h3>
+        <p>Co-determination under BetrVG &sect;87(1) No. 6 requires works council consultation when technology can monitor employee behaviour. The Hamburg Labour Court (Jan 2024) ruled that ChatGPT does not automatically trigger co-determination &mdash; but proactive works councils shape deployment through framework agreements. Siemens uses &ldquo;AI-Cards&rdquo; &mdash; standardized risk profiles mandating algorithmic transparency before deployment.</p>
+      </div>
+
+      <p><span class="inline-stat">42%</span> of firms cite lack of expertise as a primary barrier. <span class="inline-stat">50%</span> prefer &ldquo;wait-and-see.&rdquo; The procedural brake of Mitbestimmung slows adoption but fosters higher workforce acceptance and mitigates systemic bias risk.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- S3: AUSTRIA -->
+<div class="country-header" id="austria">
+  <h2><span class="num">3.</span> Austria <span class="subtitle">9.20M people, 20.2% foreign, fertility at historic low 1.31</span></h2>
+</div>
+
+<div class="accordion-item" data-country="austria">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="at-pop">
+    <span><span class="num">3.1</span> Population &amp; Workforce</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="at-pop" role="region">
+    <div class="inner">
+      <p>Austria&rsquo;s population reached <span class="inline-stat">9,197,213</span> on 1.1.2025 (+38,463 or +0.4%). Growth will continue to ~9.4M by the 2040s before reversing. Deaths outpaced births by <span class="inline-stat">11,248</span> in 2024 (77,238 births vs 88,486 deaths) &mdash; all growth is migration-dependent. The total fertility rate hit a historic low of <span class="inline-stat">1.31</span> children per woman (Austrian women: 1.22).</p>
+
+      <p>The working-age population peaked in 2024 at <span class="inline-stat">5.57 million</span> and will contract by 256,000 (-4.6%) to 5.32M by 2040. The old-age dependency ratio rises from <span class="inline-stat">20.0% to 26.2%</span> by 2040. The median age diverges starkly: Austrian citizens 45.4, non-Austrian citizens 36.3. A comprehensive WKO survey found <span class="inline-stat">82%</span> of companies report labour shortages, with health/social care, food production, and construction sectors most severely affected (67&ndash;68% of firms highly impacted).</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="austria">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="at-cross">
+    <span><span class="num">3.2</span> Migration &amp; Integration</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="at-cross" role="region">
+    <div class="inner">
+      <p>Austria hosts <span class="inline-stat">1,855,419 foreign nationals</span> (20.2% of population, 1.1.2025) &mdash; up 62% in a decade. The split is remarkably balanced: <span class="inline-stat">50.9% EU/EFTA</span>, 49.1% third-country. Net migration in 2024: <span class="inline-stat">+50,105</span> (down 25% from 2023). All population growth is migration-dependent &mdash; deaths exceeded births by 11,248.</p>
+
+      <p><strong>Who comes:</strong> Germany leads the stock (239,452), followed by Romania (155,715), Turkey (124,788), Serbia (122,459), Hungary (112,376), Croatia (109,359). Syria grew fastest in 2024 (+9,653 to 104,833). A distinct skill stratification persists: CEE nations fill low-to-mid skill vacancies in tourism, agriculture, construction, and basic healthcare. German nationals fill academic positions &mdash; <span class="inline-stat">29%</span> of the non-Austrian population are academics vs only 21% of native Austrians.</p>
+
+      <p><strong>Conversely:</strong> <span class="inline-stat">232,700 Austrians</span> reside in Germany and <span class="inline-stat">40,000+</span> commute to Switzerland (Rhine Valley, eastern cantons). Austrian citizens themselves have a negative migration balance (&minus;5,662 in 2024).</p>
+
+      <p><strong>Asylum applications halved:</strong> <span class="inline-stat">25,400</span> in 2024 (2023: 59,200, &minus;57%). Austria ranked 8th in the EU at 2.8 per 1,000 inhabitants (EU average: 2.2). 68,200 persons remain in Grundversorgung (basic care), of whom 54% are Ukrainian.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="austria">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="at-integration">
+    <span><span class="num">3.3</span> Integration &amp; Employment</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="at-integration" role="region">
+    <div class="inner">
+      <div class="highlight">
+        <h3>The Employment Gap Nobody Talks About</h3>
+        <p>Employment rates diverge sharply by origin. EU pre-2004 nationals: <span class="inline-stat">79%</span>. Turkish nationals: <span class="inline-stat">60.3%</span>. Afghans, Syrians, Iraqis: <span class="inline-stat">40.2%</span>. The gender dimension is even starker &mdash; women from Afghanistan/Syria/Iraq reach only <span class="inline-stat">24.3%</span> employment. Unemployment for the same group: <span class="inline-stat">31.3%</span> vs 5.7% for Austrians. Meanwhile, 29% of all employed workers have a migration background, concentrated in building services (42%), hospitality (42%), and construction (37%).</p>
+      </div>
+
+      <div class="highlight" style="background:rgba(234,179,8,0.06);border-left-color:#eab308">
+        <h3>What &ldquo;Unemployment&rdquo; Actually Means</h3>
+        <p>Austria&rsquo;s foreign unemployment rate of <span class="inline-stat">10.5%</span> (vs 5.7% Austrian) hides the same structural layers as Germany. Asylum seekers in Grundversorgung are largely barred from the regular labour market. Women from predominantly Asian origins (e.g. Turkey, Afghanistan, Syria, and Iraq) face a quadruple barrier: limited formal education (<span class="inline-stat">50.9%</span> of Turkish-origin residents have only Pflichtschule), cultural expectations around household and childcare, a language gap (only 42% of foreign-born adults speak fluent German), and a corporate language wall &mdash; Austrian employers overwhelmingly require business-level German even for roles where it is not operationally necessary, screening out highly qualified candidates with international experience but non-native fluency. The NEET rate (not in education, employment, or training) is <span class="inline-stat">13%</span> for youth with migration background vs 7% without &mdash; rising to 24.9% for Afghan/Syrian/Iraqi youth. These are not people choosing not to work &mdash; they are people the system has not yet reached.</p>
+      </div>
+
+      <p><strong>Naturalisations:</strong> <span class="inline-stat">13,036</span> in 2024 (+9.6%), a naturalisation rate of just 0.7% &mdash; unchanged since 2019 and far below Germany&rsquo;s 5.1%. Austria remains one of the most restrictive EU countries for citizenship acquisition. Top nationalities: Syria (2,241), Turkey (1,389), Afghanistan (1,056). 33% of naturalisees were born in Austria.</p>
+
+      <p><strong>The fertility dimension:</strong> Austria&rsquo;s total fertility rate hit a historic low of <span class="inline-stat">1.31</span> in 2024. Austrian women: 1.22. Non-Austrian women: 1.58. The gap narrows with each generation, but even combined, it falls well below replacement level. The demographic math is unambiguous: without sustained immigration, the workforce contraction accelerates.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="austria">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="at-retrain">
+    <span><span class="num">3.4</span> Retraining &amp; Sozialpartnerschaft</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="at-retrain" role="region">
+    <div class="inner">
+      <p>Austria&rsquo;s corporatist Sozialpartnerschaft model (WK&Ouml;, AK, &Ouml;GB, LK) facilitates continuous consensus-building. Unlike Germany&rsquo;s sometimes adversarial labour relations, the Austrian social partners co-author national strategies, pairing technological modernization with workforce upskilling.</p>
+
+      <div class="highlight">
+        <h3>Pflegestipendium: State-Funded Career Pivots</h3>
+        <p>The nursing scholarship (launched Jan 2023) guarantees <span class="inline-stat">&euro;1,536/month</span> for up to 4 years of healthcare training. Within 18 months: <span class="inline-stat">9,000 participants</span>, 78% women, &euro;107.9M in payouts. Austria directly funds domestic retraining into bottleneck sectors rather than relying primarily on importing ready-made talent.</p>
+      </div>
+
+      <p>AMS vacancy ratios reveal extreme hospitality shortages: Restaurant specialists <span class="inline-stat">6.6</span> open positions per seeker, Gastronomy <span class="inline-stat">5.9</span>, Cooks <span class="inline-stat">4.2</span>, Hotel &amp; Hospitality <span class="inline-stat">3.9</span>, Retail <span class="inline-stat">2.3</span>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="austria">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="at-ai">
+    <span><span class="num">3.5</span> AI Adoption</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="at-ai" role="region">
+    <div class="inner">
+      <p>Austria sits in the mid-tier of EU AI adoption. Limited structured data exists on enterprise-level deployment, but the Sozialpartnerschaft model shapes the pace of adoption &mdash; social partners co-author technology strategies rather than unilaterally deploying them.</p>
+
+      <p>Unlike Germany, Austria lacks the Betriebsrat friction that slows deployment through mandatory co-determination on monitoring technology. However, the consensus-driven approach means adoption tends to be incremental and broadly accepted rather than fast and contested. Austria&rsquo;s AI strategy focuses on applied research through institutions like the Austrian Institute of Technology (AIT) and the TU Wien, with emerging clusters in Vienna and Graz.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- S4: SWITZERLAND -->
+<div class="country-header" id="switzerland">
+  <h2><span class="num">4.</span> Switzerland <span class="subtitle">9.05M people, EU leader in AI, most migration-dependent</span></h2>
+</div>
+
+<div class="accordion-item" data-country="switzerland">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="ch-pop">
+    <span><span class="num">4.1</span> Population &amp; Workforce</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="ch-pop" role="region">
+    <div class="inner">
+      <p>Switzerland surpassed 9 million in 2024, ending the year at <span class="inline-stat">9.05 million</span> (+1.0% YoY). The BFS reference scenario projects <span class="inline-stat">10.5 million by 2055</span>. But the natural birth surplus has collapsed to just <span class="inline-stat">6,300</span> in 2024 &mdash; the lowest since 1918. Future growth depends almost entirely on migration.</p>
+
+      <p>The working-age share (20&ndash;64) will steadily decline from <span class="inline-stat">60.7%</span> (2023) to 58.1% by 2035 and 56.7% by 2055. Average monthly earnings of <span class="inline-stat">&euro;8,759</span> (vs EU-27 average of &euro;3,417) act as a gravitational pull, effectively buying the prime working years of neighbouring countries&rsquo; citizens.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="switzerland">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="ch-eu">
+    <span><span class="num">4.2</span> Migration &amp; Free Movement</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="ch-eu" role="region">
+    <div class="inner">
+      <p>The Swiss economic model is fundamentally dependent on foreign labour. <span class="inline-stat">407,000 Grenzg&auml;nger</span> (cross-border commuters with G permits) work in Switzerland, traversing daily from France, Germany, and Italy. Foreign nationals account for <span class="inline-stat">34.4%</span> of the entire active workforce. The 2024 OECD Economic Survey places Switzerland's foreign-born population share at 30%, the <strong>second-highest in the OECD</strong>, with net immigration more than doubling since 2000 &mdash; a structural dependency, not a cyclical one.</p>
+
+      <p>Since the Free Movement Agreement (FZA) took effect in 2002, Switzerland&rsquo;s permanent foreign population has grown by <span class="inline-stat">1.7 million</span> to 2.41 million. <span class="inline-stat">82%</span> of that growth came from net migration, and the EU/EFTA share rose from 56% to <span class="inline-stat">67%</span>. The data from the BFS Demografische Verlaufsstatistik (DVS) is unambiguous: this is overwhelmingly EU workers filling structural labour gaps, not uncontrolled mass immigration.</p>
+
+      <p><strong>Who actually comes:</strong> In 2025, <span class="inline-stat">88,355</span> people immigrated for work &mdash; and <span class="inline-stat">95%</span> of them came from EU/EFTA states. The top sources: Germany (19%), France (14%), Italy (13%), Portugal (9%), Spain (9%). Another 42,170 came for family reunification, 17,579 for education, and just 8,119 transferred from the asylum system. Work immigration outnumbers asylum transfers <span class="inline-stat">11 to 1</span>.</p>
+
+      <p><strong>Where they work:</strong> <span class="inline-stat">81%</span> enter the services sector (healthcare, IT, finance, education), 17% go into industry and construction, 2% into agriculture. These are the sectors with the deepest structural shortages in the DACH region.</p>
+
+      <div class="highlight">
+        <h3>SVP &ldquo;No to 10 Million&rdquo; Initiative</h3>
+        <p>The right-wing SVP has launched an initiative seeking a constitutional cap preventing the population from exceeding 10 million before 2050. The vote is scheduled for <span class="inline-stat">June 2026</span>. If passed, Switzerland would be forced to terminate the Agreement on Free Movement of Persons. The guillotine clause would sever access to the European single market. The BFS longitudinal data reveals the paradox: the initiative targets the very mechanism &mdash; EU free movement &mdash; that delivers 95% of Switzerland&rsquo;s work immigrants and fills the structural gaps that keep the economy running.</p>
+      </div>
+
+      <p>Restricting free movement would be catastrophic for healthcare, hospitality, IT, and construction &mdash; instantly cutting these sectors off from the elastic EU talent pool. Of the 2.41 million foreign residents, <span class="inline-stat">60%</span> of EU/EFTA nationals hold C permits (permanent settlement) &mdash; these are long-term residents, not transients. And 445,615 foreign nationals (18%) were <em>born in Switzerland</em>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="switzerland">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="ch-integration">
+    <span><span class="num">4.3</span> Integration &amp; Employment</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="ch-integration" role="region">
+    <div class="inner">
+      <div class="highlight">
+        <h3>The refugee integration story the debate ignores</h3>
+        <p>The 2015 cohort reached <span class="inline-stat">62% employment</span> after 7 years (men: 75%). The 2020 cohort is already at <span class="inline-stat">53% after just 5 years</span> &mdash; 12 percentage points ahead of the 2018 cohort at the same point, <strong>exceeding</strong> the federal Integrationsagenda target of 50%. But the gender gap is persistent: women reach only 32&ndash;33% even after 7 years. The loudest part of the immigration debate concerns the smallest and fastest-improving segment.</p>
+      </div>
+
+      <div class="highlight" style="background:rgba(234,179,8,0.06);border-left-color:#eab308">
+        <h3>What &ldquo;Unemployment&rdquo; Actually Means</h3>
+        <p>Switzerland&rsquo;s headline foreign unemployment is low by DACH standards, but the cantonal variation tells the real story. Refugee employment after 7 years ranges from <span class="inline-stat">83% in Uri</span> to <span class="inline-stat">24% in Ticino</span>. The same person, same skills, same legal status &mdash; but a 59-percentage-point gap depending on where they were assigned. Linguistic barriers (French/Italian cantons vs German), local labour market structure, and cantonal integration programme quality matter more than individual motivation. The gender gap is equally structural: women reach only 32&ndash;33% employment even after 7 years, constrained by the same childcare and qualification-recognition barriers as in Germany and Austria. Switzerland&rsquo;s advantage is that the refugee population is tiny relative to the workforce &mdash; the entire 2018 cohort was 3,060 people next to 88,355 annual work immigrants.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item" data-country="switzerland">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="ch-ai">
+    <span><span class="num">4.4</span> AI Adoption</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="accordion-content" id="ch-ai" role="region">
+    <div class="inner">
+      <p>Switzerland leads Europe in AI adoption: <span class="inline-stat">32%</span> of workers actively use AI (vs 23% EU average). At the enterprise level, <span class="inline-stat">52%</span> of organizations use AI agents to automate business processes (global average: 46%). This is underpinned by ETH Zurich and EPFL, which founded the Swiss National AI Institute (SNAI).</p>
+
+      <div class="highlight">
+        <h3>Financial Sector: Operational AI</h3>
+        <p>A FINMA survey (late 2024 / early 2025): <span class="inline-stat">50%</span> of Swiss financial institutions use AI in live environments, with another 25% planning deployment within 3 years. Of adopters, <span class="inline-stat">91%</span> leverage Generative AI &mdash; for algorithmic underwriting, fraud detection, and automated client advisory.</p>
+      </div>
+
+      <p><strong>The paradox:</strong> the most AI-ready DACH economy is simultaneously the most migration-dependent. AI cannot substitute for the physical-presence Zone C jobs that cross-border commuters fill. Switzerland&rsquo;s technological leadership and demographic vulnerability are two sides of the same coin.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- S5: MIGRATION DIVERGENCE -->
+<div class="country-header" id="divergence">
+  <h2><span class="num">5.</span> Three Countries, Three Migration Stories <span class="subtitle">The same labour gap, fundamentally different pipelines</span></h2>
+</div>
+
+<p>Strip away the shared language and the DACH label, and the migration data reveals three economies on diverging trajectories. Each tells a structurally different story about where workers come from, why they come, and whether the pipeline is sustainable.</p>
+
+<!-- Sankey: Germany -->
+<div class="chart-box">
+  <h3>Germany &mdash; Migration Flow (2024)</h3>
+  <div id="sankey-de" style="width:100%;min-height:340px"></div>
+  <p style="font-size:11px;color:var(--muted-foreground);margin-top:8px">Source: Migrationsbericht 2024 (BAMF/Destatis). Note: EU outflow (&minus;33.6K net) not shown in inflow diagram.</p>
+</div>
+
+<!-- Sankey: Austria -->
+<div class="chart-box">
+  <h3>Austria &mdash; Migration Flow (2024)</h3>
+  <div id="sankey-at" style="width:100%;min-height:340px"></div>
+  <p style="font-size:11px;color:var(--muted-foreground);margin-top:8px">Source: Statistik Austria, Migration-Integration 2025, Demographie 2024.</p>
+</div>
+
+<!-- Sankey: Switzerland -->
+<div class="chart-box">
+  <h3>Switzerland &mdash; Migration Flow (2025)</h3>
+  <div id="sankey-ch" style="width:100%;min-height:340px"></div>
+  <p style="font-size:11px;color:var(--muted-foreground);margin-top:8px">Source: SEM Jahresstatistik Zuwanderung 2025.</p>
+</div>
+
+<!-- Shared Sankey legend -->
+<div style="margin:20px 0 8px;padding:16px 20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md)">
+  <div style="display:flex;flex-wrap:wrap;gap:10px 20px;font-size:11px;color:var(--muted-foreground)">
+    <span style="font-weight:600;color:var(--muted);width:100%">Origins</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#3b82f6;vertical-align:middle;margin-right:4px"></span>EU/EFTA</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fbbf24;vertical-align:middle;margin-right:4px"></span>Ukraine</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#ef4444;vertical-align:middle;margin-right:4px"></span>Syria</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#f59e0b;vertical-align:middle;margin-right:4px"></span>Turkey</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fb923c;vertical-align:middle;margin-right:4px"></span>Non-EU/EFTA Europe</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#a78bfa;vertical-align:middle;margin-right:4px"></span>Asia</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#34d399;vertical-align:middle;margin-right:4px"></span>Africa</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#f472b6;vertical-align:middle;margin-right:4px"></span>Americas</span>
+    <span style="font-weight:600;color:var(--muted);width:100%;margin-top:6px">Channels</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#22c55e;vertical-align:middle;margin-right:4px"></span>Work</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#a78bfa;vertical-align:middle;margin-right:4px"></span>Family</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#ef4444;vertical-align:middle;margin-right:4px"></span>Asylum</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fbbf24;vertical-align:middle;margin-right:4px"></span>Temp. Protection</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#3b82f6;vertical-align:middle;margin-right:4px"></span>Education</span>
+    <span style="font-weight:600;color:var(--muted);width:100%;margin-top:6px">Sectors</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#06b6d4;vertical-align:middle;margin-right:4px"></span>Services</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#eab308;vertical-align:middle;margin-right:4px"></span>Hospitality</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#f97316;vertical-align:middle;margin-right:4px"></span>Industry / Construction</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#ec4899;vertical-align:middle;margin-right:4px"></span>Healthcare</span>
+    <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#22c55e;vertical-align:middle;margin-right:4px"></span>Agriculture</span>
+  </div>
+  <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--card-border);font-size:12px;color:var(--muted);line-height:1.7">
+    <strong style="color:var(--muted-foreground)">Reading the channels:</strong>
+    <strong>Work</strong> &mdash; employment visa, Blue Card, or EU free movement for employment.
+    <strong>Family</strong> &mdash; reunification with a resident spouse, parent, or child.
+    <strong>Asylum</strong> &mdash; international protection application (refugee status, subsidiary protection).
+    <strong>Temp. Protection</strong> &mdash; EU Temporary Protection Directive (2022), primarily Ukrainians.
+    <strong>Education</strong> &mdash; student visa, trainee, or au pair.
+    Not all channels lead to employment equally: work migrants enter jobs immediately; family and asylum channels require integration time, language acquisition, and often qualification recognition before labour market entry.
+  </div>
+</div>
+
+<div class="comparison-table-wrap">
+  <table class="comparison-table" id="migration-divergence">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Germany</th>
+        <th>Austria</th>
+        <th>Switzerland</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Foreign Population</td>
+        <td>14.06M (AZR) / 16.8%</td>
+        <td>1.86M / 20.2%</td>
+        <td>2.41M / 26.7%</td>
+      </tr>
+      <tr>
+        <td>EU Share of Stock</td>
+        <td class="severity-mid">~53%</td>
+        <td>50.9%</td>
+        <td style="color:#86efac">67%</td>
+      </tr>
+      <tr>
+        <td>EU Net Migration 2024</td>
+        <td class="severity-high">&minus;23,770 (first negative since 2008)</td>
+        <td>Positive (DE +6,713 alone)</td>
+        <td style="color:#86efac">+53,700</td>
+      </tr>
+      <tr>
+        <td>Work Immigration EU Share</td>
+        <td>~33% (visa stats)</td>
+        <td>~48% of inflows</td>
+        <td style="color:#86efac">95%</td>
+      </tr>
+      <tr>
+        <td>Net Migration 2024</td>
+        <td>+430,183 (&minus;35%)</td>
+        <td>+50,105 (&minus;25%)</td>
+        <td>+74,675 (2025)</td>
+      </tr>
+      <tr>
+        <td>Asylum Applications 2024</td>
+        <td>229,751 (&minus;30%)</td>
+        <td>25,400 (&minus;57%)</td>
+        <td>~28,000</td>
+      </tr>
+      <tr>
+        <td>Naturalisation Rate</td>
+        <td>5.1% (record 292K)</td>
+        <td class="severity-high">0.7% (13K)</td>
+        <td>~1.7% (41K)</td>
+      </tr>
+      <tr>
+        <td>Refugee Men Employment (7&ndash;8y)</td>
+        <td style="color:#86efac">86% (exceeds native men)</td>
+        <td>40.2% (Afg/Syr/Irq overall)</td>
+        <td>64&ndash;75% (by cohort)</td>
+      </tr>
+      <tr>
+        <td>Key Narrative</td>
+        <td class="severity-high">Losing EU workers, gaining refugees</td>
+        <td>Balanced but asylum-heavy debate</td>
+        <td style="color:#86efac">EU labour machine, wages as gravity</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="highlight" style="background:rgba(239,68,68,0.08);border-left-color:#ef4444">
+  <h3>The structural divergence</h3>
+  <p>Switzerland&rsquo;s &euro;8,759 average monthly wage acts as gravitational pull &mdash; 95% of its work immigrants come through EU free movement, voluntarily and job-ready. Germany&rsquo;s EU pipeline has reversed: Poland, Romania, and Bulgaria are now net outflows. Germany is replacing EU free-movers with visa-dependent third-country workers and humanitarian arrivals &mdash; a structurally slower, more expensive channel. Austria sits between: balanced EU/third-country split, but with the EU&rsquo;s lowest naturalisation rate (0.7%) creating a permanent underclass of long-term residents without citizenship rights.</p>
+</div>
+
+<!-- Author's note -->
+<div class="author-note">
+  <h3>Author&rsquo;s Note</h3>
+  <p>The corporate language wall is not abstract to me. When I ran a company in Austria, I had to justify to shareholders why the business language was English rather than German. In Switzerland, the same question never came up. With four national languages, English becomes the natural fallback in any room where two people do not share a mother tongue. That structural multilingualism is a genuine competitive advantage: it makes Switzerland&rsquo;s labour market more permeable to international talent than Austria&rsquo;s or Germany&rsquo;s, regardless of what immigration policy says on paper.</p>
+  <p>The wall extends beyond employers to institutions. I&rsquo;ve seen people asked for German certificates even when they majored and studied in German throughout the naturalisation process, or denied access to education because the written language criterion was suddenly replaced by a &ldquo;new&rdquo; unwritten one. When gates become discretionary, formal qualifications stop mattering.</p>
+  <p class="sig">&mdash; Philipp Maul, April 2026</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>Continue exploring</h3>
+  <p>See the 2025&ndash;2050 projections for the full demographic cliff, or explore how AI exposure varies by occupation across Europe.</p>
+  <div class="btn-row">
+    <a href="projections.html" class="btn btn-primary">Peek across the cliff &rarr;</a>
+    <a href="generations.html" class="btn btn-outline">Four Generations &rarr;</a>
+    <a href="https://ai-exposure.nexalps.com/" class="btn btn-outline" target="_blank" rel="noopener">What does AI actually expose? &rarr;</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Europe Is Running Out of Workers, Not Work v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="projections.html">Projections</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="generations.html">Generations</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> &middot; &copy; 2026 Nexalps
+</footer>
+
+</main>
+
+<script>
+// Burger menu
+const burgerBtn = document.getElementById('burger-btn');
+const burgerPanel = document.getElementById('burger-panel');
+burgerBtn.addEventListener('click', () => {
+  const open = burgerBtn.classList.toggle('open');
+  burgerPanel.classList.toggle('open');
+  burgerBtn.setAttribute('aria-expanded', open);
+});
+
+// Accordion logic
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const expanded = trigger.getAttribute('aria-expanded') === 'true';
+    const content = trigger.nextElementSibling;
+    const country = trigger.closest('.accordion-item').dataset.country;
+
+    // Close other accordions in the same country group
+    trigger.closest('.container-narrow').querySelectorAll(`.accordion-item[data-country="${country}"] .accordion-trigger`).forEach(other => {
+      if (other !== trigger) {
+        other.setAttribute('aria-expanded', 'false');
+        other.nextElementSibling.style.maxHeight = null;
+      }
+    });
+
+    if (expanded) {
+      trigger.setAttribute('aria-expanded', 'false');
+      content.style.maxHeight = null;
+    } else {
+      trigger.setAttribute('aria-expanded', 'true');
+      content.style.maxHeight = content.scrollHeight + 'px';
+
+      // Track with PostHog
+      const sectionName = trigger.querySelector('span:first-child').textContent.trim();
+      if (typeof posthog !== 'undefined') {
+        posthog.capture('accordion_opened', { country: country, section: sectionName });
+      }
+    }
+  });
+
+  // Keyboard support
+  trigger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      trigger.click();
+    }
+  });
+});
+
+// Load data and populate shortage table
+fetch('demographics-data.json').then(r => r.json()).then(DATA => {
+  const dach = DATA.dach;
+
+  // Populate Germany top shortage occupations table
+  const tbody = document.querySelector('#shortage-table tbody');
+  if (dach.germany.top_shortage_occupations && tbody) {
+    dach.germany.top_shortage_occupations.forEach(occ => {
+      const severityClass = occ.severity >= 2.6 ? 'severity-high' : occ.severity >= 2.3 ? 'severity-mid' : 'severity-low';
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${occ.rank}</td><td>${occ.occupation}</td><td style="font-family:monospace;font-size:12px;color:var(--muted-foreground)">${occ.kldb}</td><td class="${severityClass}">${occ.severity.toFixed(1)}</td><td style="font-size:12px;color:var(--muted)">${occ.type}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+});
+
+// Hash navigation: auto-open accordion on page load
+function openFromHash() {
+  const hash = window.location.hash.replace('#', '');
+  if (!hash) return;
+
+  const target = document.getElementById(hash);
+  if (!target) return;
+
+  // Scroll to the country header
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // Open the first accordion in that country section
+  const country = hash;
+  const firstTrigger = document.querySelector(`.accordion-item[data-country="${country}"] .accordion-trigger`);
+  if (firstTrigger && firstTrigger.getAttribute('aria-expanded') !== 'true') {
+    setTimeout(() => firstTrigger.click(), 400);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', openFromHash);
+} else {
+  openFromHash();
+}
+window.addEventListener('hashchange', openFromHash);
+</script>
+
+<!-- D3 Sankey -->
+<script src="/assets/d3.v7.min.js"></script>
+<script src="/assets/d3-sankey.min.js"></script>
+<script>
+(function() {
+  const COLORS = {
+    // Origins
+    'EU West': '#3b82f6',
+    'EU East': '#60a5fa',
+    'EU/EFTA': '#3b82f6',
+    'EU South': '#60a5fa',
+    'Turkey': '#f59e0b',
+    'Ukraine': '#fbbf24',
+    'Syria': '#ef4444',
+    'Asia': '#a78bfa',
+    'Africa': '#34d399',
+    'Americas': '#f472b6',
+    'Non-EU/EFTA': '#fb923c',
+    'Non-EU/EFTA': '#fb923c',
+    'Afghanistan': '#f87171',
+    'Other': '#71717a',
+    'Return (DE)': '#94a3b8',
+    // Reasons
+    'Work': '#22c55e',
+    'Family': '#a78bfa',
+    'Asylum': '#ef4444',
+    'Education': '#3b82f6',
+    'Temp. Protection': '#fbbf24',
+    'Other reason': '#71717a',
+    // Sectors
+    'Services': '#06b6d4',
+    'Industry': '#f97316',
+    'Agriculture': '#22c55e',
+    'Healthcare': '#ec4899',
+    'Construction': '#f97316',
+    'IT/Finance': '#8b5cf6',
+    'Hospitality': '#eab308',
+    'EU Outflow': '#ef4444',
+  };
+
+  function getColor(name) {
+    return COLORS[name] || '#71717a';
+  }
+
+  function buildSankey(containerId, nodes, links, opts = {}) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    const rawWidth = container.clientWidth || 700;
+    const width = Math.max(rawWidth, 600); // minimum 600px for readability
+    const height = opts.height || 340;
+
+    const svg = d3.select('#' + containerId)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .style('min-width', '600px')
+      .style('font-family', 'var(--font)');
+
+    const sankey = d3.sankey()
+      .nodeId(d => d.name)
+      .nodeWidth(18)
+      .nodePadding(10)
+      .nodeAlign(d3.sankeyLeft)
+      .extent([[1, opts.columns ? 24 : 8], [width - 1, height - 8]]);
+
+    const graph = sankey({
+      nodes: nodes.map(d => Object.assign({}, d)),
+      links: links.map(d => Object.assign({}, d))
+    });
+
+    // Tooltip
+    const tooltip = d3.select('#' + containerId)
+      .append('div')
+      .attr('class', 'chart-tooltip')
+      .style('opacity', 0);
+
+    // Links
+    svg.append('g')
+      .selectAll('path')
+      .data(graph.links)
+      .join('path')
+      .attr('d', d3.sankeyLinkHorizontal())
+      .attr('fill', 'none')
+      .attr('stroke', d => getColor(d.source.name))
+      .attr('stroke-opacity', 0.35)
+      .attr('stroke-width', d => Math.max(1, d.width))
+      .on('mouseover', function(event, d) {
+        d3.select(this).attr('stroke-opacity', 0.65);
+        tooltip.style('opacity', 1)
+          .html(`<strong>${d.source.name}</strong> → <strong>${d.target.name}</strong><br>${d.value.toLocaleString()}`)
+          .style('left', (event.offsetX + 12) + 'px')
+          .style('top', (event.offsetY - 28) + 'px');
+      })
+      .on('mouseout', function() {
+        d3.select(this).attr('stroke-opacity', 0.35);
+        tooltip.style('opacity', 0);
+      });
+
+    // Nodes
+    const node = svg.append('g')
+      .selectAll('g')
+      .data(graph.nodes)
+      .join('g');
+
+    node.append('rect')
+      .attr('x', d => d.x0)
+      .attr('y', d => d.y0)
+      .attr('height', d => Math.max(1, d.y1 - d.y0))
+      .attr('width', d => d.x1 - d.x0)
+      .attr('fill', d => getColor(d.name))
+      .attr('rx', 2);
+
+    node.append('text')
+      .attr('x', d => d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6)
+      .attr('y', d => (d.y0 + d.y1) / 2)
+      .attr('dy', '0.35em')
+      .attr('text-anchor', d => d.x0 < width / 2 ? 'start' : 'end')
+      .attr('font-size', '11px')
+      .attr('fill', '#a1a1aa')
+      .text(d => {
+        const h = d.y1 - d.y0;
+        if (h < 12) return '';
+        return d.name;
+      });
+
+    // Column headers
+    if (opts.columns) {
+      const cols = opts.columns;
+      // Find the x-ranges for each column by grouping nodes
+      const nodesByDepth = {};
+      graph.nodes.forEach(n => {
+        const d = n.depth;
+        if (!nodesByDepth[d]) nodesByDepth[d] = [];
+        nodesByDepth[d].push(n);
+      });
+      const depths = Object.keys(nodesByDepth).sort((a,b) => a - b);
+      depths.forEach((d, i) => {
+        if (i >= cols.length) return;
+        const ns = nodesByDepth[d];
+        const cx = (ns[0].x0 + ns[0].x1) / 2;
+        const anchor = i === 0 ? 'start' : i === depths.length - 1 ? 'end' : 'middle';
+        const xPos = i === 0 ? ns[0].x0 : i === depths.length - 1 ? ns[0].x1 : cx;
+        svg.append('text')
+          .attr('x', xPos)
+          .attr('y', 0)
+          .attr('dy', '0.8em')
+          .attr('text-anchor', anchor)
+          .attr('font-size', '10px')
+          .attr('font-weight', '600')
+          .attr('text-transform', 'uppercase')
+          .attr('letter-spacing', '0.06em')
+          .attr('fill', '#71717a')
+          .text(cols[i]);
+      });
+    }
+  }
+
+  // ─── SWITZERLAND (2025) ───
+  // Origin → Reason → Sector
+  // Source: SEM Jahresstatistik 2025 p.8, p.11
+  // Gastgewerbe = 55% foreign workers, ~15% of services sector work immigration
+  buildSankey('sankey-ch', [
+    {name:'EU/EFTA'}, {name:'Non-EU/EFTA'}, {name:'Ukraine'}, {name:'Asia'}, {name:'Africa'}, {name:'Americas'},
+    {name:'Work'}, {name:'Family'}, {name:'Education'}, {name:'Asylum'},
+    {name:'Services'}, {name:'Hospitality'}, {name:'Industry'}, {name:'Agriculture'}
+  ], [
+    {source:'EU/EFTA', target:'Work', value:77200},
+    {source:'EU/EFTA', target:'Family', value:21800},
+    {source:'EU/EFTA', target:'Education', value:7100},
+    {source:'Non-EU/EFTA', target:'Work', value:2900},
+    {source:'Non-EU/EFTA', target:'Family', value:3700},
+    {source:'Non-EU/EFTA', target:'Asylum', value:1600},
+    {source:'Ukraine', target:'Work', value:1000},
+    {source:'Ukraine', target:'Family', value:1500},
+    {source:'Ukraine', target:'Asylum', value:1500},
+    {source:'Asia', target:'Work', value:3200},
+    {source:'Asia', target:'Family', value:6500},
+    {source:'Asia', target:'Education', value:5800},
+    {source:'Asia', target:'Asylum', value:3400},
+    {source:'Africa', target:'Work', value:1600},
+    {source:'Africa', target:'Family', value:3800},
+    {source:'Africa', target:'Asylum', value:1700},
+    {source:'Americas', target:'Work', value:3500},
+    {source:'Americas', target:'Family', value:2400},
+    {source:'Americas', target:'Education', value:2300},
+    // Reason → Sector (Gastgewerbe split from Services; ~15% of service-sector work)
+    {source:'Work', target:'Services', value:60800},
+    {source:'Work', target:'Hospitality', value:11500},
+    {source:'Work', target:'Industry', value:15100},
+    {source:'Work', target:'Agriculture', value:1800},
+    {source:'Family', target:'Services', value:25500},
+    {source:'Family', target:'Hospitality', value:6500},
+    {source:'Family', target:'Industry', value:5600},
+    {source:'Family', target:'Agriculture', value:1700},
+    {source:'Education', target:'Services', value:12500},
+    {source:'Education', target:'Hospitality', value:1000},
+    {source:'Education', target:'Industry', value:1700},
+    {source:'Asylum', target:'Services', value:4500},
+    {source:'Asylum', target:'Hospitality', value:2000},
+    {source:'Asylum', target:'Industry', value:1700},
+  ], {columns: ['Origin', 'Channel', 'Sector']});
+
+  // ─── GERMANY (2024) ───
+  // Origin → Channel → (destination implied)
+  // Source: Migrationsbericht 2024 p.18, p.38-42, p.50-51
+  buildSankey('sankey-de', [
+    {name:'EU/EFTA'}, {name:'Ukraine'}, {name:'Syria'}, {name:'Turkey'}, {name:'Asia'}, {name:'Africa'}, {name:'Non-EU/EFTA'}, {name:'Return (DE)'},
+    {name:'Work'}, {name:'Family'}, {name:'Asylum'}, {name:'Temp. Protection'}, {name:'Education'}, {name:'Other reason'},
+    {name:'Services'}, {name:'Hospitality'}, {name:'Industry'}, {name:'Healthcare'}, {name:'Construction'}, {name:'EU Outflow'}
+  ], [
+    // Origin → Channel
+    {source:'EU/EFTA', target:'Work', value:305000},
+    {source:'EU/EFTA', target:'Family', value:120000},
+    {source:'EU/EFTA', target:'Education', value:40000},
+    {source:'EU/EFTA', target:'Other reason', value:45000},
+    {source:'Ukraine', target:'Temp. Protection', value:162000},
+    {source:'Ukraine', target:'Work', value:35000},
+    {source:'Ukraine', target:'Family', value:24000},
+    {source:'Syria', target:'Asylum', value:76800},
+    {source:'Turkey', target:'Work', value:28000},
+    {source:'Turkey', target:'Asylum', value:29200},
+    {source:'Turkey', target:'Family', value:20000},
+    {source:'Turkey', target:'Other reason', value:11500},
+    {source:'Asia', target:'Work', value:57000},
+    {source:'Asia', target:'Asylum', value:48000},
+    {source:'Asia', target:'Family', value:28000},
+    {source:'Asia', target:'Education', value:35000},
+    {source:'Africa', target:'Asylum', value:42000},
+    {source:'Africa', target:'Family', value:18000},
+    {source:'Africa', target:'Work', value:12000},
+    {source:'Africa', target:'Education', value:10000},
+    {source:'Non-EU/EFTA', target:'Work', value:28000},
+    {source:'Non-EU/EFTA', target:'Family', value:12000},
+    {source:'Return (DE)', target:'Other reason', value:189000},
+    // Channel → Sector/Destination (Hospitality split from Services ~12%)
+    {source:'Work', target:'Services', value:235000},
+    {source:'Work', target:'Hospitality', value:45000},
+    {source:'Work', target:'Industry', value:115000},
+    {source:'Work', target:'Healthcare', value:48000},
+    {source:'Work', target:'Construction', value:42000},
+    {source:'Family', target:'Services', value:140000},
+    {source:'Family', target:'Hospitality', value:30000},
+    {source:'Family', target:'Industry', value:32000},
+    {source:'Family', target:'Healthcare', value:20000},
+    {source:'Asylum', target:'Services', value:68000},
+    {source:'Asylum', target:'Hospitality', value:30000},
+    {source:'Asylum', target:'Industry', value:49000},
+    {source:'Asylum', target:'Construction', value:49000},
+    {source:'Temp. Protection', target:'Services', value:85000},
+    {source:'Temp. Protection', target:'Hospitality', value:20000},
+    {source:'Temp. Protection', target:'Industry', value:30000},
+    {source:'Temp. Protection', target:'Healthcare', value:27000},
+    {source:'Education', target:'Services', value:60000},
+    {source:'Education', target:'Hospitality', value:10000},
+    {source:'Education', target:'Industry', value:15000},
+    {source:'Other reason', target:'Services', value:155000},
+    {source:'Other reason', target:'Hospitality', value:25000},
+    {source:'Other reason', target:'EU Outflow', value:33600},
+    {source:'Other reason', target:'Industry', value:31400},
+  ], {height: 400, columns: ['Origin', 'Channel', 'Sector']});
+
+  // ─── AUSTRIA (2024) ───
+  // Source: Migration-Integration 2025 p.30-39, Demographie 2024 p.10-11
+  buildSankey('sankey-at', [
+    {name:'EU/EFTA'}, {name:'Turkey'}, {name:'Syria'}, {name:'Non-EU/EFTA'}, {name:'Ukraine'}, {name:'Afghanistan'}, {name:'Other'},
+    {name:'Work'}, {name:'Family'}, {name:'Asylum'}, {name:'Education'}, {name:'Other reason'},
+    {name:'Services'}, {name:'Industry'}, {name:'Hospitality'}, {name:'Construction'}, {name:'Healthcare'}
+  ], [
+    // Origin → Channel (from Demographie 2024 p.10, Migration-Integration p.30-39)
+    {source:'EU/EFTA', target:'Work', value:48000},
+    {source:'EU/EFTA', target:'Family', value:22000},
+    {source:'EU/EFTA', target:'Education', value:8000},
+    {source:'EU/EFTA', target:'Other reason', value:7100},
+    {source:'Turkey', target:'Family', value:4800},
+    {source:'Turkey', target:'Work', value:2600},
+    {source:'Turkey', target:'Asylum', value:1100},
+    {source:'Syria', target:'Asylum', value:13900},
+    {source:'Syria', target:'Family', value:3200},
+    {source:'Non-EU/EFTA', target:'Work', value:8500},
+    {source:'Non-EU/EFTA', target:'Family', value:6200},
+    {source:'Ukraine', target:'Asylum', value:5000},
+    {source:'Ukraine', target:'Work', value:4800},
+    {source:'Ukraine', target:'Family', value:4200},
+    {source:'Afghanistan', target:'Asylum', value:3400},
+    {source:'Afghanistan', target:'Family', value:2100},
+    {source:'Other', target:'Work', value:9500},
+    {source:'Other', target:'Family', value:8500},
+    {source:'Other', target:'Asylum', value:2000},
+    {source:'Other', target:'Education', value:5200},
+    // Channel → Sector (Migration-Integration p.50-61: workers with migration background by sector)
+    {source:'Work', target:'Services', value:32000},
+    {source:'Work', target:'Industry', value:15000},
+    {source:'Work', target:'Hospitality', value:12500},
+    {source:'Work', target:'Construction', value:8000},
+    {source:'Work', target:'Healthcare', value:6500},
+    {source:'Family', target:'Services', value:22000},
+    {source:'Family', target:'Hospitality', value:8000},
+    {source:'Family', target:'Industry', value:6000},
+    {source:'Family', target:'Healthcare', value:5000},
+    {source:'Family', target:'Construction', value:3000},
+    {source:'Asylum', target:'Services', value:10000},
+    {source:'Asylum', target:'Construction', value:5200},
+    {source:'Asylum', target:'Industry', value:4200},
+    {source:'Asylum', target:'Hospitality', value:3500},
+    {source:'Asylum', target:'Healthcare', value:2500},
+    {source:'Education', target:'Services', value:10500},
+    {source:'Education', target:'Industry', value:2000},
+    {source:'Education', target:'Healthcare', value:700},
+    {source:'Other reason', target:'Services', value:5000},
+    {source:'Other reason', target:'Hospitality', value:2100},
+  ], {columns: ['Origin', 'Channel', 'Sector']});
+})();
+</script>
+</body>
+</html>
