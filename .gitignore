@@ -1,0 +1,6 @@
+# Raw source material — too large for git, not needed for deploy
+data/
+
+# macOS
+.DS_Store
+**/.DS_Store
