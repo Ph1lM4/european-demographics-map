@@ -78,18 +78,19 @@ This is Part 4 of 7 in the European AI Labour Market suite:
 2. **[Job Market](https://job-market.nexalps.com)** — Hiring trends and career intelligence across 9 roles × 34 countries (*where demand is going*)
 3. **[Disruptions](https://disruptions.nexalps.com)** — 580 years of technology shocks, 20 case studies, 5 disruption patterns (*what happened every other time*)
 4. **[Demographics](https://demographics.nexalps.com)** — Population × AI substitution through 2050 *(this repo — the structural constraint)*
-5. *Coming soon — Reskilling*
+5. **[Reskilling](https://reskilling.nexalps.com)** — The bottleneck is evaluation, not acquisition: 7.55M deep-reskilling need by 2035 vs ~450K/year throughput, six European system models ranked (*whether the bridge is walkable*)
 6. *Coming soon*
 7. *Coming soon*
 
-**How the four products connect:**
+**How the five products connect:**
 
 - `ai-exposure.nexalps.com` = **which jobs** AI hits
 - `job-market.nexalps.com` = **where demand** is going
 - `disruptions.nexalps.com` = **what happened every other time**
 - `demographics.nexalps.com` = **the structural constraint** (population decline × AI mismatch)
+- `reskilling.nexalps.com` = **whether the bridge is walkable** (capacity vs need)
 
-ISCO-08 codes bridge all four products. Shared design system (shadcn dark, Geist font, `#f97316` orange accent).
+ISCO-08 codes bridge all five products. Shared design system (shadcn dark, Geist font, `#f97316` orange accent).
 
 ## Preview Locally
 
